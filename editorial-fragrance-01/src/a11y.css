@@ -1,0 +1,4 @@
+.product-track p,
+footer > p {
+  color: color-mix(in srgb, var(--bw-text) 78%, var(--bw-surface));
+}
