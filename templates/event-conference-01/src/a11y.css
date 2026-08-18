@@ -1,0 +1,3 @@
+.day-tabs button[aria-pressed='true'] span {
+  color: #b6a8ff;
+}
