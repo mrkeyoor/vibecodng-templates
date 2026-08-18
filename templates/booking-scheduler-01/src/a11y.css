@@ -1,3 +1,30 @@
-.services button[aria-pressed='true'] small {
-  color: #5e4a42;
+.services button[aria-pressed='true'],
+.dates button[aria-pressed='true'] {
+  background: color-mix(in srgb, var(--bw-accent) 14%, var(--bw-surface));
+  color: var(--bw-text);
 }
+
+.services button[aria-pressed='true'] small {
+  color: color-mix(in srgb, var(--bw-text) 76%, var(--bw-surface));
+}
+
+.summary-card {
+  background: var(--bw-surface);
+}
+
+.modal input,
+.modal textarea,
+.modal select {
+  background: color-mix(in srgb, var(--bw-surface) 94%, var(--bw-text));
+}
+.booking .primary,
+.times button[aria-pressed='true'] {
+  background: var(--bw-text);
+  border-color: var(--bw-text);
+  color: var(--bw-surface);
+}
+.booking main .eyebrow,
+.booking .modal .eyebrow {
+  color: color-mix(in srgb, var(--bw-text) 82%, var(--bw-surface));
+}
+

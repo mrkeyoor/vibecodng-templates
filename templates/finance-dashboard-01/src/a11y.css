@@ -1,3 +1,57 @@
-.insight > .eyebrow {
-  color: #1f604f;
+.finance > aside {
+  background: #142522;
+  color: #f3f6f2;
 }
+
+.finance > aside .brand small {
+  color: #a9bbb5;
+}
+
+.account-row > div,
+.transactions,
+.insight,
+.finance main > header button,
+.transactions input {
+  background: var(--bw-surface);
+}
+
+.insight {
+  background: color-mix(in srgb, var(--bw-accent) 12%, var(--bw-surface));
+}
+
+.insight > .eyebrow {
+  color: color-mix(in srgb, var(--bw-text) 80%, var(--bw-surface));
+}
+
+.notice {
+  background: color-mix(in srgb, var(--bw-accent) 14%, var(--bw-surface));
+  color: var(--bw-text);
+}
+
+.modal input,
+.modal textarea,
+.modal select {
+  background: color-mix(in srgb, var(--bw-surface) 94%, var(--bw-text));
+}
+.finance .primary,
+.balance > div > button:first-child {
+  background: var(--bw-text);
+  border-color: var(--bw-text);
+  color: var(--bw-surface);
+}
+
+.positive,
+.insight > p:not(.eyebrow) {
+  color: color-mix(in srgb, var(--bw-text) 82%, var(--bw-surface));
+}
+.finance main .eyebrow {
+  color: color-mix(in srgb, var(--bw-text) 82%, var(--bw-surface));
+}
+
+.finance main > header .primary,
+.finance .modal .primary {
+  background: var(--bw-text);
+  border-color: var(--bw-text);
+  color: var(--bw-surface);
+}
+

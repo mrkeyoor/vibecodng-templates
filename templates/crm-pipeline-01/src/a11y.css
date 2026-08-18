@@ -8,7 +8,48 @@
   min-width: 0;
 }
 
+.crm > aside,
+.metrics article,
+.workspace,
+.deal,
+.search input {
+  background: var(--bw-surface);
+}
+
+.crm > aside nav a.active,
+.aside-note,
+.deal.selected {
+  background: color-mix(in srgb, var(--bw-accent) 12%, var(--bw-surface));
+}
+
+.logo {
+  background: color-mix(in srgb, var(--bw-accent) 18%, var(--bw-surface));
+  color: var(--bw-text);
+}
+
 .deal small,
 .deal i {
-  color: #52615b;
+  color: color-mix(in srgb, var(--bw-text) 76%, var(--bw-surface));
 }
+
+.modal input,
+.modal textarea,
+.modal select {
+  background: color-mix(in srgb, var(--bw-surface) 94%, var(--bw-text));
+  border-color: color-mix(in srgb, var(--bw-text) 24%, transparent);
+}
+.crm .primary,
+.tabs button[aria-pressed='true'] {
+  background: var(--bw-text);
+  border-color: var(--bw-text);
+  color: var(--bw-surface);
+}
+
+.tabs button {
+  background: color-mix(in srgb, var(--bw-text) 8%, var(--bw-surface));
+  color: var(--bw-text);
+}
+.crm main .eyebrow {
+  color: color-mix(in srgb, var(--bw-text) 82%, var(--bw-surface));
+}
+

@@ -2,9 +2,25 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
-const fallback={accent:'#2563eb',surface:'#f8fafc',text:'#0f172a',muted:'#64748b'}
-let palette=fallback
-try{if(process.env.BW_PALETTE)palette={...fallback,...JSON.parse(process.env.BW_PALETTE)}}catch{}
-const vars=Object.entries(palette).map(([k,v])=>`--bw-${k}:${v}`).join(';')
-const injectPalette={name:'vibecodng-palette',transformIndexHtml(html){return html.replace('</head>',`<style>:root{${vars}}</style></head>`)}}
-export default defineConfig({plugins:[react(),tailwindcss(),injectPalette]})
+function paletteInjection() {
+  const raw = process.env.BW_PALETTE
+  if (!raw) return null
+  const palette = JSON.parse(raw)
+  const { accent, surface, text, muted } = palette.colors
+  const scheme = palette.tags.includes('light') ? 'light' : 'dark'
+  const css = `html:root{--bw-accent:${accent};--bw-surface:${surface};--bw-text:${text};--bw-muted:${muted};color-scheme:${scheme}}`
+  return {
+    name: 'vibecodng-palette',
+    transformIndexHtml: {
+      order: 'post',
+      handler(html) {
+        return html
+          .replace(/(<meta name="theme-color" content=")[^"]+(")/, `$1${surface}$2`)
+          .replace('</head>', `<style id="bw-palette">${css}</style></head>`)
+      },
+    },
+  }
+}
+
+export default defineConfig({ plugins: [react(), tailwindcss(), paletteInjection()].filter(Boolean) })
+

@@ -6,9 +6,52 @@
   min-width: 0;
 }
 
+.community > header {
+  background: color-mix(in srgb, var(--bw-surface) 94%, transparent);
+}
+
+.community > header input,
+.posts article,
+.right section {
+  background: var(--bw-surface);
+}
+
+.left nav button[aria-pressed='true'],
+.guidelines,
+.posts article footer button,
+.posts article footer a {
+  background: color-mix(in srgb, var(--bw-accent) 12%, var(--bw-surface));
+}
+
 .community > header .brand small,
 .posts article header small,
 .posts article footer button,
 .posts article footer a {
-  color: #554d6b;
+  color: color-mix(in srgb, var(--bw-text) 76%, var(--bw-surface));
 }
+
+.avatar,
+.faces span {
+  background: color-mix(in srgb, var(--bw-accent) 16%, var(--bw-surface));
+  color: var(--bw-text);
+}
+
+.modal input,
+.modal textarea,
+.modal select {
+  background: color-mix(in srgb, var(--bw-surface) 94%, var(--bw-text));
+}
+.community .primary {
+  background: var(--bw-text);
+  border-color: var(--bw-text);
+  color: var(--bw-surface);
+}
+
+.feed-head > button {
+  background: var(--bw-surface);
+  color: var(--bw-text);
+}
+.feed-head .eyebrow {
+  color: color-mix(in srgb, var(--bw-text) 82%, var(--bw-surface));
+}
+

@@ -1,4 +1,53 @@
+.support > aside,
+.inbox,
+.conversation,
+.customer,
+.inbox input,
+.conversation header button,
+.reply {
+  background: var(--bw-surface);
+}
+
+.support > aside nav button[aria-pressed='true'],
+.ticket.active,
+.note {
+  background: color-mix(in srgb, var(--bw-accent) 12%, var(--bw-surface));
+}
+
+.message > div {
+  background: color-mix(in srgb, var(--bw-text) 7%, var(--bw-surface));
+}
+
+.message.agent > div {
+  background: color-mix(in srgb, var(--bw-accent) 12%, var(--bw-surface));
+}
+
 .ticket.active small,
 .ticket.active time {
-  color: #5f5550;
+  color: color-mix(in srgb, var(--bw-text) 76%, var(--bw-surface));
+}
+
+.avatar {
+  background: color-mix(in srgb, var(--bw-accent) 16%, var(--bw-surface));
+  color: var(--bw-text);
+}
+
+.support .eyebrow {
+  color: color-mix(in srgb, var(--bw-text) 80%, var(--bw-surface));
+}
+
+.modal input,
+.modal textarea,
+.modal select {
+  background: color-mix(in srgb, var(--bw-surface) 94%, var(--bw-text));
+}
+.compose,
+.support .primary {
+  background: var(--bw-text);
+  border-color: var(--bw-text);
+  color: var(--bw-surface);
+}
+
+.ticket .urgent {
+  color: color-mix(in srgb, var(--bw-text) 82%, var(--bw-surface));
 }
