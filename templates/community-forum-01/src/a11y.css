@@ -1,0 +1,14 @@
+.community {
+  overflow-x: hidden;
+}
+
+.feed {
+  min-width: 0;
+}
+
+.community > header .brand small,
+.posts article header small,
+.posts article footer button,
+.posts article footer a {
+  color: #554d6b;
+}

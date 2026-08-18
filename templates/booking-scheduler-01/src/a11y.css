@@ -1,0 +1,3 @@
+.services button[aria-pressed='true'] small {
+  color: #5e4a42;
+}

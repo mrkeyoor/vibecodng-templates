@@ -1,0 +1,14 @@
+.crm {
+  overflow-x: hidden;
+}
+
+.crm > main,
+.deal-list,
+.deal span {
+  min-width: 0;
+}
+
+.deal small,
+.deal i {
+  color: #52615b;
+}

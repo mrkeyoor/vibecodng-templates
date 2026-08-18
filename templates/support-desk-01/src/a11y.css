@@ -1,0 +1,4 @@
+.ticket.active small,
+.ticket.active time {
+  color: #5f5550;
+}
