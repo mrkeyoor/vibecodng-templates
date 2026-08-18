@@ -1,0 +1,1 @@
+:focus-visible{outline:3px solid var(--bw-accent);outline-offset:4px}.portal,.backdrop,.veil{pointer-events:none}.booking[aria-hidden="true"]{visibility:hidden;transition:transform .7s cubic-bezier(.16,1,.3,1),visibility 0s .7s}.booking[aria-hidden="false"]{visibility:visible}@media(prefers-reduced-motion:reduce){.booking,.booking[aria-hidden="true"]{transition:none}}
