@@ -1,0 +1,3 @@
+// Source slug: meraki-testimonials-slider
+// Author repo: https://github.com/merakiui/merakiui
+export default function Testimonial(){return <section className="section testimonial" data-reveal-group><div className="shell"><div className="stars" data-reveal>★★★★★</div><blockquote data-reveal style={{'--order':1}}>“The cup I reach for without thinking. It feels considered, but never precious.”</blockquote><p data-reveal style={{'--order':2}}>- ELLA M. / DAWN CUP OWNER</p><div className="quote-nav" data-reveal style={{'--order':3}}><button aria-label="Previous testimonial">←</button><span>01 / 03</span><button aria-label="Next testimonial">→</button></div></div></section>}

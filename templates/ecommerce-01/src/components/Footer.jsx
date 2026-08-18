@@ -1,0 +1,3 @@
+// Source slug: tailark-mist-footer-2
+// Author repo: https://github.com/tailark/blocks
+export default function Footer(){return <footer><div className="shell"><div className="footer-main"><a className="footer-logo" href="#top">LOOM<span>+</span>CO</a><div><h2>Shop</h2><a href="#shop">Table</a><a href="#shop">Textiles</a><a href="#shop">Objects</a></div><div><h2>About</h2><a href="#story">Our story</a><a href="#journal">Journal</a><a href="#top">Stockists</a></div><div><h2>Help</h2><a href="#top">Delivery</a><a href="#top">Care guide</a><a href="#top">Contact</a></div></div><div className="footer-bottom"><span>© 2026 Loom+Co</span><span>Made thoughtfully. Used daily.</span><span>GBP / United Kingdom</span></div></div></footer>}

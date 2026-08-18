@@ -1,0 +1,64 @@
+{
+  "name": "motion-primitives-text-scramble",
+  "pattern": "text-effect",
+  "sourceUrl": "https://raw.githubusercontent.com/ibelick/motion-primitives/main/public/c/text-scramble.json",
+  "license": "MIT",
+  "fetchedAt": "2026-08-14T06:54:26.861Z",
+  "deps": {
+    "declared": [
+      "motion"
+    ],
+    "missing": [],
+    "installOk": true,
+    "installLog": ""
+  },
+  "build": {
+    "ok": true,
+    "errors": []
+  },
+  "mount": {
+    "ok": true,
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  "viewports": {
+    "w375": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/motion-primitives-text-scramble/shot-375.png"
+    },
+    "w768": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/motion-primitives-text-scramble/shot-768.png"
+    },
+    "w1440": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/motion-primitives-text-scramble/shot-1440.png"
+    }
+  },
+  "a11y": {
+    "counts": {
+      "critical": 0,
+      "serious": 0,
+      "moderate": 0,
+      "minor": 0
+    },
+    "violations": []
+  },
+  "bundle": {
+    "gzipKb": 123.7,
+    "baselineGzipKb": 65.4,
+    "marginalKb": 58.3
+  },
+  "bare": {
+    "buildOk": true,
+    "mountOk": true,
+    "errors": []
+  },
+  "needsProvider": false,
+  "demoUsed": true,
+  "video": "/var/www/mrkeyoor.com/harness/out/motion-primitives-text-scramble/video.webm",
+  "timings": {
+    "totalMs": 80706
+  },
+  "retried": false
+}

@@ -1,0 +1,96 @@
+{
+  "name": "tailark-dusk-hero-section-3",
+  "pattern": "hero",
+  "sourceUrl": "https://oss.tailark.com/r/radix/dusk-hero-section-3.json",
+  "license": "MIT",
+  "fetchedAt": "2026-08-15T08:46:16.054Z",
+  "deps": {
+    "declared": [
+      "clsx",
+      "tailwind-merge"
+    ],
+    "missing": [],
+    "installOk": true,
+    "installLog": ""
+  },
+  "build": {
+    "ok": true,
+    "errors": []
+  },
+  "mount": {
+    "ok": true,
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ],
+    "pageErrors": []
+  },
+  "viewports": {
+    "w375": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/tailark-dusk-hero-section-3/shot-375.png"
+    },
+    "w768": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/tailark-dusk-hero-section-3/shot-768.png"
+    },
+    "w1440": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/tailark-dusk-hero-section-3/shot-1440.png"
+    }
+  },
+  "a11y": {
+    "counts": {
+      "critical": 0,
+      "serious": 1,
+      "moderate": 3,
+      "minor": 0
+    },
+    "violations": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "nodes": 2
+      },
+      {
+        "id": "landmark-main-is-top-level",
+        "impact": "moderate",
+        "help": "Main landmark should not be contained in another landmark",
+        "nodes": 1
+      },
+      {
+        "id": "landmark-no-duplicate-main",
+        "impact": "moderate",
+        "help": "Document should not have more than one main landmark",
+        "nodes": 1
+      },
+      {
+        "id": "skip-link",
+        "impact": "moderate",
+        "help": "The skip-link target should exist and be focusable",
+        "nodes": 2
+      }
+    ]
+  },
+  "bundle": {
+    "gzipKb": 134.2,
+    "baselineGzipKb": 65.4,
+    "marginalKb": 68.8
+  },
+  "bare": {
+    "buildOk": true,
+    "mountOk": true,
+    "errors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ]
+  },
+  "needsProvider": false,
+  "demoUsed": true,
+  "video": null,
+  "timings": {
+    "totalMs": 108052
+  },
+  "retried": false
+}

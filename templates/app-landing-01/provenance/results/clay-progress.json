@@ -1,0 +1,62 @@
+{
+  "name": "clay-progress",
+  "pattern": "progress",
+  "sourceUrl": "/var/www/sir-originals/components/clay-progress.jsx",
+  "license": "MIT",
+  "fetchedAt": "2026-08-13T21:11:08.993Z",
+  "deps": {
+    "declared": [],
+    "missing": [],
+    "installOk": true,
+    "installLog": ""
+  },
+  "build": {
+    "ok": true,
+    "errors": []
+  },
+  "mount": {
+    "ok": true,
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  "viewports": {
+    "w375": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/clay-progress/shot-375.png"
+    },
+    "w768": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/clay-progress/shot-768.png"
+    },
+    "w1440": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/clay-progress/shot-1440.png"
+    }
+  },
+  "a11y": {
+    "counts": {
+      "critical": 0,
+      "serious": 0,
+      "moderate": 0,
+      "minor": 0
+    },
+    "violations": []
+  },
+  "bundle": {
+    "gzipKb": 83.4,
+    "baselineGzipKb": 65.4,
+    "marginalKb": 18
+  },
+  "bare": {
+    "buildOk": true,
+    "mountOk": true,
+    "errors": []
+  },
+  "needsProvider": false,
+  "demoUsed": true,
+  "video": null,
+  "timings": {
+    "totalMs": 54445
+  },
+  "retried": false
+}

@@ -1,0 +1,319 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: var(--bw-surface);
+  --color-ink: var(--bw-text);
+  --color-mist: var(--bw-muted);
+  --color-accent: var(--bw-accent);
+  --font-sans: "Spectral", ui-serif, Georgia, serif;
+  --font-display: "Bebas Neue", "Arial Narrow", sans-serif;
+}
+
+:root {
+  --bw-accent: #E8A24C;
+  --bw-surface: #211812;
+  --bw-text: #F2E7D3;
+  --bw-muted: #B5A183;
+
+  /* Material palette, all derived from the four theme variables. */
+  --leather: color-mix(in srgb, var(--bw-surface) 92%, var(--bw-accent));
+  --leather-deep: color-mix(in srgb, var(--bw-surface) 88%, black);
+  --stitch: color-mix(in srgb, var(--bw-accent) 55%, var(--bw-surface));
+  --metal-hi: color-mix(in srgb, var(--bw-text) 30%, var(--bw-surface));
+  --metal-lo: color-mix(in srgb, var(--bw-text) 12%, var(--bw-surface));
+  --metal-edge: color-mix(in srgb, var(--bw-text) 45%, var(--bw-surface));
+  --paper: color-mix(in srgb, var(--bw-text) 96%, var(--bw-accent));
+  --paper-ink: color-mix(in srgb, var(--bw-surface) 92%, var(--bw-text));
+  --paper-rule: color-mix(in srgb, var(--bw-surface) 16%, var(--bw-text));
+  --led-off: color-mix(in srgb, var(--bw-accent) 14%, var(--bw-surface));
+  color-scheme: dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  background: var(--bw-surface);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--leather);
+  color: var(--bw-text);
+  font-family: var(--font-sans);
+}
+
+::selection { color: var(--bw-surface); background: var(--bw-accent); }
+
+a, button, summary { -webkit-tap-highlight-color: transparent; }
+
+a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visible {
+  outline: 2px solid var(--bw-accent);
+  outline-offset: 3px;
+}
+
+.shell { width: min(100% - 2.5rem, 72rem); margin-inline: auto; }
+.section { padding-block: clamp(5rem, 9vw, 8rem); }
+
+.display {
+  font-family: var(--font-display);
+  font-size: clamp(3.4rem, 9vw, 7rem);
+  font-weight: 400;
+  line-height: 0.92;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 5.4vw, 4.2rem);
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--bw-accent);
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+}
+.eyebrow::before { width: 1.5rem; height: 2px; content: ""; background: currentColor; box-shadow: 0 1px 0 rgb(0 0 0 / 0.6); }
+
+/* Engraved faceplate label */
+.engraved {
+  font-family: var(--font-display);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--bw-text) 62%, var(--bw-surface));
+  text-shadow: 0 -1px 0 rgb(0 0 0 / 0.65), 0 1px 0 color-mix(in srgb, var(--bw-text) 16%, transparent);
+}
+
+/* ---- Materials ---- */
+.leather-panel {
+  position: relative;
+  background:
+    radial-gradient(120% 90% at 50% 0%, color-mix(in srgb, var(--bw-accent) 6%, transparent), transparent 60%),
+    var(--leather);
+  border: 1px solid var(--leather-deep);
+  box-shadow:
+    inset 0 1px 0 color-mix(in srgb, var(--bw-text) 12%, transparent),
+    inset 0 -2px 6px rgb(0 0 0 / 0.5),
+    0 18px 40px rgb(0 0 0 / 0.55);
+}
+.stitched {
+  position: absolute;
+  inset: 0.65rem;
+  border: 2px dashed var(--stitch);
+  border-radius: inherit;
+  opacity: 0.65;
+  pointer-events: none;
+}
+
+.metal-panel {
+  position: relative;
+  background:
+    repeating-linear-gradient(90deg, transparent 0 2px, rgb(255 255 255 / 0.025) 2px 3px),
+    linear-gradient(180deg, var(--metal-hi), var(--metal-lo) 55%, var(--metal-hi));
+  border: 1px solid var(--metal-edge);
+  border-radius: 10px;
+  box-shadow:
+    inset 0 2px 0 color-mix(in srgb, var(--bw-text) 35%, transparent),
+    inset 0 -3px 6px rgb(0 0 0 / 0.55),
+    0 14px 30px rgb(0 0 0 / 0.5);
+}
+.metal-screw {
+  position: absolute;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background: radial-gradient(circle at 32% 30%, var(--metal-edge), var(--metal-lo) 70%);
+  box-shadow: inset 0 -1px 2px rgb(0 0 0 / 0.7), 0 1px 1px rgb(255 255 255 / 0.12);
+}
+.metal-screw::after {
+  position: absolute;
+  inset: 42% 12%;
+  content: "";
+  background: rgb(0 0 0 / 0.55);
+  border-radius: 2px;
+  transform: rotate(28deg);
+}
+
+.paper-panel {
+  position: relative;
+  background:
+    repeating-linear-gradient(180deg, transparent 0 1.85rem, color-mix(in srgb, var(--paper-rule) 40%, transparent) 1.85rem calc(1.85rem + 1px)),
+    var(--paper);
+  color: var(--paper-ink);
+  border-radius: 4px;
+  box-shadow:
+    0 1px 0 rgb(255 255 255 / 0.35) inset,
+    0 12px 26px rgb(0 0 0 / 0.5),
+    0 2px 6px rgb(0 0 0 / 0.4);
+}
+.paper-tape {
+  position: absolute;
+  top: -0.8rem;
+  left: 50%;
+  width: 6rem;
+  height: 1.6rem;
+  background: color-mix(in srgb, var(--bw-accent) 30%, var(--paper));
+  opacity: 0.85;
+  transform: translateX(-50%) rotate(-2deg);
+  box-shadow: 0 2px 5px rgb(0 0 0 / 0.3);
+}
+
+/* ---- Tactile push button ---- */
+.push-button {
+  display: inline-flex;
+  min-height: 3rem;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  border: 1px solid color-mix(in srgb, var(--bw-accent) 55%, black);
+  border-radius: 10px;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--bw-accent) 88%, white), var(--bw-accent) 45%, color-mix(in srgb, var(--bw-accent) 72%, black));
+  padding: 0.8rem 1.6rem;
+  color: color-mix(in srgb, var(--bw-surface) 88%, black);
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 color-mix(in srgb, var(--bw-text) 40%, transparent);
+  box-shadow:
+    inset 0 2px 0 color-mix(in srgb, var(--bw-text) 55%, transparent),
+    inset 0 -4px 6px color-mix(in srgb, black 35%, transparent),
+    0 5px 0 color-mix(in srgb, var(--bw-accent) 42%, black),
+    0 9px 18px rgb(0 0 0 / 0.5);
+  transition: transform 120ms ease, box-shadow 120ms ease, filter 120ms ease;
+}
+.push-button:hover { filter: brightness(1.06); }
+.push-button:active {
+  transform: translateY(4px);
+  box-shadow:
+    inset 0 2px 0 color-mix(in srgb, var(--bw-text) 40%, transparent),
+    inset 0 -2px 4px color-mix(in srgb, black 35%, transparent),
+    0 1px 0 color-mix(in srgb, var(--bw-accent) 42%, black),
+    0 3px 8px rgb(0 0 0 / 0.5);
+}
+.push-button-ghost {
+  border-color: var(--metal-edge);
+  background: linear-gradient(180deg, var(--metal-hi), var(--metal-lo));
+  color: var(--bw-text);
+  text-shadow: 0 -1px 0 rgb(0 0 0 / 0.6);
+  box-shadow:
+    inset 0 2px 0 color-mix(in srgb, var(--bw-text) 25%, transparent),
+    inset 0 -4px 6px rgb(0 0 0 / 0.45),
+    0 5px 0 color-mix(in srgb, var(--metal-lo) 60%, black),
+    0 9px 18px rgb(0 0 0 / 0.5);
+}
+.push-button-ghost:active {
+  box-shadow:
+    inset 0 2px 0 color-mix(in srgb, var(--bw-text) 18%, transparent),
+    inset 0 -2px 4px rgb(0 0 0 / 0.45),
+    0 1px 0 color-mix(in srgb, var(--metal-lo) 60%, black),
+    0 3px 8px rgb(0 0 0 / 0.5);
+}
+
+/* ---- Toggle switch (two-position) ---- */
+.amp-switch {
+  position: relative;
+  width: 3.4rem;
+  height: 1.7rem;
+  cursor: pointer;
+  border-radius: 999px;
+  border: 1px solid rgb(0 0 0 / 0.6);
+  background: linear-gradient(180deg, rgb(0 0 0 / 0.55), rgb(0 0 0 / 0.25));
+  box-shadow: inset 0 2px 5px rgb(0 0 0 / 0.7), 0 1px 0 color-mix(in srgb, var(--bw-text) 14%, transparent);
+}
+.amp-switch i {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: calc(50% - 2px);
+  height: calc(100% - 4px);
+  border-radius: 999px;
+  background: linear-gradient(180deg, var(--metal-edge), var(--metal-lo));
+  box-shadow: inset 0 1px 0 color-mix(in srgb, var(--bw-text) 40%, transparent), 0 2px 4px rgb(0 0 0 / 0.6);
+  transition: left 160ms ease;
+}
+.amp-switch[aria-pressed="true"] i { left: 50%; }
+.amp-switch[aria-pressed="true"] { background: linear-gradient(180deg, color-mix(in srgb, var(--bw-accent) 55%, black), color-mix(in srgb, var(--bw-accent) 30%, black)); }
+
+/* ---- LEDs ---- */
+.led {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, color-mix(in srgb, var(--bw-accent) 60%, white), var(--bw-accent) 60%);
+  box-shadow: 0 0 6px var(--bw-accent), 0 0 14px color-mix(in srgb, var(--bw-accent) 55%, transparent), inset 0 -1px 1px rgb(0 0 0 / 0.4);
+}
+.led-off { background: var(--led-off); box-shadow: inset 0 1px 2px rgb(0 0 0 / 0.6); }
+
+.nav-link {
+  color: var(--bw-text);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 0.4rem 0.75rem;
+  white-space: nowrap;
+  transition: color 150ms ease, text-shadow 150ms ease;
+}
+.nav-link:hover { color: var(--bw-accent); text-shadow: 0 0 12px color-mix(in srgb, var(--bw-accent) 55%, transparent); }
+
+.site-nav { transition: box-shadow 200ms ease, background-color 200ms ease; }
+.site-nav.nav-scrolled {
+  background: color-mix(in srgb, var(--leather) 90%, transparent);
+  box-shadow: 0 12px 30px rgb(0 0 0 / 0.6);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+/* ---- Once-only reveals ---- */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 600ms cubic-bezier(0.22, 1, 0.36, 1), transform 600ms cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: calc(var(--reveal-order, 0) * 90ms);
+}
+[data-reveal-group].is-revealed [data-reveal] { opacity: 1; transform: translateY(0); }
+
+/* VU needle sweeps once on reveal */
+.vu-needle { transform: rotate(-42deg); transform-origin: 100px 92px; }
+.is-revealed .vu-needle { animation: vu-sweep 1500ms cubic-bezier(0.34, 1.3, 0.5, 1) 350ms forwards; }
+@keyframes vu-sweep {
+  0% { transform: rotate(-42deg); }
+  60% { transform: rotate(34deg); }
+  80% { transform: rotate(22deg); }
+  100% { transform: rotate(27deg); }
+}
+
+/* LED streak meter lights left to right once on reveal */
+.is-revealed .led-cell { animation: led-on 200ms steps(1) forwards; animation-delay: calc(560ms + var(--led-order, 0) * 70ms); }
+@keyframes led-on { to { opacity: 1; } }
+.led-cell { opacity: 0; }
+
+.faq-item summary { display: flex; cursor: pointer; list-style: none; align-items: baseline; justify-content: space-between; gap: 1rem; font-weight: 600; }
+.faq-item summary::-webkit-details-marker { display: none; }
+
+@media (max-width: 639px) {
+  .shell { width: min(100% - 1.75rem, 72rem); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; scroll-behavior: auto !important; transition-duration: 0.01ms !important; transition-delay: 0ms !important; }
+  [data-reveal] { opacity: 1 !important; transform: none !important; }
+  .led-cell { opacity: 1; }
+  .vu-needle { transform: rotate(27deg); }
+  .push-button:active { transform: none; }
+}

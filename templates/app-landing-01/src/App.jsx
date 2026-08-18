@@ -1,0 +1,2 @@
+import Header from'./components/Header.jsx';import Hero from'./components/Hero.jsx';import Features from'./components/Features.jsx';import Screenshots from'./components/Screenshots.jsx';import DownloadCta from'./components/DownloadCta.jsx';import Footer from'./components/Footer.jsx';import RevealController from'./components/RevealController.jsx';
+export default function App(){return <div className="min-h-screen overflow-x-hidden bg-surface text-ink"><RevealController/><Header/><main><Hero/><Features/><Screenshots/><DownloadCta/></main><Footer/></div>}

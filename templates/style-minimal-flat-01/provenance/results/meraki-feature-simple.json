@@ -1,0 +1,62 @@
+{
+  "name": "meraki-feature-simple",
+  "pattern": "feature-grid",
+  "sourceUrl": "https://raw.githubusercontent.com/merakiui/merakiui/main/components/features/Simple.html",
+  "license": "MIT",
+  "fetchedAt": "2026-08-13T18:47:24.133Z",
+  "deps": {
+    "declared": [],
+    "missing": [],
+    "installOk": true,
+    "installLog": ""
+  },
+  "build": {
+    "ok": true,
+    "errors": []
+  },
+  "mount": {
+    "ok": true,
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  "viewports": {
+    "w375": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/meraki-feature-simple/shot-375.png"
+    },
+    "w768": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/meraki-feature-simple/shot-768.png"
+    },
+    "w1440": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/meraki-feature-simple/shot-1440.png"
+    }
+  },
+  "a11y": {
+    "counts": {
+      "critical": 0,
+      "serious": 0,
+      "moderate": 0,
+      "minor": 0
+    },
+    "violations": []
+  },
+  "bundle": {
+    "gzipKb": 85.6,
+    "baselineGzipKb": 65.4,
+    "marginalKb": 20.2
+  },
+  "bare": {
+    "buildOk": true,
+    "mountOk": true,
+    "errors": []
+  },
+  "needsProvider": false,
+  "demoUsed": false,
+  "video": null,
+  "timings": {
+    "totalMs": 69555
+  },
+  "retried": false
+}

@@ -1,0 +1,318 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: var(--bw-surface);
+  --color-panel: color-mix(in srgb, var(--bw-surface) 93%, var(--bw-text));
+  --color-mist: var(--bw-muted);
+  --color-accent: var(--bw-accent);
+  --color-white: var(--bw-text);
+  --color-black: var(--bw-surface);
+  --font-sans: Futura, "Century Gothic", "URW Gothic", "Trebuchet MS", "Segoe UI", sans-serif;
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+}
+
+:root {
+  --bw-accent: #AEB6FF;
+  --bw-surface: #0B0B12;
+  --bw-text: #F2F3FA;
+  --bw-muted: #9CA0B8;
+  color-scheme: dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+  background: var(--bw-surface);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--bw-surface);
+  font-family: var(--font-sans);
+}
+
+::selection { color: var(--bw-surface); background: var(--bw-accent); }
+a, button, summary { -webkit-tap-highlight-color: transparent; }
+a:focus-visible, button:focus-visible, summary:focus-visible {
+  outline: 2px solid var(--bw-accent);
+  outline-offset: 4px;
+}
+
+.shell { width: min(100% - 2.5rem, 74rem); margin-inline: auto; }
+.section { padding-block: clamp(5.5rem, 10vw, 8.5rem); }
+
+.display {
+  font-size: clamp(2.8rem, 7.6vw, 6rem);
+  font-weight: 700;
+  line-height: 0.98;
+  letter-spacing: -0.035em;
+}
+
+.section-title {
+  font-size: clamp(2rem, 4.6vw, 3.4rem);
+  font-weight: 700;
+  line-height: 1.04;
+  letter-spacing: -0.028em;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--bw-accent);
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+.eyebrow::before {
+  width: 0.8rem;
+  height: 0.8rem;
+  content: "";
+  background: conic-gradient(from 210deg, #ff9ae5, #ffd36b, #7df3d2, #7fb4ff, #c39bff, #ff9ae5);
+  border-radius: 2px;
+}
+
+/* ============ First-party holographic system ============
+   The whole iridescent language lives in these classes. The foil is a
+   fixed five-stop rainbow ramp (pink, gold, mint, sky, violet), mixed
+   lightly against the surface and sheened with white so it reads as bright
+   pastel metal and keeps ink-dark type above 7:1 contrast. Interaction
+   shifts hue via filter; nothing loops. */
+
+/* Foil ink for text. Static; hue-rotates on hover of the element itself
+   or any .holo-hover ancestor (used by the hero heading). */
+.holo-text {
+  background: linear-gradient(100deg, #ff9ae5 0%, #ffd36b 22%, #7df3d2 46%, #7fb4ff 72%, #c39bff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: filter 600ms ease;
+}
+.holo-text:hover, .holo-hover:hover .holo-text { filter: hue-rotate(55deg); }
+
+/* Foil surface. A conic sheet angled by --holo-angle plus a vertical
+   metallic sheen; both static until pointer interaction changes the angle
+   (hero panel) or hover shifts hue (cards). */
+.holo-surface {
+  --holo-angle: 210deg;
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  background:
+    linear-gradient(180deg, rgb(255 255 255 / 16%), transparent 30%, rgb(255 255 255 / 9%) 55%, transparent 75%),
+    conic-gradient(from var(--holo-angle) at 50% 50%,
+      color-mix(in srgb, #ff9ae5 86%, var(--bw-surface)),
+      color-mix(in srgb, #ffd36b 84%, var(--bw-surface)),
+      color-mix(in srgb, #7df3d2 84%, var(--bw-surface)),
+      color-mix(in srgb, #7fb4ff 88%, var(--bw-surface)),
+      color-mix(in srgb, #c39bff 86%, var(--bw-surface)),
+      color-mix(in srgb, #ff9ae5 86%, var(--bw-surface)));
+  transition: filter 600ms ease;
+}
+.holo-surface:hover { filter: hue-rotate(45deg) saturate(1.15); }
+
+/* Shimmer: one diagonal light streak that sweeps only when hovered. */
+.holo-shimmer::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  pointer-events: none;
+  background: linear-gradient(115deg, transparent 35%, rgb(255 255 255 / 30%) 50%, transparent 65%);
+  transform: translateX(-140%);
+}
+.holo-shimmer:hover::after { animation: holo-sweep 750ms ease; }
+
+/* Foil border: conic rainbow ring behind a solid panel. Static. */
+.holo-border {
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  background:
+    linear-gradient(color-mix(in srgb, var(--bw-surface) 94%, var(--bw-text)), color-mix(in srgb, var(--bw-surface) 94%, var(--bw-text))) padding-box,
+    conic-gradient(from 140deg, #ff9ae5, #ffd36b, #7df3d2, #7fb4ff, #c39bff, #ff9ae5) border-box;
+}
+
+.nav-link {
+  position: relative;
+  color: var(--bw-muted);
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: color 160ms ease;
+}
+.nav-link:hover { color: var(--bw-text); }
+.nav-link::after {
+  position: absolute;
+  right: 0;
+  bottom: -0.45rem;
+  left: 0;
+  height: 2px;
+  content: "";
+  border-radius: 2px;
+  background: linear-gradient(90deg, #ff9ae5, #ffd36b, #7df3d2, #7fb4ff, #c39bff);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 200ms ease;
+}
+.nav-link:hover::after { transform: scaleX(1); }
+
+.site-nav {
+  border-bottom: 1px solid color-mix(in srgb, var(--bw-text) 8%, transparent);
+  background: color-mix(in srgb, var(--bw-surface) 80%, transparent);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+}
+
+.button {
+  position: relative;
+  display: inline-flex;
+  min-height: 3rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  overflow: hidden;
+  border: 0;
+  border-radius: 0.65rem;
+  background: linear-gradient(100deg, #ff9ae5, #ffd36b 30%, #7df3d2 55%, #7fb4ff 80%, #c39bff);
+  padding: 0.8rem 1.5rem;
+  color: #14101C;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: filter 300ms ease, box-shadow 300ms ease;
+}
+.button:hover {
+  filter: hue-rotate(40deg);
+  box-shadow: 0 6px 30px color-mix(in srgb, var(--bw-accent) 35%, transparent);
+}
+.button-ghost {
+  background: transparent;
+  border: 1px solid color-mix(in srgb, var(--bw-text) 24%, transparent);
+  color: var(--bw-text);
+}
+.button-ghost:hover { filter: none; border-color: var(--bw-accent); box-shadow: none; }
+
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 640ms cubic-bezier(0.22, 1, 0.36, 1), transform 640ms cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: calc(var(--reveal-order, 0) * 80ms);
+}
+[data-reveal-group].is-revealed [data-reveal] { opacity: 1; transform: translateY(0); }
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse 60% 45% at 30% 10%, color-mix(in srgb, #7fb4ff 8%, transparent), transparent 70%),
+    radial-gradient(ellipse 50% 40% at 80% 25%, color-mix(in srgb, #ff9ae5 7%, transparent), transparent 70%),
+    var(--bw-surface);
+}
+
+.hero-panel { min-height: 22rem; }
+.hero-panel svg { position: relative; z-index: 1; display: block; width: 100%; height: auto; }
+
+/* Signature shader canvas: sits between the CSS foil (fallback) and the
+   inked SVG art. Inherits the panel's rounded clip via overflow:hidden. */
+.holo-canvas {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.hero-hint {
+  position: absolute;
+  right: 1rem;
+  bottom: 0.85rem;
+  color: rgb(20 16 28 / 65%);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.work-card { display: block; text-decoration: none; }
+.work-card figure { aspect-ratio: 4 / 3; margin: 0; }
+.work-card figure svg { display: block; width: 100%; height: 100%; }
+.work-card:hover .holo-surface { filter: hue-rotate(45deg) saturate(1.15); }
+.work-meta { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; padding-top: 0.8rem; }
+
+.feature-panel { padding: 1.9rem; }
+.feature-chip {
+  display: grid;
+  width: 2.7rem;
+  height: 2.7rem;
+  place-items: center;
+  border-radius: 0.7rem;
+  color: #14101C;
+}
+
+.stat-value {
+  font-size: clamp(2.4rem, 5vw, 3.7rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.price-card { display: flex; flex-direction: column; min-height: 30rem; padding: clamp(1.6rem, 3vw, 2.3rem); }
+.price-value { font-size: clamp(2.2rem, 4vw, 3rem); font-weight: 700; color: var(--bw-text); letter-spacing: -0.03em; }
+.perk-row { display: flex; gap: 0.6rem; align-items: baseline; color: var(--bw-muted); font-size: 0.85rem; line-height: 1.6; }
+.perk-row::before {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  flex-shrink: 0;
+  translate: 0 -1px;
+  border-radius: 2px;
+  background: conic-gradient(from 210deg, #ff9ae5, #ffd36b, #7df3d2, #7fb4ff, #c39bff, #ff9ae5);
+}
+
+.faq-item { border-bottom: 1px solid color-mix(in srgb, var(--bw-text) 9%, transparent); }
+.faq-item summary {
+  display: flex;
+  cursor: pointer;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 1.45rem;
+  color: var(--bw-text);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary svg { flex-shrink: 0; transition: transform 200ms ease; color: var(--bw-accent); }
+.faq-item[open] summary svg { transform: rotate(45deg); }
+.faq-item p { max-width: 44rem; padding: 0 2.5rem 1.6rem 0; color: var(--bw-muted); font-size: 0.85rem; line-height: 1.75; }
+
+.cta-panel { padding: clamp(2.5rem, 7vw, 5rem); text-align: center; }
+
+.site-footer { border-top: 1px solid color-mix(in srgb, var(--bw-text) 8%, transparent); }
+.footer-link { color: var(--bw-muted); font-size: 0.8rem; transition: color 150ms ease; }
+.footer-link:hover { color: var(--bw-text); }
+.footer-foil-rule {
+  height: 2px;
+  border: 0;
+  margin: 0;
+  background: linear-gradient(90deg, #ff9ae5, #ffd36b, #7df3d2, #7fb4ff, #c39bff);
+  opacity: 0.65;
+}
+
+@keyframes holo-sweep { to { transform: translateX(140%); } }
+
+@media (max-width: 639px) {
+  .shell { width: min(100% - 2rem, 74rem); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; scroll-behavior: auto !important; transition-duration: 0.01ms !important; transition-delay: 0ms !important; }
+  [data-reveal] { opacity: 1 !important; transform: none !important; }
+  .holo-text:hover, .holo-hover:hover .holo-text, .holo-surface:hover, .work-card:hover .holo-surface, .button:hover { filter: none; }
+  .holo-shimmer:hover::after { animation: none; }
+}

@@ -1,0 +1,4 @@
+// Source slug: shadcn-block-sidebar-13
+// Author repo: https://github.com/shadcn-ui/ui
+const groups=[['GET STARTED',['Introduction','Quickstart','Core concepts']],['GUIDES',['Workspaces','Collections','Live sync','Permissions']],['REFERENCE',['JavaScript SDK','REST API','Webhooks']],['RESOURCES',['Examples','Changelog','Status']]]
+export default function Sidebar(){return <aside className="sidebar"><div className="version"><span>v2.4</span><strong>Stable</strong></div>{groups.map(([title,items],g)=><nav key={title} aria-label={title}><h2>{title}</h2>{items.map((item,i)=><a className={g===0&&i===0?'active':''} href={item==='Changelog'?'#changelog':item==='REST API'?'#api':'#quickstart'} key={item}>{item}{item==='Webhooks'&&<small>NEW</small>}</a>)}</nav>)}<div className="side-foot"><span className="status-dot"/>All systems operational</div></aside>}

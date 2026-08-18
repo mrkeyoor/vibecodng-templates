@@ -1,0 +1,69 @@
+{
+  "name": "neu-input",
+  "pattern": "input",
+  "sourceUrl": "/var/www/sir-originals/components/neu-input.jsx",
+  "license": "MIT",
+  "fetchedAt": "2026-08-13T20:47:49.416Z",
+  "deps": {
+    "declared": [],
+    "missing": [],
+    "installOk": true,
+    "installLog": ""
+  },
+  "build": {
+    "ok": true,
+    "errors": []
+  },
+  "mount": {
+    "ok": true,
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  "viewports": {
+    "w375": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/neu-input/shot-375.png"
+    },
+    "w768": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/neu-input/shot-768.png"
+    },
+    "w1440": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/neu-input/shot-1440.png"
+    }
+  },
+  "a11y": {
+    "counts": {
+      "critical": 0,
+      "serious": 1,
+      "moderate": 0,
+      "minor": 0
+    },
+    "violations": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "nodes": 1
+      }
+    ]
+  },
+  "bundle": {
+    "gzipKb": 83.1,
+    "baselineGzipKb": 65.4,
+    "marginalKb": 17.7
+  },
+  "bare": {
+    "buildOk": true,
+    "mountOk": true,
+    "errors": []
+  },
+  "needsProvider": false,
+  "demoUsed": true,
+  "video": null,
+  "timings": {
+    "totalMs": 56088
+  },
+  "retried": false
+}

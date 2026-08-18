@@ -1,0 +1,65 @@
+{
+  "name": "tailark-mist-features-2",
+  "pattern": "feature-grid",
+  "sourceUrl": "https://oss.tailark.com/r/radix/mist-features-2.json",
+  "license": "MIT",
+  "fetchedAt": "2026-08-15T09:36:20.504Z",
+  "deps": {
+    "declared": [
+      "clsx",
+      "tailwind-merge"
+    ],
+    "missing": [],
+    "installOk": true,
+    "installLog": ""
+  },
+  "build": {
+    "ok": true,
+    "errors": []
+  },
+  "mount": {
+    "ok": true,
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  "viewports": {
+    "w375": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/tailark-mist-features-2/shot-375.png"
+    },
+    "w768": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/tailark-mist-features-2/shot-768.png"
+    },
+    "w1440": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/tailark-mist-features-2/shot-1440.png"
+    }
+  },
+  "a11y": {
+    "counts": {
+      "critical": 0,
+      "serious": 0,
+      "moderate": 0,
+      "minor": 0
+    },
+    "violations": []
+  },
+  "bundle": {
+    "gzipKb": 95.8,
+    "baselineGzipKb": 65.4,
+    "marginalKb": 30.4
+  },
+  "bare": {
+    "buildOk": true,
+    "mountOk": true,
+    "errors": []
+  },
+  "needsProvider": false,
+  "demoUsed": true,
+  "video": null,
+  "timings": {
+    "totalMs": 101286
+  },
+  "retried": false
+}

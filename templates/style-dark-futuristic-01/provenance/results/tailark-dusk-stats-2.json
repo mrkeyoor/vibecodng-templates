@@ -1,0 +1,69 @@
+{
+  "name": "tailark-dusk-stats-2",
+  "pattern": "stats",
+  "sourceUrl": "https://oss.tailark.com/r/radix/dusk-stats-2.json",
+  "license": "MIT",
+  "fetchedAt": "2026-08-14T12:10:53.773Z",
+  "deps": {
+    "declared": [],
+    "missing": [],
+    "installOk": true,
+    "installLog": ""
+  },
+  "build": {
+    "ok": true,
+    "errors": []
+  },
+  "mount": {
+    "ok": true,
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  "viewports": {
+    "w375": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/tailark-dusk-stats-2/shot-375.png"
+    },
+    "w768": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/tailark-dusk-stats-2/shot-768.png"
+    },
+    "w1440": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/tailark-dusk-stats-2/shot-1440.png"
+    }
+  },
+  "a11y": {
+    "counts": {
+      "critical": 0,
+      "serious": 1,
+      "moderate": 0,
+      "minor": 0
+    },
+    "violations": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "nodes": 3
+      }
+    ]
+  },
+  "bundle": {
+    "gzipKb": 83.1,
+    "baselineGzipKb": 65.4,
+    "marginalKb": 17.7
+  },
+  "bare": {
+    "buildOk": true,
+    "mountOk": true,
+    "errors": []
+  },
+  "needsProvider": false,
+  "demoUsed": true,
+  "video": null,
+  "timings": {
+    "totalMs": 122364
+  },
+  "retried": false
+}

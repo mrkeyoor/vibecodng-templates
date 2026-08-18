@@ -1,0 +1,62 @@
+{
+  "name": "meraki-testimonials-full-page-cards",
+  "pattern": "testimonials",
+  "sourceUrl": "https://raw.githubusercontent.com/merakiui/merakiui/main/components/testimonials/FullPageCards.html",
+  "license": "MIT",
+  "fetchedAt": "2026-08-13T20:08:58.115Z",
+  "deps": {
+    "declared": [],
+    "missing": [],
+    "installOk": true,
+    "installLog": ""
+  },
+  "build": {
+    "ok": true,
+    "errors": []
+  },
+  "mount": {
+    "ok": true,
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  "viewports": {
+    "w375": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/meraki-testimonials-full-page-cards/shot-375.png"
+    },
+    "w768": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/meraki-testimonials-full-page-cards/shot-768.png"
+    },
+    "w1440": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/meraki-testimonials-full-page-cards/shot-1440.png"
+    }
+  },
+  "a11y": {
+    "counts": {
+      "critical": 0,
+      "serious": 0,
+      "moderate": 0,
+      "minor": 0
+    },
+    "violations": []
+  },
+  "bundle": {
+    "gzipKb": 84.1,
+    "baselineGzipKb": 65.4,
+    "marginalKb": 18.7
+  },
+  "bare": {
+    "buildOk": true,
+    "mountOk": true,
+    "errors": []
+  },
+  "needsProvider": false,
+  "demoUsed": false,
+  "video": null,
+  "timings": {
+    "totalMs": 53505
+  },
+  "retried": false
+}

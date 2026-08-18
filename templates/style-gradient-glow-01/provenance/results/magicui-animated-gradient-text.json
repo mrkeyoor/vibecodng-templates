@@ -1,0 +1,64 @@
+{
+  "name": "magicui-animated-gradient-text",
+  "pattern": "text-effect",
+  "sourceUrl": "https://magicui.design/r/animated-gradient-text.json",
+  "license": "MIT",
+  "fetchedAt": "2026-08-14T03:49:55.810Z",
+  "deps": {
+    "declared": [],
+    "missing": [],
+    "installOk": true,
+    "installLog": ""
+  },
+  "build": {
+    "ok": true,
+    "errors": []
+  },
+  "mount": {
+    "ok": true,
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  "viewports": {
+    "w375": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/magicui-animated-gradient-text/shot-375.png"
+    },
+    "w768": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/magicui-animated-gradient-text/shot-768.png"
+    },
+    "w1440": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/magicui-animated-gradient-text/shot-1440.png"
+    }
+  },
+  "a11y": {
+    "counts": {
+      "critical": 0,
+      "serious": 0,
+      "moderate": 0,
+      "minor": 0
+    },
+    "violations": []
+  },
+  "bundle": {
+    "gzipKb": 91.5,
+    "baselineGzipKb": 65.4,
+    "marginalKb": 26.1
+  },
+  "bare": {
+    "buildOk": false,
+    "mountOk": false,
+    "errors": [
+      "✗ Build failed in 24.89s\nerror during build:\n[vite:load-fallback] Could not load /var/www/mrkeyoor.com/harness/work/0f9a0edbba8e/src/lib/utils (imported by src/cut/animated-gradient-text.tsx): ENOENT: no such file or directory, open '/var/www/mrkeyoor.com/harness/work/0f9a0edbba8e/src/lib/utils'\n    at async open (node:internal/fs/promises:636:25)\n    at async Object.readFile (node:internal/fs/promises:1235:14)\n    at async Object.handler (file:///var/www/mrkeyoor.com/harness/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:46002:27)\n    at async PluginDriver.hookFirstAndGetPlugin (file:///var/www/mrkeyoor.com/harness/node_modules/rollup/dist/es/shared/node-entry.js:22669:28)\n    at async file:///var/www/mrkeyoor.com/harness/node_modules/rollup/dist/es/shared/node-entry.js:21655:33\n    at async Queue.work (file:///var/www/mrkeyoor.com/harness/node_modules/rollup/dist/es/shared/node-entry.js:22897:32)\n"
+    ]
+  },
+  "needsProvider": false,
+  "demoUsed": true,
+  "video": "/var/www/mrkeyoor.com/harness/out/magicui-animated-gradient-text/video.webm",
+  "timings": {
+    "totalMs": 65970
+  },
+  "retried": false
+}

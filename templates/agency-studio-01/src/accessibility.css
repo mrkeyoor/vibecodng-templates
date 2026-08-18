@@ -1,0 +1,3 @@
+.wordmark span {
+  color: color-mix(in srgb, var(--bw-accent) 45%, var(--bw-text));
+}

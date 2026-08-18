@@ -1,0 +1,5 @@
+:root { --bw-accent: #8e3c1f; }
+.open-card small { color: var(--bw-text); }
+.footer-inner { color: #f6efe3; }
+.footer-inner small, .footer-inner .legal { color: #c9beb5; }
+footer .border-t > p { color: #b7ada4; }

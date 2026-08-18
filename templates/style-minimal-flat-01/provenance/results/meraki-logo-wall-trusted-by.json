@@ -1,0 +1,62 @@
+{
+  "name": "meraki-logo-wall-trusted-by",
+  "pattern": "logo-wall",
+  "sourceUrl": "https://raw.githubusercontent.com/merakiui/merakiui/main/components/features/TrustedBy.html",
+  "license": "MIT",
+  "fetchedAt": "2026-08-13T18:49:40.490Z",
+  "deps": {
+    "declared": [],
+    "missing": [],
+    "installOk": true,
+    "installLog": ""
+  },
+  "build": {
+    "ok": true,
+    "errors": []
+  },
+  "mount": {
+    "ok": true,
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  "viewports": {
+    "w375": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/meraki-logo-wall-trusted-by/shot-375.png"
+    },
+    "w768": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/meraki-logo-wall-trusted-by/shot-768.png"
+    },
+    "w1440": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/meraki-logo-wall-trusted-by/shot-1440.png"
+    }
+  },
+  "a11y": {
+    "counts": {
+      "critical": 0,
+      "serious": 0,
+      "moderate": 0,
+      "minor": 0
+    },
+    "violations": []
+  },
+  "bundle": {
+    "gzipKb": 90.5,
+    "baselineGzipKb": 65.4,
+    "marginalKb": 25.1
+  },
+  "bare": {
+    "buildOk": true,
+    "mountOk": true,
+    "errors": []
+  },
+  "needsProvider": false,
+  "demoUsed": false,
+  "video": null,
+  "timings": {
+    "totalMs": 58667
+  },
+  "retried": false
+}

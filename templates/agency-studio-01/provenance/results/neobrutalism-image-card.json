@@ -1,0 +1,63 @@
+{
+  "name": "neobrutalism-image-card",
+  "pattern": "image-card",
+  "sourceUrl": "https://www.neobrutalism.dev/r/image-card.json",
+  "license": "MIT",
+  "fetchedAt": "2026-08-13T03:21:20.536Z",
+  "deps": {
+    "declared": [],
+    "missing": [],
+    "installOk": true,
+    "installLog": ""
+  },
+  "build": {
+    "ok": true,
+    "errors": []
+  },
+  "mount": {
+    "ok": true,
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  "viewports": {
+    "w375": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/neobrutalism-image-card/shot-375.png"
+    },
+    "w768": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/neobrutalism-image-card/shot-768.png"
+    },
+    "w1440": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/neobrutalism-image-card/shot-1440.png"
+    }
+  },
+  "a11y": {
+    "counts": {
+      "critical": 0,
+      "serious": 0,
+      "moderate": 0,
+      "minor": 0
+    },
+    "violations": []
+  },
+  "bundle": {
+    "gzipKb": 76.9,
+    "baselineGzipKb": 65.4,
+    "marginalKb": 11.5
+  },
+  "bare": {
+    "buildOk": false,
+    "mountOk": false,
+    "errors": [
+      "✗ Build failed in 2.04s\nerror during build:\n[vite:load-fallback] Could not load /var/www/mrkeyoor.com/harness/work/d4c36e9a6ac0/src/lib/utils (imported by src/cut/components/ui/image-card.tsx): ENOENT: no such file or directory, open '/var/www/mrkeyoor.com/harness/work/d4c36e9a6ac0/src/lib/utils'\n    at async open (node:internal/fs/promises:636:25)\n    at async Object.readFile (node:internal/fs/promises:1235:14)\n    at async Object.handler (file:///var/www/mrkeyoor.com/harness/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:46002:27)\n    at async PluginDriver.hookFirstAndGetPlugin (file:///var/www/mrkeyoor.com/harness/node_modules/rollup/dist/es/shared/node-entry.js:22669:28)\n    at async file:///var/www/mrkeyoor.com/harness/node_modules/rollup/dist/es/shared/node-entry.js:21655:33\n    at async Queue.work (file:///var/www/mrkeyoor.com/harness/node_modules/rollup/dist/es/shared/node-entry.js:22897:32)\n"
+    ]
+  },
+  "demoUsed": true,
+  "video": null,
+  "timings": {
+    "totalMs": 9254
+  },
+  "retried": false
+}

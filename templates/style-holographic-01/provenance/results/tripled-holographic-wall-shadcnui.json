@@ -1,0 +1,65 @@
+{
+  "name": "tripled-holographic-wall-shadcnui",
+  "pattern": "chart",
+  "sourceUrl": "https://raw.githubusercontent.com/moumen-soliman/uitripled/9f60146c1856f36e555367ddacfd7114c8ebf93b/apps/docs/public/r/holographic-wall-shadcnui.json",
+  "license": "MIT",
+  "fetchedAt": "2026-08-14T12:28:49.250Z",
+  "deps": {
+    "declared": [
+      "framer-motion",
+      "react"
+    ],
+    "missing": [],
+    "installOk": true,
+    "installLog": ""
+  },
+  "build": {
+    "ok": true,
+    "errors": []
+  },
+  "mount": {
+    "ok": true,
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  "viewports": {
+    "w375": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/tripled-holographic-wall-shadcnui/shot-375.png"
+    },
+    "w768": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/tripled-holographic-wall-shadcnui/shot-768.png"
+    },
+    "w1440": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/tripled-holographic-wall-shadcnui/shot-1440.png"
+    }
+  },
+  "a11y": {
+    "counts": {
+      "critical": 0,
+      "serious": 0,
+      "moderate": 0,
+      "minor": 0
+    },
+    "violations": []
+  },
+  "bundle": {
+    "gzipKb": 124,
+    "baselineGzipKb": 65.4,
+    "marginalKb": 58.6
+  },
+  "bare": {
+    "buildOk": true,
+    "mountOk": true,
+    "errors": []
+  },
+  "needsProvider": false,
+  "demoUsed": true,
+  "video": "/var/www/mrkeyoor.com/harness/out/tripled-holographic-wall-shadcnui/video.webm",
+  "timings": {
+    "totalMs": 154491
+  },
+  "retried": false
+}

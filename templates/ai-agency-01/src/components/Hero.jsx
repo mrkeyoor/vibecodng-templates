@@ -1,0 +1,10 @@
+import { lazy, Suspense, useEffect, useState } from 'react'
+import { Aurora } from './Effects.jsx'
+import SignalArt from './SignalArt.jsx'
+// Source slugs: tailark-mist-hero-section-5, magicui-aurora-text, animata-moving-gradient
+// Author repos: https://github.com/tailark/blocks, https://github.com/magicuidesign/magicui, https://github.com/codse/animata
+// Signature hero: first-party WebGL2 signal-wave field (lazy chunk). The CSS
+// aurora blobs render only when WebGL2 is unavailable.
+const SignalShader = lazy(() => import('./shader/SignalShader.jsx'))
+function useWebGL2(){const [ok,setOk]=useState(false);useEffect(()=>{try{const c=document.createElement('canvas');const gl=c.getContext('webgl2');if(gl){gl.getExtension('WEBGL_lose_context')?.loseContext();setOk(true)}}catch{/* CSS fallback stays */}},[]);return ok}
+export default function Hero(){const webgl=useWebGL2();return <section id="top" className="hero" data-reveal-group>{webgl?<Suspense fallback={<Aurora/>}><SignalShader/></Suspense>:<Aurora/>}<div className="grid-lines"/><div className="shell hero-in"><div className="badge" data-reveal><span/>Applied AI studio · London / Remote</div><h1 data-reveal style={{'--order':1}}>We build AI that<br/><span className="aurora-text">earns its place.</span></h1><p data-reveal style={{'--order':2}}>Signalcraft turns hard operational problems into dependable AI products-from first prototype to the systems your team trusts every day.</p><div className="hero-actions" data-reveal style={{'--order':3}}><a className="pill" href="#work">See our work <span>↗</span></a><a className="text-link" href="#capabilities">Explore capabilities ↓</a></div><div className="signal-card" data-reveal style={{'--order':4}}><div className="signal-top"><span><i/> SYSTEM ONLINE</span><span>SC / 04</span></div><div className="signal-visual"><SignalArt/><div className="signal-copy"><span>LIVE INFERENCE</span><strong>91.8%</strong><small>confidence / human-reviewed</small><div className="signal-stats"><b>128</b><small>sources</small><b>24ms</b><small>latency</small></div></div></div></div></div></section>}

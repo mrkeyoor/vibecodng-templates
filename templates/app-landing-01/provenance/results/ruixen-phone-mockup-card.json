@@ -1,0 +1,65 @@
+{
+  "name": "ruixen-phone-mockup-card",
+  "pattern": "stats",
+  "sourceUrl": "https://raw.githubusercontent.com/ruixenui/ruixen.com/fa4041da52aa8652c682083941c4c0d22dc8faf2/public/r/phone-mockup-card.json",
+  "license": "MIT",
+  "fetchedAt": "2026-08-14T10:17:06.936Z",
+  "deps": {
+    "declared": [
+      "motion",
+      "react-icons"
+    ],
+    "missing": [],
+    "installOk": true,
+    "installLog": ""
+  },
+  "build": {
+    "ok": true,
+    "errors": []
+  },
+  "mount": {
+    "ok": true,
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  "viewports": {
+    "w375": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/ruixen-phone-mockup-card/shot-375.png"
+    },
+    "w768": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/ruixen-phone-mockup-card/shot-768.png"
+    },
+    "w1440": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/ruixen-phone-mockup-card/shot-1440.png"
+    }
+  },
+  "a11y": {
+    "counts": {
+      "critical": 0,
+      "serious": 0,
+      "moderate": 0,
+      "minor": 0
+    },
+    "violations": []
+  },
+  "bundle": {
+    "gzipKb": 126.1,
+    "baselineGzipKb": 65.4,
+    "marginalKb": 60.7
+  },
+  "bare": {
+    "buildOk": true,
+    "mountOk": true,
+    "errors": []
+  },
+  "needsProvider": false,
+  "demoUsed": true,
+  "video": "/var/www/mrkeyoor.com/harness/out/ruixen-phone-mockup-card/video.webm",
+  "timings": {
+    "totalMs": 110887
+  },
+  "retried": false
+}

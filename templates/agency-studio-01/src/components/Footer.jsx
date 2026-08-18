@@ -1,0 +1,3 @@
+// Source slug: efferd-footer-2
+// Author repo: https://github.com/shabanhr/efferd-ui
+export default function Footer(){return <footer><div className="wide-shell footer-main"><a className="footer-mark" href="#top">B/O®</a><p>BLUNT OBJECT IS AN INDEPENDENT<br/>DESIGN STUDIO IN BROOKLYN.</p><nav aria-label="Footer"><a href="#work">WORK</a><a href="#capabilities">CAPABILITIES</a><a href="#manifesto">ABOUT</a><a href="#contact">CONTACT</a></nav></div><div className="wide-shell footer-bottom"><span>© 2026 BLUNT OBJECT LLC</span><span>THIS IS A FICTIONAL STUDIO TEMPLATE.</span><a href="#top">BACK TO TOP ↑</a></div></footer>}

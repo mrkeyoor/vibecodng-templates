@@ -1,0 +1,62 @@
+{
+  "name": "hyperui-logo-wall-3",
+  "pattern": "logo-wall",
+  "sourceUrl": "https://raw.githubusercontent.com/markmead/hyperui/main/public/examples/marketing/logo-clouds/3.html",
+  "license": "MIT",
+  "fetchedAt": "2026-08-13T18:39:38.286Z",
+  "deps": {
+    "declared": [],
+    "missing": [],
+    "installOk": true,
+    "installLog": ""
+  },
+  "build": {
+    "ok": true,
+    "errors": []
+  },
+  "mount": {
+    "ok": true,
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  "viewports": {
+    "w375": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/hyperui-logo-wall-3/shot-375.png"
+    },
+    "w768": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/hyperui-logo-wall-3/shot-768.png"
+    },
+    "w1440": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/hyperui-logo-wall-3/shot-1440.png"
+    }
+  },
+  "a11y": {
+    "counts": {
+      "critical": 0,
+      "serious": 0,
+      "moderate": 0,
+      "minor": 0
+    },
+    "violations": []
+  },
+  "bundle": {
+    "gzipKb": 88.2,
+    "baselineGzipKb": 65.4,
+    "marginalKb": 22.8
+  },
+  "bare": {
+    "buildOk": true,
+    "mountOk": true,
+    "errors": []
+  },
+  "needsProvider": false,
+  "demoUsed": false,
+  "video": null,
+  "timings": {
+    "totalMs": 63176
+  },
+  "retried": false
+}

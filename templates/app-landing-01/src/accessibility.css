@@ -1,0 +1,14 @@
+:root {
+  --bw-accent: #b33b2f;
+  --bw-muted: #665a72;
+}
+
+.clay-card p,
+.clay-card > div,
+.message {
+  color: var(--bw-text);
+}
+
+.bg-\[color-mix\(in_srgb\,var\(--clay-accent\)_58\%\,var\(--clay-surface\)\)\] {
+  background: color-mix(in srgb, var(--clay-accent) 35%, var(--clay-surface));
+}

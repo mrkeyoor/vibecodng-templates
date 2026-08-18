@@ -1,0 +1,10 @@
+import Navbar from './components/Navbar.jsx'
+import Hero from './components/Hero.jsx'
+import Work from './components/Work.jsx'
+import Practice from './components/Practice.jsx'
+import StudioProcess from './components/StudioProcess.jsx'
+import Testimonial from './components/Testimonial.jsx'
+import Cta from './components/Cta.jsx'
+import Footer from './components/Footer.jsx'
+import { RevealController } from './components/Effects.jsx'
+export default function App() { return <div className="site"><RevealController/><Navbar/><main><Hero/><Work/><Practice/><StudioProcess/><Testimonial/><Cta/></main><Footer/></div> }

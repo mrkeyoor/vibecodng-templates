@@ -1,0 +1,65 @@
+{
+  "name": "neobrutalism-navigation-menu",
+  "pattern": "navigation-menu",
+  "sourceUrl": "https://www.neobrutalism.dev/r/navigation-menu.json",
+  "license": "MIT",
+  "fetchedAt": "2026-08-13T03:27:27.867Z",
+  "deps": {
+    "declared": [
+      "@radix-ui/react-navigation-menu"
+    ],
+    "missing": [],
+    "installOk": true,
+    "installLog": ""
+  },
+  "build": {
+    "ok": true,
+    "errors": []
+  },
+  "mount": {
+    "ok": true,
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  "viewports": {
+    "w375": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/neobrutalism-navigation-menu/shot-375.png"
+    },
+    "w768": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/neobrutalism-navigation-menu/shot-768.png"
+    },
+    "w1440": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/neobrutalism-navigation-menu/shot-1440.png"
+    }
+  },
+  "a11y": {
+    "counts": {
+      "critical": 0,
+      "serious": 0,
+      "moderate": 0,
+      "minor": 0
+    },
+    "violations": []
+  },
+  "bundle": {
+    "gzipKb": 91.7,
+    "baselineGzipKb": 65.4,
+    "marginalKb": 26.3
+  },
+  "bare": {
+    "buildOk": false,
+    "mountOk": false,
+    "errors": [
+      "✗ Build failed in 1.75s\nerror during build:\n[vite]: Rollup failed to resolve import \"class-variance-authority\" from \"/var/www/mrkeyoor.com/harness/work/c126bce2aa27/src/cut/components/ui/navigation-menu.tsx\".\nThis is most likely unintended because it can break your application at runtime.\nIf you do want to externalize this module explicitly add it to\n`build.rollupOptions.external`\n    at viteLog (file:///var/www/mrkeyoor.com/harness/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:46504:15)\n    at file:///var/www/mrkeyoor.com/harness/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:46562:18\n    at onwarn (file:///var/www/mrkeyoor.com/harness/node_modules/@vitejs/plugin-react/dist/index.js:90:7)\n    at file:///var/www/mrkeyoor.com/harness/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:46560:7\n    at onRollupLog (file:///var/www/mrkeyoor.com/harness/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:46552:5)\n    at onLog (file:///var/www/mrkeyoor.com/harness/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:46202:7)\n    at file:///var/www/mrkeyoor.com/harness/node_modules/rollup/dist/es/shared/node-entry.js:21200:32\n    at Object.logger [as onLog] (file:///var/www/mrkeyoor.com/harness/node_modules/rollup/dist/es/shared/node-entry.js:23185:9)\n    at ModuleLoader.handleInvalidResolvedId (file:///var/www/mrkeyoor.com/harness/node_modules/rollup/dist/es/shared/node-entry.js:21930:26)\n    at file:///var/www/mrkeyoor.com/harness/node_modules/rollup/dist/es/shared/node-entry.js:21888:26\n"
+    ]
+  },
+  "demoUsed": true,
+  "video": null,
+  "timings": {
+    "totalMs": 12658
+  },
+  "retried": false
+}

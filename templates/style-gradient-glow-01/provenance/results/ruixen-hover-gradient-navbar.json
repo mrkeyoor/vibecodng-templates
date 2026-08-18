@@ -1,0 +1,65 @@
+{
+  "name": "ruixen-hover-gradient-navbar",
+  "pattern": "navbar",
+  "sourceUrl": "https://raw.githubusercontent.com/ruixenui/ruixen.com/fa4041da52aa8652c682083941c4c0d22dc8faf2/public/r/hover-gradient-navbar.json",
+  "license": "MIT",
+  "fetchedAt": "2026-08-14T05:00:26.599Z",
+  "deps": {
+    "declared": [
+      "motion",
+      "lucide-react"
+    ],
+    "missing": [],
+    "installOk": true,
+    "installLog": ""
+  },
+  "build": {
+    "ok": true,
+    "errors": []
+  },
+  "mount": {
+    "ok": true,
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  "viewports": {
+    "w375": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/ruixen-hover-gradient-navbar/shot-375.png"
+    },
+    "w768": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/ruixen-hover-gradient-navbar/shot-768.png"
+    },
+    "w1440": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/ruixen-hover-gradient-navbar/shot-1440.png"
+    }
+  },
+  "a11y": {
+    "counts": {
+      "critical": 0,
+      "serious": 0,
+      "moderate": 0,
+      "minor": 0
+    },
+    "violations": []
+  },
+  "bundle": {
+    "gzipKb": 126.3,
+    "baselineGzipKb": 65.4,
+    "marginalKb": 60.9
+  },
+  "bare": {
+    "buildOk": true,
+    "mountOk": true,
+    "errors": []
+  },
+  "needsProvider": false,
+  "demoUsed": true,
+  "video": "/var/www/mrkeyoor.com/harness/out/ruixen-hover-gradient-navbar/video.webm",
+  "timings": {
+    "totalMs": 92392
+  },
+  "retried": false
+}

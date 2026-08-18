@@ -1,0 +1,4 @@
+import { useState } from 'react'
+// Source slug: hyperui-headers-4
+// Author repo: https://github.com/markmead/hyperui
+export default function Navbar(){const[open,setOpen]=useState(false);return <header className="nav"><div className="nav-in"><a href="#top" className="logo" aria-label="Gridnote docs home"><i>G</i><strong>gridnote</strong><span>/ docs</span></a><div className="search" role="search"><span>⌕</span><input aria-label="Search documentation" placeholder="Search docs..."/><kbd>⌘ K</kbd></div><nav className="nav-links" aria-label="Top navigation"><a href="#changelog">Changelog</a><a href="#top">GitHub ↗</a><a className="app-link" href="#quickstart">Open app</a></nav><button className="menu" onClick={()=>setOpen(!open)} aria-label="Toggle navigation" aria-expanded={open}>☰</button></div>{open&&<nav className="mobile"><a href="#quickstart">Quickstart</a><a href="#api">API</a><a href="#changelog">Changelog</a></nav>}</header>}

@@ -1,0 +1,65 @@
+{
+  "name": "tripled-dynamic-spotlight-cta-shadcnui",
+  "pattern": "cta",
+  "sourceUrl": "https://raw.githubusercontent.com/moumen-soliman/uitripled/9f60146c1856f36e555367ddacfd7114c8ebf93b/apps/docs/public/r/dynamic-spotlight-cta-shadcnui.json",
+  "license": "MIT",
+  "fetchedAt": "2026-08-14T17:25:55.607Z",
+  "deps": {
+    "declared": [
+      "framer-motion",
+      "react"
+    ],
+    "missing": [],
+    "installOk": true,
+    "installLog": ""
+  },
+  "build": {
+    "ok": true,
+    "errors": []
+  },
+  "mount": {
+    "ok": true,
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  "viewports": {
+    "w375": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/tripled-dynamic-spotlight-cta-shadcnui/shot-375.png"
+    },
+    "w768": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/tripled-dynamic-spotlight-cta-shadcnui/shot-768.png"
+    },
+    "w1440": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/tripled-dynamic-spotlight-cta-shadcnui/shot-1440.png"
+    }
+  },
+  "a11y": {
+    "counts": {
+      "critical": 0,
+      "serious": 0,
+      "moderate": 0,
+      "minor": 0
+    },
+    "violations": []
+  },
+  "bundle": {
+    "gzipKb": 129.7,
+    "baselineGzipKb": 65.4,
+    "marginalKb": 64.3
+  },
+  "bare": {
+    "buildOk": true,
+    "mountOk": true,
+    "errors": []
+  },
+  "needsProvider": false,
+  "demoUsed": true,
+  "video": "/var/www/mrkeyoor.com/harness/out/tripled-dynamic-spotlight-cta-shadcnui/video.webm",
+  "timings": {
+    "totalMs": 305168
+  },
+  "retried": false
+}

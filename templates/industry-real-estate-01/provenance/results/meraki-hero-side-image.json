@@ -1,0 +1,69 @@
+{
+  "name": "meraki-hero-side-image",
+  "pattern": "hero",
+  "sourceUrl": "https://raw.githubusercontent.com/merakiui/merakiui/main/components/heros/SideImage.html",
+  "license": "MIT",
+  "fetchedAt": "2026-08-14T09:07:57.459Z",
+  "deps": {
+    "declared": [],
+    "missing": [],
+    "installOk": true,
+    "installLog": ""
+  },
+  "build": {
+    "ok": true,
+    "errors": []
+  },
+  "mount": {
+    "ok": true,
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  "viewports": {
+    "w375": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/meraki-hero-side-image/shot-375.png"
+    },
+    "w768": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/meraki-hero-side-image/shot-768.png"
+    },
+    "w1440": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/meraki-hero-side-image/shot-1440.png"
+    }
+  },
+  "a11y": {
+    "counts": {
+      "critical": 0,
+      "serious": 1,
+      "moderate": 0,
+      "minor": 0
+    },
+    "violations": [
+      {
+        "id": "link-name",
+        "impact": "serious",
+        "help": "Links must have discernible text",
+        "nodes": 1
+      }
+    ]
+  },
+  "bundle": {
+    "gzipKb": 84.2,
+    "baselineGzipKb": 65.4,
+    "marginalKb": 18.8
+  },
+  "bare": {
+    "buildOk": true,
+    "mountOk": true,
+    "errors": []
+  },
+  "needsProvider": false,
+  "demoUsed": false,
+  "video": null,
+  "timings": {
+    "totalMs": 76668
+  },
+  "retried": false
+}

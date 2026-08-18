@@ -1,0 +1,3 @@
+// Source slug: meraki-cta-card
+// Author repo: https://github.com/merakiui/merakiui
+export default function BookingCta(){return <section id="book" className="booking section"><div className="shell"><div className="booking-card" data-reveal><p className="kicker kicker-light justify-center"><span/> Save your seat</p><h2>There’s a table<br/><em>with your name on it.</em></h2><p>For breakfast, lunch, or something worth raising a glass to.</p><div className="mt-8 flex flex-wrap justify-center gap-3"><a className="pill pill-light" href="mailto:hello@amberroom.example?subject=Table%20booking">Book a table <span>↗</span></a><a className="text-link text-link-light" href="tel:+15550144141">Call (555) 014-4141</a></div></div></div></section>}

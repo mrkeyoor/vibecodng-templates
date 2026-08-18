@@ -1,0 +1,3 @@
+// Source slug: tripled-glassmorphism-testimonials-block-shadcnui
+// Author repo: https://github.com/moumen-soliman/uitripled
+export default function Testimonial(){return <section id="studio" className="section testimonial" data-reveal-group><div className="shell quote-card" data-reveal><div className="quote-no">/ PARTNER NOTE</div><blockquote>“Signalcraft understood the messy reality before proposing the technology. That judgment is what made the system work.”</blockquote><div className="person"><span>AD</span><p><strong>Amara Doyle</strong><small>Chief Operations Officer, Northline</small></p><i>★★★★★</i></div></div></section>}

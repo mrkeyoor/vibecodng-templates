@@ -1,0 +1,73 @@
+{
+  "name": "8bitcn-progress",
+  "pattern": "progress",
+  "sourceUrl": "https://8bitcn.com/r/progress.json",
+  "license": "MIT",
+  "fetchedAt": "2026-08-14T10:38:31.931Z",
+  "deps": {
+    "declared": [
+      "@radix-ui/react-progress"
+    ],
+    "missing": [],
+    "installOk": true,
+    "installLog": ""
+  },
+  "build": {
+    "ok": true,
+    "errors": []
+  },
+  "mount": {
+    "ok": true,
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  "viewports": {
+    "w375": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/8bitcn-progress/shot-375.png"
+    },
+    "w768": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/8bitcn-progress/shot-768.png"
+    },
+    "w1440": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/8bitcn-progress/shot-1440.png"
+    }
+  },
+  "a11y": {
+    "counts": {
+      "critical": 0,
+      "serious": 1,
+      "moderate": 0,
+      "minor": 0
+    },
+    "violations": [
+      {
+        "id": "aria-progressbar-name",
+        "impact": "serious",
+        "help": "ARIA progressbar nodes must have an accessible name",
+        "nodes": 1
+      }
+    ]
+  },
+  "bundle": {
+    "gzipKb": 95.3,
+    "baselineGzipKb": 65.4,
+    "marginalKb": 29.9
+  },
+  "bare": {
+    "buildOk": false,
+    "mountOk": false,
+    "errors": [
+      "✗ Build failed in 55.23s\nerror during build:\n[vite:load-fallback] Could not load /var/www/mrkeyoor.com/harness/work/1380ca8f12fb/src/lib/utils (imported by src/cut/components/ui/8bit/progress.tsx): ENOENT: no such file or directory, open '/var/www/mrkeyoor.com/harness/work/1380ca8f12fb/src/lib/utils'\n    at async open (node:internal/fs/promises:636:25)\n    at async Object.readFile (node:internal/fs/promises:1235:14)\n    at async Object.handler (file:///var/www/mrkeyoor.com/harness/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js:46002:27)\n    at async PluginDriver.hookFirstAndGetPlugin (file:///var/www/mrkeyoor.com/harness/node_modules/rollup/dist/es/shared/node-entry.js:22669:28)\n    at async file:///var/www/mrkeyoor.com/harness/node_modules/rollup/dist/es/shared/node-entry.js:21655:33\n    at async Queue.work (file:///var/www/mrkeyoor.com/harness/node_modules/rollup/dist/es/shared/node-entry.js:22897:32)\n"
+    ]
+  },
+  "needsProvider": false,
+  "demoUsed": true,
+  "video": "/var/www/mrkeyoor.com/harness/out/8bitcn-progress/video.webm",
+  "timings": {
+    "totalMs": 122047
+  },
+  "retried": false
+}

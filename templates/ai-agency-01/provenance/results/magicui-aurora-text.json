@@ -1,0 +1,62 @@
+{
+  "name": "magicui-aurora-text",
+  "pattern": "text-effect",
+  "sourceUrl": "https://magicui.design/r/aurora-text.json",
+  "license": "MIT",
+  "fetchedAt": "2026-08-14T04:03:23.016Z",
+  "deps": {
+    "declared": [],
+    "missing": [],
+    "installOk": true,
+    "installLog": ""
+  },
+  "build": {
+    "ok": true,
+    "errors": []
+  },
+  "mount": {
+    "ok": true,
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  "viewports": {
+    "w375": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/magicui-aurora-text/shot-375.png"
+    },
+    "w768": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/magicui-aurora-text/shot-768.png"
+    },
+    "w1440": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/magicui-aurora-text/shot-1440.png"
+    }
+  },
+  "a11y": {
+    "counts": {
+      "critical": 0,
+      "serious": 0,
+      "moderate": 0,
+      "minor": 0
+    },
+    "violations": []
+  },
+  "bundle": {
+    "gzipKb": 82.9,
+    "baselineGzipKb": 65.4,
+    "marginalKb": 17.5
+  },
+  "bare": {
+    "buildOk": true,
+    "mountOk": true,
+    "errors": []
+  },
+  "needsProvider": false,
+  "demoUsed": true,
+  "video": "/var/www/mrkeyoor.com/harness/out/magicui-aurora-text/video.webm",
+  "timings": {
+    "totalMs": 76558
+  },
+  "retried": false
+}

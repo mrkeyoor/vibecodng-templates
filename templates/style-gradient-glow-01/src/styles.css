@@ -1,0 +1,393 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: var(--bw-surface);
+  --color-panel: color-mix(in srgb, var(--bw-surface) 93%, var(--bw-text));
+  --color-mist: var(--bw-muted);
+  --color-accent: var(--bw-accent);
+  --color-white: var(--bw-text);
+  --color-black: var(--bw-surface);
+  --font-sans: "Avenir Next", "Segoe UI", Seravek, Ubuntu, Cantarell, sans-serif;
+  --font-serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+}
+
+:root {
+  --bw-accent: #FF5DA2;
+  --bw-surface: #160A14;
+  --bw-text: #FFF2F7;
+  --bw-muted: #C4A3B4;
+  /* Gradient companions, all derived around the single accent. */
+  --glow-warm: #FFB36B;
+  --glow-cool: #9D6BFF;
+  color-scheme: dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+  background: var(--bw-surface);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--bw-surface);
+  font-family: var(--font-sans);
+}
+
+::selection { color: var(--bw-surface); background: var(--bw-accent); }
+a, button, summary { -webkit-tap-highlight-color: transparent; }
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--bw-accent);
+  outline-offset: 4px;
+}
+
+.shell { width: min(100% - 2.5rem, 72rem); margin-inline: auto; }
+.section { padding-block: clamp(5.5rem, 10vw, 8.5rem); }
+
+.display {
+  font-family: var(--font-serif);
+  font-size: clamp(2.9rem, 7.5vw, 5.6rem);
+  font-weight: 500;
+  line-height: 1.02;
+  letter-spacing: -0.028em;
+}
+.display em { font-style: italic; }
+
+.section-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.1rem, 4.6vw, 3.5rem);
+  font-weight: 500;
+  line-height: 1.06;
+  letter-spacing: -0.022em;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid color-mix(in srgb, var(--bw-accent) 35%, transparent);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--bw-accent) 8%, transparent);
+  padding: 0.4rem 0.9rem;
+  color: color-mix(in srgb, var(--bw-accent) 75%, var(--bw-text));
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* Source slug: magicui-animated-gradient-text
+   Author repo: https://github.com/magicuidesign/magicui
+   The indexed text loops its gradient forever; here the gradient is static
+   ink and only sweeps once when the reveal group enters view. */
+.gradient-text {
+  background: linear-gradient(100deg, var(--glow-warm), var(--bw-accent) 45%, var(--glow-cool) 90%);
+  background-size: 220% 100%;
+  background-position: 100% 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.is-revealed .gradient-text { animation: gradient-sweep-once 1.4s cubic-bezier(0.22, 1, 0.36, 1) 200ms both; }
+
+.nav-link {
+  position: relative;
+  border-radius: 999px;
+  padding: 0.45rem 0.9rem;
+  color: var(--bw-muted);
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: color 160ms ease, background-color 160ms ease, box-shadow 160ms ease;
+}
+.nav-link:hover {
+  color: var(--bw-text);
+  background: color-mix(in srgb, var(--bw-accent) 12%, transparent);
+  box-shadow: 0 0 18px color-mix(in srgb, var(--bw-accent) 18%, transparent);
+}
+
+.site-nav {
+  border-bottom: 1px solid color-mix(in srgb, var(--bw-text) 8%, transparent);
+  background: color-mix(in srgb, var(--bw-surface) 78%, transparent);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+}
+
+.button {
+  position: relative;
+  display: inline-flex;
+  min-height: 3rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  overflow: hidden;
+  border: 0;
+  border-radius: 999px;
+  background: linear-gradient(105deg, var(--bw-accent), var(--glow-warm));
+  padding: 0.8rem 1.6rem;
+  color: #2A0A1E;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  box-shadow: 0 4px 24px color-mix(in srgb, var(--bw-accent) 35%, transparent);
+  transition: box-shadow 180ms ease, transform 180ms ease;
+}
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 34px color-mix(in srgb, var(--bw-accent) 55%, transparent);
+}
+/* Source slug: magicui-shiny-button
+   Author repo: https://github.com/magicuidesign/magicui
+   Indexed shine loops; this shine passes once, and only on hover. */
+.button::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: linear-gradient(115deg, transparent 30%, rgb(255 255 255 / 55%) 50%, transparent 70%);
+  transform: translateX(-130%);
+}
+.button:hover::after { animation: shine-pass 650ms ease; }
+
+.button-ghost {
+  background: transparent;
+  border: 1px solid color-mix(in srgb, var(--bw-text) 22%, transparent);
+  color: var(--bw-text);
+  box-shadow: none;
+}
+.button-ghost:hover { box-shadow: 0 0 24px color-mix(in srgb, var(--bw-accent) 20%, transparent); border-color: color-mix(in srgb, var(--bw-accent) 45%, transparent); }
+.button-ghost::after { display: none; }
+
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 640ms cubic-bezier(0.22, 1, 0.36, 1), transform 640ms cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: calc(var(--reveal-order, 0) * 80ms);
+}
+[data-reveal-group].is-revealed [data-reveal] { opacity: 1; transform: translateY(0); }
+
+/* Source slug: tripled-glowy-waves-hero-shadcnui
+   Author repo: https://github.com/moumen-soliman/uitripled
+   The glowy wave backdrop rebuilt as two static radial fields plus an inline
+   SVG wave line; the indexed version animates the waves continuously. */
+.hero {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse 55% 42% at 22% 18%, color-mix(in srgb, var(--bw-accent) 16%, transparent), transparent 70%),
+    radial-gradient(ellipse 48% 38% at 82% 30%, color-mix(in srgb, var(--glow-cool) 14%, transparent), transparent 70%),
+    radial-gradient(ellipse 60% 30% at 55% 95%, color-mix(in srgb, var(--glow-warm) 9%, transparent), transparent 70%),
+    var(--bw-surface);
+}
+.hero-waves { position: absolute; inset: auto 0 -2px 0; width: 100%; height: auto; display: block; pointer-events: none; }
+
+.pay-card {
+  border: 1px solid color-mix(in srgb, var(--bw-text) 12%, transparent);
+  border-radius: 1.25rem;
+  background: color-mix(in srgb, var(--bw-surface) 82%, transparent);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow:
+    0 30px 80px color-mix(in srgb, var(--bw-surface) 70%, transparent),
+    0 0 60px color-mix(in srgb, var(--bw-accent) 10%, transparent);
+  padding: 1.4rem;
+}
+.pay-row {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--bw-text) 7%, transparent);
+  padding-block: 0.75rem;
+  font-size: 0.8rem;
+}
+.pay-row:last-child { border-bottom: 0; }
+.pay-badge {
+  display: grid;
+  width: 2.1rem;
+  height: 2.1rem;
+  flex-shrink: 0;
+  place-items: center;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #2A0A1E;
+}
+
+/* Source slug: magicui-magic-card
+   Author repo: https://github.com/magicuidesign/magicui
+   Cursor-following radial glow, hover-only, driven by two CSS custom
+   properties set from a pointermove handler. Nothing runs while idle. */
+.magic-card {
+  --mx: 50%;
+  --my: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--bw-text) 10%, transparent);
+  border-radius: 1.25rem;
+  background: color-mix(in srgb, var(--bw-surface) 94%, var(--bw-text));
+  padding: 1.9rem;
+  transition: border-color 200ms ease;
+}
+.magic-card::before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  opacity: 0;
+  background: radial-gradient(260px circle at var(--mx) var(--my), color-mix(in srgb, var(--bw-accent) 13%, transparent), transparent 75%);
+  transition: opacity 250ms ease;
+  pointer-events: none;
+}
+.magic-card:hover { border-color: color-mix(in srgb, var(--bw-accent) 35%, transparent); }
+.magic-card:hover::before { opacity: 1; }
+.magic-card > * { position: relative; }
+.feature-icon {
+  display: grid;
+  width: 2.6rem;
+  height: 2.6rem;
+  place-items: center;
+  border-radius: 0.8rem;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--bw-accent) 24%, transparent), color-mix(in srgb, var(--glow-cool) 20%, transparent));
+  color: var(--bw-text);
+}
+
+.stat-value {
+  font-family: var(--font-serif);
+  color: var(--bw-text);
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+}
+.stat-panel {
+  border: 1px solid color-mix(in srgb, var(--bw-text) 9%, transparent);
+  border-radius: 1.5rem;
+  background:
+    radial-gradient(ellipse 60% 90% at 50% 0%, color-mix(in srgb, var(--glow-cool) 7%, transparent), transparent 70%),
+    color-mix(in srgb, var(--bw-surface) 95%, var(--bw-text));
+  box-shadow: 0 0 80px color-mix(in srgb, var(--glow-cool) 8%, transparent);
+}
+
+/* Source slug: magicui-shine-border
+   Author repo: https://github.com/magicuidesign/magicui
+   Gradient border via padding-box/border-box double background. Static. */
+.shine-border {
+  border: 1px solid transparent;
+  border-radius: 1.25rem;
+  background:
+    linear-gradient(color-mix(in srgb, var(--bw-surface) 95%, var(--bw-text)), color-mix(in srgb, var(--bw-surface) 95%, var(--bw-text))) padding-box,
+    linear-gradient(150deg, color-mix(in srgb, var(--bw-text) 22%, transparent), color-mix(in srgb, var(--bw-text) 6%, transparent)) border-box;
+}
+
+/* Source slug: magicui-neon-gradient-card
+   Author repo: https://github.com/magicuidesign/magicui
+   The neon halo is rendered with layered colored box-shadows instead of the
+   indexed blurred pseudo-element (which a reveal-transform stacking context
+   would lift above the card background). Static glow; the indexed continuous
+   hue spin is removed. */
+.neon-card {
+  position: relative;
+  border: 1px solid transparent;
+  border-radius: 1.25rem;
+  background:
+    linear-gradient(color-mix(in srgb, var(--bw-surface) 90%, var(--bw-text)), color-mix(in srgb, var(--bw-surface) 90%, var(--bw-text))) padding-box,
+    linear-gradient(150deg, var(--bw-accent), var(--glow-warm) 50%, var(--glow-cool)) border-box;
+  box-shadow:
+    0 0 26px color-mix(in srgb, var(--bw-accent) 28%, transparent),
+    0 14px 60px color-mix(in srgb, var(--glow-cool) 22%, transparent);
+}
+
+.price-card { display: flex; flex-direction: column; min-height: 31rem; padding: clamp(1.6rem, 3vw, 2.3rem); }
+.price-value { font-family: var(--font-serif); font-size: clamp(2.3rem, 4vw, 3.1rem); color: var(--bw-text); letter-spacing: -0.03em; }
+.perk-row { display: flex; gap: 0.6rem; align-items: baseline; color: var(--bw-muted); font-size: 0.85rem; line-height: 1.6; }
+.perk-row svg { flex-shrink: 0; translate: 0 2px; color: var(--bw-accent); }
+
+.quote-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid color-mix(in srgb, var(--bw-text) 9%, transparent);
+  border-radius: 1.25rem;
+  background: color-mix(in srgb, var(--bw-surface) 94%, var(--bw-text));
+  padding: 1.8rem;
+  transition: box-shadow 220ms ease, border-color 220ms ease;
+}
+.quote-card:hover {
+  border-color: color-mix(in srgb, var(--bw-accent) 30%, transparent);
+  box-shadow: 0 0 40px color-mix(in srgb, var(--bw-accent) 12%, transparent);
+}
+.avatar {
+  display: grid;
+  width: 2.5rem;
+  height: 2.5rem;
+  place-items: center;
+  border-radius: 999px;
+  color: #2A0A1E;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+/* Source slug: tripled-dynamic-spotlight-cta-shadcnui
+   Author repo: https://github.com/moumen-soliman/uitripled
+   Pointer-tracked spotlight, hover-only, same custom-property technique as
+   the magic card. Falls back to a centered static glow. */
+.cta-panel {
+  --mx: 50%;
+  --my: 40%;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--bw-accent) 30%, transparent);
+  border-radius: 2rem;
+  background:
+    radial-gradient(480px circle at var(--mx) var(--my), color-mix(in srgb, var(--bw-accent) 14%, transparent), transparent 75%),
+    radial-gradient(ellipse 70% 90% at 85% 100%, color-mix(in srgb, var(--glow-cool) 12%, transparent), transparent 70%),
+    color-mix(in srgb, var(--bw-surface) 92%, var(--bw-text));
+  padding: clamp(2.5rem, 7vw, 5rem);
+  text-align: center;
+}
+
+.site-footer {
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid color-mix(in srgb, var(--bw-text) 8%, transparent);
+  background:
+    radial-gradient(ellipse 70% 120% at 50% 130%, color-mix(in srgb, var(--bw-accent) 10%, transparent), transparent 70%),
+    var(--bw-surface);
+}
+.footer-link { color: var(--bw-muted); font-size: 0.8rem; transition: color 150ms ease; }
+.footer-link:hover { color: var(--bw-text); }
+/* Source slug: ruixen-ruixen-gradient-footer
+   Author repo: https://github.com/ruixenui/ruixen.com
+   The oversized gradient wordmark ghosted along the footer base. */
+.footer-wordmark {
+  display: block;
+  margin-top: 3rem;
+  font-family: var(--font-serif);
+  font-size: clamp(4.5rem, 18vw, 12rem);
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  line-height: 0.78;
+  text-align: center;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--bw-accent) 40%, transparent), transparent 85%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  user-select: none;
+}
+
+@keyframes gradient-sweep-once { from { background-position: 100% 0; } to { background-position: 0% 0; } }
+@keyframes shine-pass { to { transform: translateX(130%); } }
+
+@media (max-width: 639px) {
+  .shell { width: min(100% - 2rem, 72rem); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; scroll-behavior: auto !important; transition-duration: 0.01ms !important; transition-delay: 0ms !important; }
+  [data-reveal] { opacity: 1 !important; transform: none !important; }
+  .gradient-text { background-position: 0% 0; }
+  .button:hover { transform: none; }
+  .button::after { display: none; }
+}

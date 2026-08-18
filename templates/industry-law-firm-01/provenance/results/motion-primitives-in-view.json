@@ -1,0 +1,64 @@
+{
+  "name": "motion-primitives-in-view",
+  "pattern": "scroll-effect",
+  "sourceUrl": "https://raw.githubusercontent.com/ibelick/motion-primitives/main/public/c/in-view.json",
+  "license": "MIT",
+  "fetchedAt": "2026-08-13T14:27:41.847Z",
+  "deps": {
+    "declared": [
+      "motion"
+    ],
+    "missing": [],
+    "installOk": true,
+    "installLog": ""
+  },
+  "build": {
+    "ok": true,
+    "errors": []
+  },
+  "mount": {
+    "ok": true,
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  "viewports": {
+    "w375": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/motion-primitives-in-view/shot-375.png"
+    },
+    "w768": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/motion-primitives-in-view/shot-768.png"
+    },
+    "w1440": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/motion-primitives-in-view/shot-1440.png"
+    }
+  },
+  "a11y": {
+    "counts": {
+      "critical": 0,
+      "serious": 0,
+      "moderate": 0,
+      "minor": 0
+    },
+    "violations": []
+  },
+  "bundle": {
+    "gzipKb": 123.5,
+    "baselineGzipKb": 65.4,
+    "marginalKb": 58.1
+  },
+  "bare": {
+    "buildOk": true,
+    "mountOk": true,
+    "errors": []
+  },
+  "needsProvider": false,
+  "demoUsed": true,
+  "video": "/var/www/mrkeyoor.com/harness/out/motion-primitives-in-view/video.webm",
+  "timings": {
+    "totalMs": 82257
+  },
+  "retried": false
+}

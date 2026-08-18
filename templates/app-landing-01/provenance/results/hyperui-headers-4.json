@@ -1,0 +1,61 @@
+{
+  "name": "hyperui-headers-4",
+  "pattern": "headers",
+  "sourceUrl": "https://raw.githubusercontent.com/markmead/hyperui/main/public/examples/marketing/headers/4.html",
+  "license": "MIT",
+  "fetchedAt": "2026-08-13T05:45:24.666Z",
+  "deps": {
+    "declared": [],
+    "missing": [],
+    "installOk": true,
+    "installLog": ""
+  },
+  "build": {
+    "ok": true,
+    "errors": []
+  },
+  "mount": {
+    "ok": true,
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  "viewports": {
+    "w375": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/hyperui-headers-4/shot-375.png"
+    },
+    "w768": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/hyperui-headers-4/shot-768.png"
+    },
+    "w1440": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/hyperui-headers-4/shot-1440.png"
+    }
+  },
+  "a11y": {
+    "counts": {
+      "critical": 0,
+      "serious": 0,
+      "moderate": 0,
+      "minor": 0
+    },
+    "violations": []
+  },
+  "bundle": {
+    "gzipKb": 84.5,
+    "baselineGzipKb": 65.4,
+    "marginalKb": 19.1
+  },
+  "bare": {
+    "buildOk": true,
+    "mountOk": true,
+    "errors": []
+  },
+  "demoUsed": true,
+  "video": null,
+  "timings": {
+    "totalMs": 18133
+  },
+  "retried": false
+}

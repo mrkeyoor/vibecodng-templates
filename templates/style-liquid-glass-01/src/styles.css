@@ -1,0 +1,483 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: var(--bw-text);
+  --color-mist: var(--bw-muted);
+  --color-accent: var(--bw-accent);
+  --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Instrument Serif", Georgia, serif;
+}
+
+:root {
+  --bw-accent: #135ce8;
+  --bw-surface: #edf1f7;
+  --bw-text: #0b1526;
+  --bw-muted: #5c6a80;
+  /* Companion tint for the light field behind the glass. */
+  --lg-alt: oklch(from var(--bw-accent) l c calc(h + 130));
+  --lg-white: #ffffff;
+  color-scheme: light;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+@supports not (color: oklch(from red l c h)) {
+  :root { --lg-alt: var(--bw-accent); }
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 6rem; background: var(--bw-surface); }
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--bw-surface);
+  color: var(--bw-text);
+  font-family: var(--font-sans);
+}
+
+::selection { color: var(--lg-white); background: var(--bw-accent); }
+a, button, summary { -webkit-tap-highlight-color: transparent; }
+a:focus-visible, button:focus-visible, summary:focus-visible {
+  outline: 2px solid var(--bw-accent);
+  outline-offset: 4px;
+  border-radius: 6px;
+}
+
+.shell { width: min(100% - 2.5rem, 72rem); margin-inline: auto; }
+.section { padding-block: clamp(5rem, 9vw, 8.5rem); }
+
+.serif-accent { font-family: var(--font-serif); font-style: italic; font-weight: 400; letter-spacing: 0; }
+
+.display {
+  font-size: clamp(2.9rem, 7.2vw, 5.9rem);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.042em;
+}
+
+.section-title {
+  font-size: clamp(2rem, 4.4vw, 3.6rem);
+  font-weight: 600;
+  line-height: 1.04;
+  letter-spacing: -0.032em;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  border: 1px solid color-mix(in srgb, var(--bw-text) 10%, transparent);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--lg-white) 62%, transparent);
+  box-shadow: inset 0 1px 0 var(--lg-white);
+  padding: 0.45rem 0.95rem;
+  color: color-mix(in srgb, var(--bw-text) 72%, var(--bw-accent));
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+
+/* ---------------------------------------------------------- */
+/* Light field the liquid glass refracts                       */
+/* ---------------------------------------------------------- */
+.backdrop { position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
+.backdrop::before,
+.backdrop::after {
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  filter: blur(80px);
+}
+.backdrop::before {
+  top: -14rem;
+  right: -10rem;
+  width: 48rem;
+  height: 48rem;
+  background: radial-gradient(circle, color-mix(in srgb, var(--bw-accent) 22%, transparent), transparent 66%);
+}
+.backdrop::after {
+  bottom: -16rem;
+  left: -12rem;
+  width: 52rem;
+  height: 52rem;
+  background: radial-gradient(circle, color-mix(in srgb, var(--lg-alt) 20%, transparent), transparent 66%);
+}
+.backdrop-caustic {
+  position: absolute;
+  top: 26%;
+  left: 12%;
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  background: radial-gradient(circle, color-mix(in srgb, var(--bw-accent) 10%, transparent), transparent 70%);
+  filter: blur(70px);
+}
+
+/* ---------------------------------------------------------- */
+/* Liquid glass primitives                                     */
+/* ---------------------------------------------------------- */
+.liquid {
+  position: relative;
+  border: 1px solid color-mix(in srgb, var(--bw-text) 9%, transparent);
+  border-radius: 1.5rem;
+  background: linear-gradient(
+    165deg,
+    color-mix(in srgb, var(--lg-white) 74%, transparent),
+    color-mix(in srgb, var(--lg-white) 46%, transparent) 60%
+  );
+  box-shadow:
+    inset 0 1px 0 var(--lg-white),
+    inset 0 -1px 0 color-mix(in srgb, var(--lg-white) 35%, transparent),
+    0 2px 6px color-mix(in srgb, var(--bw-text) 4%, transparent),
+    0 24px 60px color-mix(in srgb, var(--bw-text) 9%, transparent);
+  -webkit-backdrop-filter: blur(22px) saturate(1.4);
+  backdrop-filter: blur(22px) saturate(1.4);
+}
+/* Specular arc across the top edge, the liquid signature. */
+.liquid::before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  border-radius: inherit;
+  background:
+    radial-gradient(120% 60% at 18% -18%, color-mix(in srgb, var(--lg-white) 85%, transparent), transparent 42%);
+  opacity: 0.8;
+  pointer-events: none;
+}
+.liquid > * { position: relative; }
+
+.liquid-deep {
+  border-radius: 1.5rem;
+  border: 1px solid color-mix(in srgb, var(--bw-text) 8%, transparent);
+  background: color-mix(in srgb, var(--lg-white) 42%, transparent);
+  box-shadow:
+    inset 0 1px 0 color-mix(in srgb, var(--lg-white) 85%, transparent),
+    0 12px 34px color-mix(in srgb, var(--bw-text) 7%, transparent);
+  -webkit-backdrop-filter: blur(16px) saturate(1.3);
+  backdrop-filter: blur(16px) saturate(1.3);
+}
+.liquid-hover { transition: transform 240ms cubic-bezier(0.22, 1, 0.36, 1), box-shadow 240ms ease, border-color 240ms ease; }
+.liquid-hover:hover {
+  transform: translateY(-3px);
+  border-color: color-mix(in srgb, var(--bw-accent) 26%, transparent);
+  box-shadow:
+    inset 0 1px 0 var(--lg-white),
+    0 4px 10px color-mix(in srgb, var(--bw-text) 5%, transparent),
+    0 32px 70px color-mix(in srgb, var(--bw-text) 12%, transparent);
+}
+
+/* One-pass sheen sweep on reveal. */
+.sheenable { overflow: hidden; }
+.sheenable .sheen {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(105deg, transparent 30%, color-mix(in srgb, var(--lg-white) 70%, transparent) 50%, transparent 68%);
+  transform: translateX(-140%) skewX(-8deg);
+  pointer-events: none;
+}
+.is-revealed .sheenable .sheen,
+.sheenable.is-revealed .sheen { animation: lg-sheen 1.5s cubic-bezier(0.4, 0, 0.2, 1) 500ms both; }
+
+.site-nav {
+  border: 1px solid transparent;
+  border-radius: 999px;
+  transition: background-color 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
+}
+.site-nav.nav-scrolled {
+  border-color: color-mix(in srgb, var(--bw-text) 8%, transparent);
+  background: color-mix(in srgb, var(--lg-white) 55%, transparent);
+  box-shadow:
+    inset 0 1px 0 var(--lg-white),
+    0 16px 40px color-mix(in srgb, var(--bw-text) 10%, transparent);
+  -webkit-backdrop-filter: blur(20px) saturate(1.4);
+  backdrop-filter: blur(20px) saturate(1.4);
+}
+.nav-link { color: var(--bw-muted); font-size: 0.8438rem; font-weight: 500; transition: color 160ms ease; }
+.nav-link:hover { color: var(--bw-text); }
+
+/* Source slug: cultui-metal-button (https://github.com/nolly-studio/cult-ui)
+   Adapted: the MetalFx shader ring became a CSS conic ring + glass fill so the
+   liquid ring survives without a WebGL runtime. */
+.button {
+  position: relative;
+  display: inline-flex;
+  min-height: 3rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  border: 0;
+  border-radius: 999px;
+  background: linear-gradient(
+    175deg,
+    color-mix(in srgb, var(--bw-accent) 86%, var(--lg-white)),
+    color-mix(in srgb, var(--bw-accent) 92%, var(--bw-text)) 90%
+  );
+  padding: 0.8rem 1.5rem;
+  color: var(--lg-white);
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow:
+    inset 0 1.5px 0 color-mix(in srgb, var(--lg-white) 65%, transparent),
+    inset 0 -6px 12px color-mix(in srgb, var(--bw-text) 18%, transparent),
+    0 10px 24px color-mix(in srgb, var(--bw-accent) 30%, transparent);
+  transition: transform 160ms ease, box-shadow 160ms ease, filter 160ms ease;
+}
+.button::after {
+  position: absolute;
+  inset: -2.5px;
+  content: "";
+  border-radius: inherit;
+  padding: 1.5px;
+  background: conic-gradient(
+    from 210deg,
+    color-mix(in srgb, var(--lg-white) 90%, transparent),
+    color-mix(in srgb, var(--bw-accent) 40%, transparent) 30%,
+    color-mix(in srgb, var(--lg-white) 20%, transparent) 55%,
+    color-mix(in srgb, var(--lg-white) 95%, transparent) 78%,
+    color-mix(in srgb, var(--lg-white) 90%, transparent)
+  );
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+.button:hover {
+  transform: translateY(-2px);
+  filter: saturate(1.1);
+  box-shadow:
+    inset 0 1.5px 0 color-mix(in srgb, var(--lg-white) 65%, transparent),
+    inset 0 -6px 12px color-mix(in srgb, var(--bw-text) 18%, transparent),
+    0 16px 34px color-mix(in srgb, var(--bw-accent) 38%, transparent);
+}
+.button-ghost {
+  background: color-mix(in srgb, var(--lg-white) 62%, transparent);
+  color: var(--bw-text);
+  box-shadow:
+    inset 0 1.5px 0 var(--lg-white),
+    0 8px 22px color-mix(in srgb, var(--bw-text) 8%, transparent);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+}
+.button-ghost::after {
+  background: conic-gradient(
+    from 210deg,
+    color-mix(in srgb, var(--lg-white) 95%, transparent),
+    color-mix(in srgb, var(--bw-text) 16%, transparent) 30%,
+    color-mix(in srgb, var(--lg-white) 40%, transparent) 55%,
+    var(--lg-white) 78%,
+    color-mix(in srgb, var(--lg-white) 95%, transparent)
+  );
+}
+.button-ghost:hover {
+  filter: none;
+  box-shadow:
+    inset 0 1.5px 0 var(--lg-white),
+    0 14px 30px color-mix(in srgb, var(--bw-text) 12%, transparent);
+}
+.button-small { min-height: 2.5rem; padding: 0.62rem 1.1rem; font-size: 0.7813rem; }
+
+/* Scroll reveals */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 680ms cubic-bezier(0.22, 1, 0.36, 1), transform 680ms cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: calc(var(--reveal-order, 0) * 90ms);
+}
+[data-reveal-group].is-revealed [data-reveal] { opacity: 1; transform: translateY(0); }
+
+/* Hero balance card artwork */
+.phone-card { border-radius: 1.9rem; }
+.spark-line { color: var(--bw-accent); }
+.ledger-row {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  border-radius: 0.9rem;
+  padding: 0.65rem 0.75rem;
+  transition: background-color 160ms ease;
+}
+.ledger-row:hover { background: color-mix(in srgb, var(--lg-white) 55%, transparent); }
+.ledger-icon {
+  display: grid;
+  width: 2.2rem;
+  height: 2.2rem;
+  flex-shrink: 0;
+  place-items: center;
+  border-radius: 0.7rem;
+  border: 1px solid color-mix(in srgb, var(--bw-text) 8%, transparent);
+  background: linear-gradient(160deg, var(--lg-white), color-mix(in srgb, var(--lg-white) 55%, transparent));
+  box-shadow: inset 0 1px 0 var(--lg-white), 0 2px 6px color-mix(in srgb, var(--bw-text) 6%, transparent);
+  color: var(--bw-accent);
+}
+
+/* Ratings strip */
+.star { color: var(--bw-accent); }
+
+/* Insight card shimmer (adapted from ruixen-glass-ai-card) */
+.skeleton-bar {
+  height: 6px;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--bw-text) 8%, transparent) 40%,
+    color-mix(in srgb, var(--bw-text) 16%, transparent) 50%,
+    color-mix(in srgb, var(--bw-text) 8%, transparent) 60%
+  );
+  background-size: 200% 100%;
+  animation: lg-shimmer 2.4s ease-in-out infinite;
+}
+
+/* Flow diagram rails (adapted from ruixen-glass-shipment-flow) */
+.flow-rail-base { stroke: color-mix(in srgb, var(--bw-text) 10%, transparent); }
+.flow-rail { stroke: var(--bw-accent); animation: lg-flow 3s linear infinite; }
+.flow-rail-alt { stroke: color-mix(in srgb, var(--lg-alt) 70%, var(--bw-text)); animation: lg-flow-rev 3.4s linear infinite; }
+.flow-node {
+  border-radius: 1.1rem;
+}
+
+/* Stats */
+.stat-value { font-size: clamp(2.4rem, 5vw, 3.5rem); font-weight: 600; letter-spacing: -0.045em; }
+
+/* Pricing */
+.price-card { display: flex; flex-direction: column; padding: clamp(1.6rem, 3.5vw, 2.3rem); }
+.price-card-featured {
+  border-color: color-mix(in srgb, var(--bw-accent) 32%, transparent);
+  background: linear-gradient(
+    165deg,
+    color-mix(in srgb, var(--lg-white) 88%, transparent),
+    color-mix(in srgb, var(--bw-accent) 10%, var(--lg-white)) 130%
+  );
+  box-shadow:
+    inset 0 1px 0 var(--lg-white),
+    0 6px 14px color-mix(in srgb, var(--bw-accent) 8%, transparent),
+    0 34px 80px color-mix(in srgb, var(--bw-text) 14%, transparent);
+}
+.check-dot {
+  display: grid;
+  width: 1.15rem;
+  height: 1.15rem;
+  flex-shrink: 0;
+  place-items: center;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--bw-accent) 14%, transparent);
+  color: var(--bw-accent);
+}
+
+/* FAQ */
+.faq-item { border-bottom: 1px solid color-mix(in srgb, var(--bw-text) 8%, transparent); }
+.faq-item summary {
+  display: flex;
+  cursor: pointer;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 1.4rem;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary svg { transition: transform 220ms ease; flex-shrink: 0; color: var(--bw-muted); }
+.faq-item[open] summary svg { transform: rotate(45deg); }
+.faq-item p { max-width: 44rem; padding: 0 2.5rem 1.5rem 0; margin: 0; color: var(--bw-muted); font-size: 0.9063rem; line-height: 1.7; }
+
+/* Glass form rows (adapted from ruixen-glass-form) */
+.form-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.9rem 1.05rem;
+}
+.form-row + .form-row { border-top: 1px solid color-mix(in srgb, var(--bw-text) 7%, transparent); }
+.form-input {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  color: var(--bw-text);
+  font-family: var(--font-sans);
+  font-size: 0.9063rem;
+  outline: none;
+}
+.form-input::placeholder { color: color-mix(in srgb, var(--bw-muted) 80%, transparent); }
+.toggle {
+  position: relative;
+  width: 2.7rem;
+  height: 1.6rem;
+  flex-shrink: 0;
+  border: 0;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--bw-text) 14%, transparent);
+  cursor: pointer;
+  transition: background-color 200ms ease;
+}
+.toggle[aria-checked="true"] { background: var(--bw-accent); }
+.toggle::after {
+  position: absolute;
+  top: 0.15rem;
+  left: 0.15rem;
+  width: 1.3rem;
+  height: 1.3rem;
+  content: "";
+  border-radius: 50%;
+  background: var(--lg-white);
+  box-shadow: 0 1px 3px color-mix(in srgb, var(--bw-text) 25%, transparent);
+  transition: transform 200ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.toggle[aria-checked="true"]::after { transform: translateX(1.1rem); }
+
+.footer-link { color: var(--bw-muted); font-size: 0.8125rem; transition: color 160ms ease; }
+.footer-link:hover { color: var(--bw-text); }
+
+@keyframes lg-sheen { to { transform: translateX(140%) skewX(-8deg); } }
+@keyframes lg-shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
+@keyframes lg-flow { from { stroke-dashoffset: 0; } to { stroke-dashoffset: -1; } }
+@keyframes lg-flow-rev { from { stroke-dashoffset: 0; } to { stroke-dashoffset: 1; } }
+
+@media (max-width: 639px) {
+  .shell { width: min(100% - 2rem, 72rem); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation: none !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0ms !important;
+    scroll-behavior: auto !important;
+  }
+  [data-reveal] { opacity: 1 !important; transform: none !important; }
+  .sheenable .sheen { display: none; }
+  .skeleton-bar { animation: none !important; background-position: 0 0; }
+  .flow-rail, .flow-rail-alt { animation: none !important; }
+  .button:hover, .liquid-hover:hover { transform: none; }
+}
+
+/* Signature hero: liquid-metal shader stage. The .metal-fallback CSS chrome
+   gradient renders instantly and stays as the no-WebGL fallback; the WebGL2
+   canvas (LiquidMetal.jsx) covers it once the lazy chunk mounts. */
+.metal-stage {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  border-radius: 2.4rem;
+  min-height: 30rem;
+  box-shadow:
+    0 40px 80px -32px color-mix(in srgb, var(--bw-text) 38%, transparent),
+    0 0 0 1px color-mix(in srgb, var(--bw-text) 8%, transparent) inset;
+}
+.metal-fallback {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(120% 90% at 18% 8%, rgba(255, 255, 255, 0.92), transparent 42%),
+    conic-gradient(from 205deg at 62% 30%, #0f1218, #f4f6fb 16%, #262c38 32%, #dfe5ee 47%, #11151c 60%, #eef1f7 76%, #313945 88%, #0f1218),
+    linear-gradient(160deg, #10141b, #e8ecf3 48%, #171c25);
+}

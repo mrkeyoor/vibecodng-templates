@@ -1,0 +1,3 @@
+// Source slug: ruixen-ruixen-gradient-footer
+// Author repo: https://github.com/ruixenui/ruixen.com
+export default function Footer(){return <footer><div className="shell"><div className="footer-top"><a className="logo" href="#top"><i/>SIGNALCRAFT</a><div><p>Applied AI systems for teams<br/>with real work to move.</p><a href="mailto:hello@signalcraft.ai">hello@signalcraft.ai ↗</a></div><nav><a href="#work">Work</a><a href="#capabilities">Capabilities</a><a href="#studio">Studio</a></nav></div><div className="footer-bottom"><span>© 2026 SIGNALCRAFT</span><span>LONDON · 51.5072° N</span><span>FICTIONAL STUDIO / REAL TEMPLATE</span></div></div></footer>}

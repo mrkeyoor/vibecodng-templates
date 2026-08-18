@@ -1,0 +1,4 @@
+import { useState } from 'react'
+// Source slug: efferd-header-1
+// Author repo: https://github.com/shabanhr/efferd-ui
+export default function Navbar(){const[open,setOpen]=useState(false);return <header className="nav"><div className="shell nav-in"><a className="logo" href="#top" aria-label="Signalcraft home"><i/>SIGNALCRAFT</a><nav className="nav-links" aria-label="Primary"><a href="#work">Work</a><a href="#capabilities">Capabilities</a><a href="#studio">Studio</a></nav><a className="pill small desktop" href="mailto:hello@signalcraft.ai">Start a signal <span>↗</span></a><button className="menu" aria-label="Toggle navigation" aria-expanded={open} onClick={()=>setOpen(!open)}>☰</button></div>{open&&<nav className="mobile" aria-label="Mobile"><a href="#work">Work</a><a href="#capabilities">Capabilities</a><a href="#studio">Studio</a></nav>}</header>}

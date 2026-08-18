@@ -1,0 +1,4 @@
+// Source slug: meraki-testimonials-full-page-cards
+// Author repo: https://github.com/merakiui/merakiui
+const quotes=[['“Somehow Amber Room feels special without trying to prove it. The eggs are perfect and they know exactly how I take my coffee.”','Mara Chen','Tuesday regular'],['“We booked the back table for my mum’s birthday. Warm, generous, unhurried-the whole afternoon felt like ours.”','Theo Martin','Neighbour & designer']]
+export default function Testimonials(){return <section id="stories" className="section bg-ink text-surface"><div className="shell"><p className="kicker kicker-light" data-reveal><span/> Notes from the room</p><div className="quote-grid mt-12">{quotes.map(([q,n,r],i)=><figure key={n} data-reveal style={{'--delay':`${i*100}ms`}}><span className="quote-mark">“</span><blockquote>{q}</blockquote><figcaption><i>{n[0]}</i><p><strong>{n}</strong><small>{r}</small></p></figcaption></figure>)}</div></div></section>}

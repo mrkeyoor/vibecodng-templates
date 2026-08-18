@@ -1,0 +1,75 @@
+{
+  "name": "tailark-dusk-features-6",
+  "pattern": "feature-grid",
+  "sourceUrl": "https://oss.tailark.com/r/radix/dusk-features-6.json",
+  "license": "MIT",
+  "fetchedAt": "2026-08-14T11:49:32.369Z",
+  "deps": {
+    "declared": [],
+    "missing": [],
+    "installOk": true,
+    "installLog": ""
+  },
+  "build": {
+    "ok": true,
+    "errors": []
+  },
+  "mount": {
+    "ok": true,
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ],
+    "pageErrors": []
+  },
+  "viewports": {
+    "w375": {
+      "overflow": true,
+      "shot": "/var/www/mrkeyoor.com/harness/out/tailark-dusk-features-6/shot-375.png"
+    },
+    "w768": {
+      "overflow": true,
+      "shot": "/var/www/mrkeyoor.com/harness/out/tailark-dusk-features-6/shot-768.png"
+    },
+    "w1440": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/tailark-dusk-features-6/shot-1440.png"
+    }
+  },
+  "a11y": {
+    "counts": {
+      "critical": 0,
+      "serious": 1,
+      "moderate": 0,
+      "minor": 0
+    },
+    "violations": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "nodes": 4
+      }
+    ]
+  },
+  "bundle": {
+    "gzipKb": 91.4,
+    "baselineGzipKb": 65.4,
+    "marginalKb": 26
+  },
+  "bare": {
+    "buildOk": true,
+    "mountOk": true,
+    "errors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ]
+  },
+  "needsProvider": false,
+  "demoUsed": true,
+  "video": null,
+  "timings": {
+    "totalMs": 118454
+  },
+  "retried": false
+}

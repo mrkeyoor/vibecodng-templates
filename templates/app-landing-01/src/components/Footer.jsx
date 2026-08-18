@@ -1,0 +1,3 @@
+// Source slug: hyperui-footers-2
+// Author repo: https://github.com/markmead/hyperui
+export default function Footer(){return <footer><div className="shell footer-grid"><a href="#top" className="logo"><span>✿</span> petal</a><p>Tiny habits, beautifully kept.<br/><span>A fictional app for kinder consistency.</span></p><nav aria-label="Footer"><a href="#features">Features</a><a href="#screens">Screens</a><a href="#download">Download</a><a href="mailto:hello@petal.example">Say hello</a></nav></div><div className="shell footer-bottom"><p>© 2026 Petal Studio</p><p>Privacy · Terms · No guilt</p></div></footer>}

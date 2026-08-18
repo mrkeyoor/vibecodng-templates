@@ -1,0 +1,69 @@
+{
+  "name": "tailark-mist-hero-section-5",
+  "pattern": "hero",
+  "sourceUrl": "https://oss.tailark.com/r/radix/mist-hero-section-5.json",
+  "license": "MIT",
+  "fetchedAt": "2026-08-15T10:08:31.661Z",
+  "deps": {
+    "declared": [
+      "clsx",
+      "tailwind-merge"
+    ],
+    "missing": [],
+    "installOk": true,
+    "installLog": ""
+  },
+  "build": {
+    "ok": true,
+    "errors": []
+  },
+  "mount": {
+    "ok": true,
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ],
+    "pageErrors": []
+  },
+  "viewports": {
+    "w375": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/tailark-mist-hero-section-5/shot-375.png"
+    },
+    "w768": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/tailark-mist-hero-section-5/shot-768.png"
+    },
+    "w1440": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/tailark-mist-hero-section-5/shot-1440.png"
+    }
+  },
+  "a11y": {
+    "counts": {
+      "critical": 0,
+      "serious": 0,
+      "moderate": 0,
+      "minor": 0
+    },
+    "violations": []
+  },
+  "bundle": {
+    "gzipKb": 130.2,
+    "baselineGzipKb": 65.4,
+    "marginalKb": 64.8
+  },
+  "bare": {
+    "buildOk": true,
+    "mountOk": true,
+    "errors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ]
+  },
+  "needsProvider": false,
+  "demoUsed": true,
+  "video": null,
+  "timings": {
+    "totalMs": 101031
+  },
+  "retried": false
+}

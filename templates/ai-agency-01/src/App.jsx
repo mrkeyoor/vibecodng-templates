@@ -1,0 +1,2 @@
+import Navbar from './components/Navbar.jsx';import Hero from './components/Hero.jsx';import Capabilities from './components/Capabilities.jsx';import Work from './components/Work.jsx';import Testimonial from './components/Testimonial.jsx';import Cta from './components/Cta.jsx';import Footer from './components/Footer.jsx';import{RevealController,PointerGlow}from'./components/Effects.jsx';
+export default function App(){return <div className="site"><RevealController/><PointerGlow/><Navbar/><main><Hero/><Capabilities/><Work/><Testimonial/><Cta/></main><Footer/></div>}

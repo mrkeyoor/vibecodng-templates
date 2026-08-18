@@ -1,0 +1,2 @@
+html:root { --bw-accent: #116345; --bw-muted: #45685b; }
+footer .brand small { color: var(--bw-surface); }

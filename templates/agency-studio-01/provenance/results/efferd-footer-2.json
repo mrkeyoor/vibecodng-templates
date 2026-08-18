@@ -1,0 +1,64 @@
+{
+  "name": "efferd-footer-2",
+  "pattern": "footer",
+  "sourceUrl": "https://raw.githubusercontent.com/shabanhr/efferd-ui/d0748f4fd12ba6553557f297d2ad4832a33d46cb/public/r/footer-2.json",
+  "license": "MIT",
+  "fetchedAt": "2026-08-14T19:27:41.030Z",
+  "deps": {
+    "declared": [
+      "motion"
+    ],
+    "missing": [],
+    "installOk": true,
+    "installLog": ""
+  },
+  "build": {
+    "ok": true,
+    "errors": []
+  },
+  "mount": {
+    "ok": true,
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  "viewports": {
+    "w375": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/efferd-footer-2/shot-375.png"
+    },
+    "w768": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/efferd-footer-2/shot-768.png"
+    },
+    "w1440": {
+      "overflow": false,
+      "shot": "/var/www/mrkeyoor.com/harness/out/efferd-footer-2/shot-1440.png"
+    }
+  },
+  "a11y": {
+    "counts": {
+      "critical": 0,
+      "serious": 0,
+      "moderate": 0,
+      "minor": 0
+    },
+    "violations": []
+  },
+  "bundle": {
+    "gzipKb": 130.4,
+    "baselineGzipKb": 65.4,
+    "marginalKb": 65
+  },
+  "bare": {
+    "buildOk": true,
+    "mountOk": true,
+    "errors": []
+  },
+  "needsProvider": false,
+  "demoUsed": true,
+  "video": "/var/www/mrkeyoor.com/harness/out/efferd-footer-2/video.webm",
+  "timings": {
+    "totalMs": 225182
+  },
+  "retried": false
+}

@@ -1,0 +1,2 @@
+html:root { --bw-accent: #126344; --bw-muted: #45685b; }
+.footer-grid > p, .footer-grid > div:last-child, .footnote, .footer-grid .brand small { color: var(--bw-text); }
