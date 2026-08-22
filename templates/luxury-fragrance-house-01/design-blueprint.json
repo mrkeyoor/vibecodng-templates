@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "templateId": "luxury-fragrance-house-01",
+  "product": {
+    "industry": "Experimental luxury fragrance house",
+    "audience": "Fragrance collectors choosing an extrait and discovery composition",
+    "decision": "Understand the formula evolution, concentration and scent profile",
+    "conversion": "Compose a three-note discovery vial and request a sample dossier"
+  },
+  "signature": {
+    "noun": "olfactive chamber",
+    "verb": "distils",
+    "moment": "A 3D glass vessel distils through raw molecules, liquid concentrate and sealed extrait as scroll separates the cap, atomiser, glass and coloured formula"
+  },
+  "systems": {
+    "hero": "A laboratory balance sheet frames a live glass vessel and floating ingredient field, not a campaign portrait",
+    "navigation": "Formula index with batch, concentration and sample coordinate",
+    "sectionOrder": [
+      "Olfactive chamber",
+      "Formula organ",
+      "Evaporation curve",
+      "Glass and atomiser",
+      "Discovery composition",
+      "Sample dossier"
+    ],
+    "contentDensity": "Sensory spatial hero followed by precise perfumer formula, volatility and batch data",
+    "geometry": "Vessel silhouettes, droplet columns, molecule constellations, chromatography curves and lab labels",
+    "motion": "Scroll distils the bottle assembly; explicit note controls reorganise particles and atomiser causes one short controlled burst",
+    "coreInteraction": "Visitors isolate top, heart and base materials, inspect evaporation, choose three notes and receive a visible discovery formula"
+  },
+  "mobile": {
+    "archetype": "Perfumer blotter wallet",
+    "structuralDifferences": [
+      "The bottle becomes a tall hand-held chamber with explicit raw, liquid and sealed controls",
+      "Particle field is reduced while note results move into a thumb-accessible blotter strip",
+      "The desktop formula organ becomes sequential top, heart and base columns",
+      "Sample composition and confirmation remain in-flow as a folding lab label"
+    ]
+  },
+  "artDirection": {
+    "typography": "High-contrast system serif for scent language, scientific grotesk and mono formula notation",
+    "material": "Optical glass, smoky plum liquid, polished aluminium, acid chartreuse molecules and parchment labels",
+    "imageLogic": "Bottle, liquid, atomiser and ingredient field are code-native WebGL; chromatography and blotters are SVG/CSS",
+    "microcopy": "Volatility, tincture, absolute, headspace, maceration, dosage, trail and batch language",
+    "dataHonesty": "Formula percentages, materials, batches and availability are fictional and clearly identified"
+  },
+  "palettes": [
+    {
+      "name": "default-world",
+      "role": "Ink laboratory with plum glass and chartreuse molecular signal"
+    },
+    {
+      "name": "paper-coral",
+      "role": "Parchment formula room with accessible specimen contrast"
+    },
+    {
+      "name": "aurora-terminal",
+      "role": "Dark headspace chamber with vivid molecular coordinates"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Olfactive chamber",
+      "composition": "bounded 3D vessel distillation with formula balance and explicit phase controls"
+    },
+    {
+      "name": "Formula organ",
+      "composition": "three-height ingredient columns with live molecule selection"
+    },
+    {
+      "name": "Evaporation curve",
+      "composition": "chromatography timeline and changing trail description"
+    },
+    {
+      "name": "Glass and atomiser",
+      "composition": "technical vessel section with one-shot spray control"
+    },
+    {
+      "name": "Discovery composition",
+      "composition": "three-slot blotter wallet resolving concentration and formula code"
+    },
+    {
+      "name": "Sample dossier",
+      "composition": "folded lab label with validated recipient and batch confirmation"
+    }
+  ],
+  "interactions": [
+    {
+      "name": "Bottle distillation",
+      "input": "Scroll or choose raw, liquid and sealed phases; trigger one atomiser burst",
+      "states": [
+        "raw molecules",
+        "liquid concentrate",
+        "sealed extrait",
+        "spray burst"
+      ],
+      "stateChange": "3D cap, glass, liquid level, molecule field and phase readout update",
+      "visibleResult": "The product is understood as a formula becoming a physical object"
+    },
+    {
+      "name": "Discovery formula",
+      "input": "Choose one top, heart and base note plus recipient details",
+      "states": [
+        "empty formula",
+        "partial formula",
+        "composed",
+        "invalid dossier",
+        "sample recorded"
+      ],
+      "stateChange": "Blotters, ratio, trail, formula code and dossier update",
+      "visibleResult": "A complete fictional discovery vial specification"
+    }
+  ],
+  "assetStrategy": "Two original still-life frames add sensorial evidence around the interactive bottle: an optical-glass campaign image and a raw-material laboratory study, local and never reused interchangeably.",
+  "assets": [{"file":"fragrance-campaign.webp","role":"Finished extrait campaign reveal after the 3D distillation","focalCrop":"Bottle, liquid meniscus and atomised cloud dominate the central field","mobileSafeArea":"Bottle silhouette and mist remain inside the middle 65 percent"},{"file":"fragrance-ingredients.webp","role":"Formula-organ proof of mineral rose, saffron and smoked vetiver","focalCrop":"Three material zones cross a dark laboratory slab","mobileSafeArea":"Saffron threads and rose mineral remain in the central crop"}],
+  "adjacentTemplates": [
+    {
+      "id": "editorial-fragrance-01",
+      "differentAxes": [
+        "hero",
+        "navigation",
+        "sectionOrder",
+        "contentDensity",
+        "geometry",
+        "coreInteraction"
+      ],
+      "why": "AUREL is a sticky image campaign and bag drawer; this is a spatial formula chamber and discovery laboratory."
+    },
+    {
+      "id": "editorial-fragrance-02",
+      "differentAxes": [
+        "hero",
+        "sectionOrder",
+        "contentDensity",
+        "geometry",
+        "motion",
+        "coreInteraction"
+      ],
+      "why": "VAPOR uses a three-state weather story and allocation flow; this distils physical vessel layers and composes a sample formula."
+    },
+    {
+      "id": "luxury-jewelry-01",
+      "differentAxes": [
+        "hero",
+        "navigation",
+        "sectionOrder",
+        "geometry",
+        "coreInteraction"
+      ],
+      "why": "No campaign collection, gems or cart; ingredient volatility and dosage form the information system."
+    },
+    {
+      "id": "common-rare-cosmetics-01",
+      "differentAxes": [
+        "hero",
+        "contentDensity",
+        "geometry",
+        "motion",
+        "coreInteraction"
+      ],
+      "why": "A fragrance organ and evaporation curve replace cosmetics merchandising and product routine patterns."
+    },
+    {
+      "id": "luxury-watch-atelier-01",
+      "differentAxes": [
+        "hero",
+        "navigation",
+        "sectionOrder",
+        "geometry",
+        "coreInteraction"
+      ],
+      "why": "Both use 3D but glass distillation, particles and formula dosing differ from radial mechanical assembly and chronometry."
+    }
+  ],
+  "avoid": [
+    "Campaign portrait",
+    "Weather trilogy",
+    "Bag drawer",
+    "Generic product carousel",
+    "Endless particles",
+    "Copied bottle silhouette or fashion-house branding"
+  ]
+}

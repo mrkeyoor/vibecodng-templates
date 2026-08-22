@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "templateId": "space-technology-mission-01",
+  "product": {
+    "industry": "Commercial Earth-observation spacecraft company",
+    "audience": "Climate, infrastructure and public-sector teams evaluating a dedicated orbital mission",
+    "decision": "Understand platform deployment, coverage, payload capacity and mission pathway",
+    "conversion": "Configure a mission profile and submit a technical concept request"
+  },
+  "signature": {
+    "noun": "mission sequence",
+    "verb": "deploys",
+    "moment": "A 3D spacecraft climbs from launch stack to orbit, unfolds its solar wings and paints an Earth coverage swath as the visitor advances mission events"
+  },
+  "systems": {
+    "hero": "A live orbital operations viewport sits beneath a compressed mission clock and systems rail, not a generic space photograph",
+    "navigation": "Mission elapsed-time rail with direct system anchors and concept-request status",
+    "sectionOrder": [
+      "Mission sequence",
+      "Coverage pass",
+      "Payload bus",
+      "Ground network",
+      "Programme clock",
+      "Mission concept request"
+    ],
+    "contentDensity": "Operational telemetry and event data punctuated by a spatial Earth/spacecraft stage",
+    "geometry": "Orbital arcs, telemetry columns, coverage swaths, exploded satellite modules and mission event bars",
+    "motion": "Scroll or explicit event controls deploy the spacecraft and solar arrays; coverage animation advances only by scrub input, never autoplay",
+    "coreInteraction": "Visitors step launch, separation, deployment and imaging events, then configure orbit, payload and coverage into a mission concept"
+  },
+  "mobile": {
+    "archetype": "Mission patch and event stack",
+    "structuralDifferences": [
+      "The first fold begins with current event, systems health and a square spacecraft viewport",
+      "Scroll choreography becomes four explicit event cards with previous and next mission controls",
+      "Coverage map becomes a vertical ground-pass strip",
+      "Mission configuration resolves as a compact concept uplink rather than a contact modal"
+    ]
+  },
+  "artDirection": {
+    "typography": "Wide technical grotesk, monospace mission events and compact aerospace symbols",
+    "material": "Carbon-black bus, ceramic white structures, copper solar cells, ion-blue Earth limb and safety amber telemetry",
+    "imageLogic": "Spacecraft, Earth, solar arrays and coverage cone are code-native 3D; ground tracks and data views use SVG/CSS",
+    "microcopy": "MET, separation, AOS, downlink, revisit, swath, payload envelope, commissioning and concept review language",
+    "dataHonesty": "Mission performance, coverage and schedule figures are fictional illustrative estimates"
+  },
+  "palettes": [
+    {
+      "name": "default-world",
+      "role": "Black orbital control with ion blue and safety amber"
+    },
+    {
+      "name": "paper-coral",
+      "role": "Light mission review sheet retaining event semantics"
+    },
+    {
+      "name": "aurora-terminal",
+      "role": "Dark terminal alternate with accessible orbit and health signals"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Mission sequence",
+      "composition": "3D Earth-limb stage with event rail and deployment telemetry"
+    },
+    {
+      "name": "Coverage pass",
+      "composition": "ground-track strip with scrubbed swath and revisit metrics"
+    },
+    {
+      "name": "Payload bus",
+      "composition": "exploded module ledger and payload envelope selector"
+    },
+    {
+      "name": "Ground network",
+      "composition": "station handoff timeline with acquisition windows"
+    },
+    {
+      "name": "Programme clock",
+      "composition": "mission phases as proportional operations bars"
+    },
+    {
+      "name": "Mission concept request",
+      "composition": "orbit and payload inputs resolving into an uplink packet"
+    }
+  ],
+  "interactions": [
+    {
+      "name": "Mission deployment",
+      "input": "Select launch, separation, deploy and imaging events or scrub mission elapsed time",
+      "states": [
+        "launch stack",
+        "separated bus",
+        "arrays deployed",
+        "imaging pass"
+      ],
+      "stateChange": "3D altitude, solar-wing span, Earth coverage cone, event code and systems health update",
+      "visibleResult": "A spacecraft visibly becomes an operational mission"
+    },
+    {
+      "name": "Mission concept",
+      "input": "Choose orbit, payload, revisit priority and technical contact details",
+      "states": [
+        "profile editing",
+        "concept resolved",
+        "invalid uplink",
+        "packet received"
+      ],
+      "stateChange": "Coverage estimate, payload envelope, mission code and request packet update",
+      "visibleResult": "A complete fictional technical concept summary"
+    }
+  ],
+  "assetStrategy": "Two original cinematic mission frames complement the operational WebGL model: an orbital spacecraft campaign frame and a grounded mission-control proof frame, both local and explicitly fictional.",
+  "assets": [{"file":"space-orbit.webp","role":"Cinematic imaging-pass proof between deployment and coverage","focalCrop":"Spacecraft and Earth limb form a diagonal with room for telemetry","mobileSafeArea":"Spacecraft bus and blue atmospheric rim remain centered"},{"file":"mission-control.webp","role":"Human operational context for ground-network handoff","focalCrop":"Operator silhouettes, map light and consoles create depth without readable UI text","mobileSafeArea":"Central operator and blue console glow remain in frame"}],
+  "adjacentTemplates": [
+    {
+      "id": "private-aviation-01",
+      "differentAxes": [
+        "hero",
+        "navigation",
+        "sectionOrder",
+        "contentDensity",
+        "motion",
+        "coreInteraction"
+      ],
+      "why": "Aviation rotates a route globe between airports; this stages spacecraft deployment, coverage and payload engineering over mission time."
+    },
+    {
+      "id": "style-spatial-01",
+      "differentAxes": [
+        "hero",
+        "navigation",
+        "sectionOrder",
+        "geometry",
+        "coreInteraction"
+      ],
+      "why": "A documentation spatial style is replaced by an operational mission event system and spacecraft deployment."
+    },
+    {
+      "id": "ai-workspace-01",
+      "differentAxes": [
+        "hero",
+        "sectionOrder",
+        "contentDensity",
+        "motion",
+        "coreInteraction"
+      ],
+      "why": "Orbital event telemetry and payload planning replace software workspace panels and generic AI utility."
+    },
+    {
+      "id": "motorsport-team-01",
+      "differentAxes": [
+        "hero",
+        "navigation",
+        "sectionOrder",
+        "geometry",
+        "coreInteraction"
+      ],
+      "why": "Both are operational, but mission elapsed time and orbital coverage replace lap telemetry and strategy calls."
+    },
+    {
+      "id": "futuristic-villa-01",
+      "differentAxes": [
+        "hero",
+        "navigation",
+        "sectionOrder",
+        "contentDensity",
+        "coreInteraction"
+      ],
+      "why": "A spacecraft deployment sequence and ground network bear no structural relation to architectural camera itinerary and visit brief."
+    }
+  ],
+  "avoid": [
+    "Generic starfield hero",
+    "Autoplay orbit",
+    "Dashboard card grid",
+    "Aviation route planner",
+    "Sci-fi game UI clichés",
+    "Unverifiable live satellite claims"
+  ]
+}

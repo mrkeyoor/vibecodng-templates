@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "templateId": "longevity-clinic-01",
+  "product": {
+    "industry": "Physician-led healthspan clinic offering contextual assessment and coordinated preventive care",
+    "audience": "An informed adult who wants a credible starting point without wellness hype, diagnostic theatre, or an indiscriminate test menu",
+    "decision": "Choose an appropriate care pathway and understand what the first 90 days would involve",
+    "conversion": "Assemble a non-diagnostic starting brief, select a care pathway, and submit an inline consultation request with a confirmation reference"
+  },
+  "signature": {
+    "noun": "care brief",
+    "verb": "assembles",
+    "moment": "Priority, pace, setting, and follow-up preference resolve into a plain-language care brief with focus areas, cadence, pathway, preparation, and transparent starting estimate"
+  },
+  "systems": {
+    "hero": "A single-viewport split clinical file: useful service facts and a compact sample brief sit beside one documentary portrait, with no pinned scroll film or giant circular action",
+    "navigation": "A thin appointment-status bar and rectangular file tabs; mobile uses a compact care index disclosure that expands below the header instead of a full-screen overlay",
+    "sectionOrder": [
+      "Care brief introduction",
+      "Starting brief builder",
+      "Context map",
+      "Pathway matrix",
+      "Ninety-day care cadence",
+      "Institute standard",
+      "Inline consultation handover",
+      "Questions and safety note"
+    ],
+    "contentDensity": "Operational labels, clinical caveats, and compact comparisons lead; documentary imagery creates calm intervals without long empty cinematic scroll",
+    "geometry": "Rectangular casefile panels, tabbed edges, ruled rows, check columns, and an asymmetric 12-column grid; no round portals, floating stickers, pill clouds, or giant circular CTAs",
+    "motion": "Finite file-assembly transitions occur only after user input; selection highlights and result panels settle with short opacity and transform changes, with no parallax, marquee, or perpetual loop",
+    "coreInteraction": "A guided non-diagnostic brief builder turns priority, pace, setting, and review cadence into a contextual pathway recommendation and an editable consultation handover"
+  },
+  "mobile": {
+    "archetype": "Pocket care passport",
+    "structuralDifferences": [
+      "The first fold starts with service facts and Start your brief; the portrait becomes a shallow documentary strip rather than a dominant full-screen hero",
+      "The brief builder becomes one question at a time with an explicit progress label and Back or Continue controls instead of the desktop's simultaneous assessment board",
+      "Pathways become a compact comparison ledger with a sticky selected-summary row rather than stacked pricing cards",
+      "Consultation is an inline final passport page with validation and confirmation, never a side drawer or bottom sheet"
+    ]
+  },
+  "artDirection": {
+    "typography": "Local system grotesk for readable clinical UI, Georgia only for short human notes, and ui-monospace for measurements and file labels; hierarchy comes from grids, rule weight, and indentation rather than enormous uppercase display type",
+    "material": "Warm clinical paper, burgundy annotation ink, pale mineral glass, charcoal rules, and translucent evidence layers with squared and tabbed edges",
+    "imageLogic": "Four local documentary or sculptural WebP images each have one role; CSS renders file tabs, context nodes, pathway checks, and progress marks so informational graphics remain semantic and recolorable",
+    "microcopy": "Calm operational language such as starting brief, lived signals, clinical context, review cadence, care handover, and appropriate next step, with specialist terms explained in plain English",
+    "dataHonesty": "All scores, pathway matching, availability, estimates, and biomarker values are explicitly labelled illustrative template data and never presented as diagnosis, risk prediction, or guaranteed outcome"
+  },
+  "palettes": [
+    {
+      "name": "clinical-paper",
+      "role": "Default warm paper, plum text, burgundy action, and mineral-green evidence layers"
+    },
+    {
+      "name": "paper-coral",
+      "role": "Representative light variant that preserves file hierarchy through semantic surface, text, muted, and accent variables"
+    },
+    {
+      "name": "aurora-terminal",
+      "role": "Representative dark variant that turns the file system into a calm night-clinic interface without changing structure"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Care brief hero",
+      "composition": "split documentary file with live sample brief and appointment status strip"
+    },
+    {
+      "name": "Brief builder",
+      "composition": "desktop triage board and mobile progressive passport questions"
+    },
+    {
+      "name": "Context map",
+      "composition": "connected evidence specimen paired with a three-lane interpretation ledger"
+    },
+    {
+      "name": "Pathway matrix",
+      "composition": "row-and-column care comparison with one selected handover summary"
+    },
+    {
+      "name": "Care cadence",
+      "composition": "ninety-day horizontal appointment score with expandable milestones"
+    },
+    {
+      "name": "Institute standard",
+      "composition": "staggered documentary image strip with clinical-principle annotations"
+    },
+    {
+      "name": "Consultation handover",
+      "composition": "inline two-column care brief receipt and validated contact form"
+    },
+    {
+      "name": "Questions",
+      "composition": "compact safety accordion and emergency boundary footer"
+    }
+  ],
+  "interactions": [
+    {
+      "name": "Starting brief builder",
+      "input": "Visitor selects a current priority, preferred pace, consultation setting, and review cadence",
+      "states": [
+        "unstarted",
+        "answering",
+        "assembled",
+        "edited"
+      ],
+      "stateChange": "A deterministic local matcher updates focus areas, preparation steps, pathway, ninety-day cadence, and indicative starting estimate",
+      "visibleResult": "A named starting brief appears with an explicit non-diagnostic caveat and can be carried into the consultation handover"
+    },
+    {
+      "name": "Consultation handover",
+      "input": "Visitor confirms the selected pathway, provides name, email, and a short goal, then acknowledges that the request is not urgent medical care",
+      "states": [
+        "ready",
+        "invalid",
+        "submitted"
+      ],
+      "stateChange": "Accessible validation identifies incomplete fields; valid local submission stores the selected brief in the confirmation state",
+      "visibleResult": "An inline confirmation announces reference NN-2608 and repeats the selected pathway, location, and next-step boundary"
+    }
+  ],
+  "assetStrategy": "Reuse the four coordinated local WebP assets as a one-image-per-role clinical storyboard; use semantic CSS rather than additional decorative bitmap filler",
+  "assets": [
+    {
+      "file": "hero-woman.webp",
+      "role": "Human context portrait for the first-fold care brief, signalling that the visitor's lived experience comes before measurements",
+      "focalCrop": "Wide split crop preserves the subject on the right and leaves the limestone field for file annotations",
+      "mobileSafeArea": "Shallow 16:7 strip keeps the face and burgundy jacket in the right two-thirds without placing text over the face"
+    },
+    {
+      "file": "biomarkers.webp",
+      "role": "Sculptural evidence object for the context map, showing measures as connected rather than ranked",
+      "focalCrop": "Portrait crop preserves the full suspended glass system and dark negative space",
+      "mobileSafeArea": "Square crop protects the central connected discs and stone base"
+    },
+    {
+      "file": "clinic-room.webp",
+      "role": "Documentary proof of the long-consultation environment and physical accessibility",
+      "focalCrop": "Portrait crop retains consultation desk, exam couch, curved glass, and natural light",
+      "mobileSafeArea": "Landscape crop keeps desk and couch together in the central 80 percent"
+    },
+    {
+      "file": "recovery-suite.webp",
+      "role": "A calm care-cadence interval showing recovery support as one optional environment, not a universal treatment claim",
+      "focalCrop": "Portrait architectural crop holds the red alcove between cyan and stone walls",
+      "mobileSafeArea": "Square crop preserves the bench, red light, and material contrast"
+    }
+  ],
+  "adjacentTemplates": [
+    {
+      "id": "longevity-clinic-01-current",
+      "differentAxes": [
+        "hero",
+        "navigation",
+        "sectionOrder",
+        "contentDensity",
+        "geometry",
+        "motion",
+        "coreInteraction"
+      ],
+      "why": "The current build uses a 260vh pinned portrait hero, giant display slogans, circular actions, three pricing cards, a long cinematic place section, and a consultation drawer; the redesign is a compact casefile system with a guided brief and inline handover"
+    },
+    {
+      "id": "industry-healthcare-clinic-01",
+      "differentAxes": [
+        "hero",
+        "navigation",
+        "sectionOrder",
+        "contentDensity",
+        "geometry",
+        "coreInteraction"
+      ],
+      "why": "Marigold is a conventional primary-care marketing page with illustration, service cards, doctor profiles, testimonials, and mail links; North / Now becomes an operational healthspan planning product with contextual data and a complete local workflow"
+    },
+    {
+      "id": "venture-capital-fund-01",
+      "differentAxes": [
+        "hero",
+        "navigation",
+        "sectionOrder",
+        "geometry",
+        "motion",
+        "coreInteraction"
+      ],
+      "why": "Matter & Means uses a dark deal terminal, thesis matrix, portfolio ledger, and founder signal; the clinic uses warm clinical paper, a progressive care passport, evidence context map, pathway comparison, and consultation handover"
+    },
+    {
+      "id": "cinematic-music-artist-01",
+      "differentAxes": [
+        "hero",
+        "navigation",
+        "sectionOrder",
+        "contentDensity",
+        "geometry",
+        "motion",
+        "coreInteraction"
+      ],
+      "why": "MARA/0 is a player-first performance world with waveform, tracks, tour tickets, and cart; the clinic is a document-led care workflow with finite input-driven transitions and no persistent media control"
+    },
+    {
+      "id": "luxury-jewelry-01",
+      "differentAxes": [
+        "hero",
+        "navigation",
+        "sectionOrder",
+        "contentDensity",
+        "geometry",
+        "motion",
+        "coreInteraction"
+      ],
+      "why": "Serein is a gesture-first full-screen lookbook with chapter ribbon, product fitting, cart, and appointment flow; the clinic prioritises readable care evidence, tabbed files, row comparisons, and an inline health handover"
+    }
+  ],
+  "avoid": [
+    "Pinned multi-screen hero, giant uppercase manifesto, decorative pulse rings, or circular CTA language",
+    "Three tall pricing cards, pill filters, right-side consultation drawer, or generic full-screen menu overlay",
+    "Score gamification, risk prediction, biological-age claims, diagnosis, treatment promises, or unlabelled live-looking biomarker data",
+    "Mobile as a one-column desktop collapse with 16vw headings and repeated 65vh image crops",
+    "Heavy sans uppercase paired with decorative italic serif as the primary identity",
+    "External runtime fonts, expiring assets, auto-playing motion, or essential content hidden behind animation"
+  ]
+}

@@ -1,0 +1,1 @@
+{"name":"vibecodng-film-vfx-studio-01","private":true,"version":"1.0.0","type":"module","scripts":{"dev":"vite","build":"vite build","preview":"vite preview"},"dependencies":{"@tailwindcss/vite":"latest","@vitejs/plugin-react":"latest","framer-motion":"^13.1.0","react":"latest","react-dom":"latest","tailwindcss":"latest","vite":"latest"}}

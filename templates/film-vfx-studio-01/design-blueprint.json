@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "templateId": "film-vfx-studio-01",
+  "product": {
+    "industry": "Independent film, visual effects and production studio",
+    "audience": "Creative directors, producers and commissioners preparing a film, campaign or title sequence",
+    "decision": "Whether the studio has the craft, production model and point of view to shape their brief",
+    "conversion": "Assemble and submit a concise production treatment request"
+  },
+  "signature": {
+    "noun": "composite timeline",
+    "verb": "resolves",
+    "moment": "A live 144-frame monitor resolves as visitors scrub time and switch architecture, atmosphere, signal-light and grade layers before assembling a production treatment"
+  },
+  "systems": {
+    "hero": "A compact monitor wall: title and live production slate sit beside one hero frame, a vertical shot list and timecode rather than a centered cinematic poster",
+    "navigation": "A narrow production header with direct reel, treatment, craft and contact cues; no fullscreen navigation overlay",
+    "sectionOrder": ["Monitor hero", "Reel assembly", "Treatment desk", "Live compositing timeline", "VFX breakdown", "Production ledger", "Contact handoff"],
+    "contentDensity": "Operational and editorial: dense metadata beside quiet wide frames, changing scale at every stage",
+    "geometry": "Film-frame rectangles, crop marks, timeline rails, ruled ledgers and asymmetric split screens",
+    "motion": "Frame-accurate canvas redraws and short state readout transitions tied to explicit scrubbing and layer switches; no decorative infinite motion",
+    "coreInteraction": "Visitors scrub a live composite and switch its image stack, select frames on a reel timeline, then assemble a visible treatment summary they can carry into an enquiry"
+  },
+  "mobile": {
+    "archetype": "One-hand director monitor and shot-list",
+    "structuralDifferences": [
+      "The mobile first fold leads with a live monitor and shot metadata before the studio statement",
+      "The desktop compositing suite becomes a tall director monitor with a two-column layer wallet and thumb-reachable frame steps",
+      "The horizontal desktop reel becomes a numbered shot-list with previous and next controls",
+      "Treatment decisions appear one prompt at a time and the completed brief becomes a compact call sheet",
+      "VFX breakdown uses an explicit before-after switch instead of desktop split comparison"
+    ]
+  },
+  "artDirection": {
+    "typography": "System grotesk for confident titles, monospaced production metadata and one restrained serif voice for director notes; no external fonts",
+    "material": "Near-black grading suite, warm projector white, oxide red marks and acid-green playback signals with subtle film grain",
+    "imageLogic": "Three original local film stills form one nocturnal sci-fi sequence; CSS creates monitor glass, masks, safe-area guides and timeline notation",
+    "microcopy": "Rushes, cut, plate, shot, grade, treatment, call sheet, delivery and production-window language",
+    "dataHonesty": "Project credits, dates and production figures are clearly labelled as sample studio content; no false awards or client claims"
+  },
+  "palettes": [
+    {"name": "default-world", "role": "Black grading-suite surface with warm white type, oxide action and acid signal"},
+    {"name": "paper-coral", "role": "Representative light world preserving production hierarchy and focus states"},
+    {"name": "aurora-terminal", "role": "Representative dark alternate retaining readable monitor and status semantics"}
+  ],
+  "sections": [
+    {"name": "Monitor hero", "composition": "asymmetric monitor wall with vertical shot queue"},
+    {"name": "Reel assembly", "composition": "horizontal film rail plus full-bleed selected-frame stage"},
+    {"name": "Treatment desk", "composition": "sequenced prompt console resolving into a paper call sheet"},
+    {"name": "Live compositing timeline", "composition": "16:9 frame monitor, operational layer stack and frame-accurate timeline console"},
+    {"name": "VFX breakdown", "composition": "plate-to-final compositing viewport with process annotations"},
+    {"name": "Production ledger", "composition": "ruled capability matrix with delivery states"},
+    {"name": "Contact handoff", "composition": "minimal two-column brief transfer and confirmation slate"}
+  ],
+  "interactions": [
+    {
+      "name": "Live compositing timeline",
+      "input": "Scrub the frame range, step twelve frames or switch image layers",
+      "states": ["plate alignment", "signal bloom", "delivery grade", "four independent layer states"],
+      "stateChange": "Canvas composite, frame counter, layer status and finishing phase update",
+      "visibleResult": "A production-style composite resolves directly in the monitor without autoplay or decorative looping"
+    },
+    {
+      "name": "Reel timeline",
+      "input": "Select a scene frame or use previous and next shot controls",
+      "states": ["arrival selected", "signal selected", "crossing selected"],
+      "stateChange": "Active frame, timecode, project label and monitor image update",
+      "visibleResult": "A newly composed monitor view with scene-specific metadata and director note"
+    },
+    {
+      "name": "Treatment assembler",
+      "input": "Choose project format, emotional temperature and production need",
+      "states": ["unstarted", "format", "tone", "need", "assembled"],
+      "stateChange": "Prompt progress and treatment fields update",
+      "visibleResult": "A completed call-sheet summary and recommended starting conversation"
+    },
+    {
+      "name": "VFX plate comparison",
+      "input": "Switch between photographed plate and final composite",
+      "states": ["plate", "final"],
+      "stateChange": "Viewport grade, overlay treatment and annotations change",
+      "visibleResult": "The practical contribution of compositing becomes legible without drag-only interaction"
+    }
+  ],
+  "assetStrategy": "Three coordinated original local stills tell one nocturnal signal-chase story. Each is a distinct shot and crop role; no asset is reused as decoration elsewhere.",
+  "assets": [
+    {"file": "still-arrival.webp", "role": "Hero establishing frame of a lone figure entering the signal environment", "focalCrop": "Wide 16:10 with figure on right third and open monitor space left", "mobileSafeArea": "Central-right figure remains visible in a shallow 4:3 monitor crop"},
+    {"file": "still-signal.webp", "role": "Reel mid-shot and VFX plate subject showing the physical light installation", "focalCrop": "Wide symmetrical corridor with luminous practical sculpture centered", "mobileSafeArea": "Central sculpture remains intact in square crop"},
+    {"file": "still-crossing.webp", "role": "Reel finale frame showing kinetic movement through wet architecture", "focalCrop": "Low-angle wide frame with runner in left middle ground", "mobileSafeArea": "Runner and strongest red reflection stay within middle 70 percent"}
+  ],
+  "adjacentTemplates": [
+    {"id": "cinematic-music-artist-01", "differentAxes": ["hero", "navigation", "sectionOrder", "coreInteraction", "motion"], "why": "This is a production workspace and selectable edit; it has no pinned portrait reveal, persistent music player, tour grid or merchandise journey."},
+    {"id": "editorial-creative-studio-02", "differentAxes": ["hero", "contentDensity", "geometry", "sectionOrder", "coreInteraction"], "why": "The casework is presented as rushes and production metadata, while conversion assembles a treatment rather than opening a generic agency booking drawer."},
+    {"id": "museum-exhibition-01", "differentAxes": ["hero", "navigation", "motion", "sectionOrder", "coreInteraction"], "why": "No expanding gallery image, ticket flow, exhibition grid or access panel; the defining action is editorial sequence selection."},
+    {"id": "venture-capital-fund-01", "differentAxes": ["hero", "contentDensity", "geometry", "motion", "coreInteraction"], "why": "The page uses a monitor and film timeline rather than an orbital sticky hero, thesis selector, company ledger and founder drawer."},
+    {"id": "longevity-clinic-01", "differentAxes": ["hero", "navigation", "sectionOrder", "contentDensity", "geometry", "coreInteraction"], "why": "The mobile director monitor and desktop cutting rail differ from the clinical passport, care-file layout and pathway comparison system."}
+  ],
+  "avoid": [
+    "Pinned multi-screen hero",
+    "Oversized uppercase plus italic-serif house formula",
+    "Generic portfolio card grid",
+    "Fullscreen menu or contact drawer",
+    "Autoplaying video or decorative loop",
+    "Unverifiable awards and client claims"
+  ]
+}

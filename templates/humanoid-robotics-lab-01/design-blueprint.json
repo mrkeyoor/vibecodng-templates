@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "templateId": "humanoid-robotics-lab-01",
+  "product": {"industry":"Humanoid robotics and embodied autonomy laboratory","audience":"Operations leaders and research partners imagining a humanoid inside a real work environment","decision":"Feel the machine's physical character, then test whether its movement and safety model fit a selected task","conversion":"Choreograph a fictional first shift and log a field-evaluation request"},
+  "signature": {"noun":"choreography floor","verb":"wakes","moment":"A life-scale 3D humanoid wakes inside an orange spatial field, then changes gaze, stance and reach while giant type and safety geometry respond to the selected procedure"},
+  "systems": {
+    "hero":"A borderless theatre of body, type and moving calibration geometry; the robot interrupts a two-line kinetic statement instead of sitting inside a dashboard cell",
+    "navigation":"A floating black instrument strip cuts across the bright stage and carries chapter, state and evaluation actions",
+    "sectionOrder":["Body wakes","Movement score","Human-scale proof","Sense field","Outside world","Stopping ritual","First-shift ticket"],
+    "contentDensity":"Alternating spectacle and compression: full-bleed spatial scenes, narrow score strips, quiet photographic pauses and one tactile ticket",
+    "geometry":"Oversized cropped type, diagonal floor axes, animated reach halos, hard photographic wipes and score notation",
+    "motion":"Explicit procedure changes send the body between poses; scroll moves type layers, floor axes and image masks without making content frame-dependent",
+    "coreInteraction":"Visitors direct teach, sense, carry and verify beats, then turn that choreography into a visible first-shift ticket"
+  },
+  "mobile": {"archetype":"Pocket movement score","structuralDifferences":["Mobile opens with a portrait body stage and the active verb overlaid at hand scale, not a compressed desktop split","The four-beat desktop score becomes a thumb-operated vertical cue stack whose active cue changes the code-native body pose","Full-width photography becomes swipe-like image chapters with visible step buttons rather than desktop wipes","Sensor and stopping stories use circular single-focus instruments instead of wide technical ledgers","The first-shift outcome becomes a tear-off ticket at the end of the flow"]},
+  "artDirection": {"typography":"Massive compressed neo-grotesk as moving physical matter, contrasted with tiny monospaced score notation; no repeated editorial-serif formula","material":"Safety orange field, warm composite shell, absolute black, laser cyan, aluminium and scuffed industrial photography","imageLogic":"Procedural 3D owns the theatrical body; three original photographs provide human scale, field consequence and tactile contact; CSS/SVG create the score and safety geometry","microcopy":"Wake, look, reach, carry, yield, stop, score, body, floor, first shift and field-note language","dataHonesty":"All cycle, reach, force and readiness values remain clearly fictional illustrative template data"},
+  "palettes":[{"name":"default-world","role":"Safety-orange performance stage, black interludes and laser-cyan sensor marks"},{"name":"paper-coral","role":"Paper rehearsal world with dark type and preserved spatial contrast"},{"name":"aurora-terminal","role":"Night performance world with vivid motion cues"}],
+  "sections":[
+    {"name":"Body wakes","composition":"full-bleed 3D humanoid interrupting two enormous kinetic words and a floating instrument strip"},
+    {"name":"Movement score","composition":"horizontal beat notation wrapped around a live pose stage, not cards or a telemetry dashboard"},
+    {"name":"Human-scale proof","composition":"edge-to-edge laboratory photograph revealed by a vertical type curtain"},
+    {"name":"Sense field","composition":"one circular perception instrument floating inside an asymmetric typographic void"},
+    {"name":"Outside world","composition":"warehouse image wipe paired with a moving four-line field transcript"},
+    {"name":"Stopping ritual","composition":"three giant words crossing a color field while distance physically contracts"},
+    {"name":"First-shift ticket","composition":"configuration controls orbit a large tear-off outcome ticket and inline contact handoff"}
+  ],
+  "interactions":[
+    {"name":"Movement score","input":"Choose tote, inspect or kit, then cue wake, look, reach and verify","states":["wake","look","reach","verify"],"stateChange":"3D joints, mobile body pose, reach object, sensor halo, active verb, floor geometry and cycle note change together","visibleResult":"The visitor directs an embodied four-beat performance rather than changing a dashboard value"},
+    {"name":"First-shift ticket","input":"Choose floor, carried object and shift rhythm, then provide evaluation contact details","states":["score open","ticket calculated","invalid handoff","field note logged"],"stateChange":"Ticket number, readiness, safety mode, scene color and confirmation stamp update","visibleResult":"A theatrical but useful commissioning ticket resolves from the movement choices"}
+  ],
+  "assetStrategy":"The existing three original local frames are re-authored as a film sequence rather than evidence cards: arrival in the lab, movement in the field and touch at the object.",
+  "assets":[
+    {"file":"robotics-calibration.webp","role":"Human-scale arrival chapter beneath a moving typographic curtain","focalCrop":"Robot remains central-right while observers establish physical scale","mobileSafeArea":"Robot and nearest observer survive separate portrait crops"},
+    {"file":"robotics-workcell.webp","role":"Outside-world movement chapter with field transcript","focalCrop":"Walking robot and carried tote cross a deep industrial aisle","mobileSafeArea":"Robot and tote remain centered in portrait"},
+    {"file":"robotics-gripper.webp","role":"Tactile contact coda inside the first-shift sequence","focalCrop":"Fingertips and cylinder dominate the frame","mobileSafeArea":"Contact point stays in the middle 70 percent"}
+  ],
+  "adjacentTemplates":[
+    {"id":"kinetic-beverage-01","differentAxes":["hero","navigation","sectionOrder","geometry","motion","coreInteraction"],"why":"Both pursue cinematic energy, but PULSE carries one can through three photographic worlds and a bag flow; robotics directs an articulated body through a movement score and commissioning ticket."},
+    {"id":"space-technology-mission-01","differentAxes":["hero","navigation","sectionOrder","contentDensity","geometry","coreInteraction"],"why":"A bright performance stage, image curtains and movement verbs replace dark mission telemetry, orbital deployment and coverage planning."},
+    {"id":"motorsport-team-01","differentAxes":["hero","navigation","sectionOrder","contentDensity","geometry","coreInteraction"],"why":"The visual system behaves like body choreography and theatre, not a broadcast timing wall or strategy simulation."},
+    {"id":"luxury-watch-atelier-01","differentAxes":["hero","sectionOrder","contentDensity","geometry","motion","coreInteraction"],"why":"Life-scale movement and image wipes replace radial micro-mechanics, exploded layers and collector configuration."},
+    {"id":"couture-fashion-runway-01","differentAxes":["hero","navigation","sectionOrder","geometry","motion","coreInteraction"],"why":"A machine body follows task and safety cues rather than assembling cloth silhouettes or runway looks."}
+  ],
+  "avoid":["Engineering dashboard","Three-column hero","Evidence card grid","Copied beverage scene trilogy","Generic dark technology page","Autoplay-only choreography","Repeated giant-heading plus ledger rhythm","Fullscreen enquiry drawer"]
+}

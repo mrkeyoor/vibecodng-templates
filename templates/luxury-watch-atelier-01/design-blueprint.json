@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "templateId": "luxury-watch-atelier-01",
+  "product": {"industry":"Independent haute horlogerie atelier","audience":"Collectors evaluating a limited hand-finished mechanical watch","decision":"Understand the calibre architecture, finishing, configuration and allocation process","conversion":"Configure a numbered watch and submit a private allocation request"},
+  "signature": {"noun":"calibre bench","verb":"opens","moment":"A scroll-linked 3D mechanical movement opens from a complete watch into bridges, gears, jewels and hands, then returns to a collector configuration"},
+  "systems": {
+    "hero":"An off-centre technical title ledger and live 3D watch on a bounded vertical calibre bench, not a photographic poster",
+    "navigation":"Slim numbered atelier rail with direct chapter coordinates and allocation status",
+    "sectionOrder":["Calibre bench","Movement anatomy","Finishing loupe","Timing certificate","Collector configuration","Allocation handoff"],
+    "contentDensity":"Dense technical notations around one spacious spatial object, followed by compact certificate and configuration surfaces",
+    "geometry":"Concentric case rings, radial callouts, exploded z-axis layers, ruled timing slips and jeweller tray divisions",
+    "motion":"Scroll opens the movement on its physical axis; explicit crown and layer controls update time and assembly state; no autoplay rotation",
+    "coreInteraction":"Visitors scrub the movement assembly, isolate functional layers, wind the crown, then configure case and strap for a visible allocation dossier"
+  },
+  "mobile": {"archetype":"Watchmaker loupe and parts tray","structuralDifferences":["The first fold leads with a square loupe viewport and thumb crown before the atelier statement","The desktop scroll-linked exploded bench becomes explicit assembled, train and open buttons","Radial desktop annotations become a vertical numbered parts tray","The collector configuration resolves as an in-flow certificate rather than a side drawer"]},
+  "artDirection": {"typography":"Condensed system grotesk for calibre numerals, quiet serif for watchmaker notes and monospaced timing data","material":"Graphite bench felt, rhodium bridges, warm brass train, synthetic ruby jewels and sapphire-blue focus marks","imageLogic":"All hero and movement imagery is code-native WebGL geometry; CSS provides loupe glass, timing slips and engraved rules","microcopy":"Bridge, barrel, train, escapement, beat error, amplitude, anglage, reserve and allocation language","dataHonesty":"Calibre, timing and production figures are clearly fictional sample atelier data"},
+  "palettes":[{"name":"default-world","role":"Graphite atelier with rhodium, brass and sapphire signals"},{"name":"paper-coral","role":"Light certificate world preserving metal and jewel separation"},{"name":"aurora-terminal","role":"Dark technical bench with accessible operational signals"}],
+  "sections":[
+    {"name":"Calibre bench","composition":"bounded sticky spatial bench with scroll ruler and 3D exploded movement"},
+    {"name":"Movement anatomy","composition":"three-column functional train ledger around a live layer selector"},
+    {"name":"Finishing loupe","composition":"oversized code-native loupe with engraved bridge detail and craft annotations"},
+    {"name":"Timing certificate","composition":"six-position chronometry slip with asymmetric measured data"},
+    {"name":"Collector configuration","composition":"case and strap material tray resolving into a numbered specification"},
+    {"name":"Allocation handoff","composition":"inline collector details and stamped success certificate"}
+  ],
+  "interactions":[
+    {"name":"Exploded calibre","input":"Scroll the bench, choose assembly depth or step the crown","states":["assembled","gear train","fully open","multiple crown positions"],"stateChange":"3D bridges, train, hands, jewels and time separate or rotate","visibleResult":"The mechanical architecture and set time become legible in one spatial watch model"},
+    {"name":"Collector configuration","input":"Select case, dial, strap and allocation details","states":["material selection","configured","invalid request","allocation recorded"],"stateChange":"Specification, price context and certificate update","visibleResult":"A complete fictional allocation dossier and accessible success state"}
+  ],
+  "assetStrategy":"A coordinated two-frame horology campaign supports the interactive calibre: one macro proof frame and one human-scale wrist frame, both original, local and compositionally distinct from the 3D assembly.",
+  "assets":[{"file":"watch-macro.webp","role":"Hand-finishing proof beside the finishing loupe","focalCrop":"Movement bridge and ruby bearing remain in the central-right field","mobileSafeArea":"Bearing, tool tip and metal grain remain readable in a portrait crop"},{"file":"watch-wrist.webp","role":"Quiet collector-scale campaign frame near configuration","focalCrop":"Watch and cuff occupy the left two-thirds with dark negative space","mobileSafeArea":"Dial, crown and cuff stay inside the middle 70 percent"}],
+  "adjacentTemplates":[
+    {"id":"luxury-watch-01","differentAxes":["hero","sectionOrder","contentDensity","geometry","motion","coreInteraction"],"why":"The existing watch is a photographic four-scene scroll film and allocation drawer; this is an operational 3D calibre bench with inline certificate."},
+    {"id":"luxury-jewelry-01","differentAxes":["hero","navigation","sectionOrder","geometry","coreInteraction"],"why":"No campaign portrait or jewellery gallery; the object is decomposed as a functional mechanical system."},
+    {"id":"performance-footwear-01","differentAxes":["hero","navigation","sectionOrder","contentDensity","coreInteraction"],"why":"Both use spatial geometry, but this radial horology bench, crown setting and chronometry certificate differ from gait calibration and chassis anatomy."},
+    {"id":"design-furniture-01","differentAxes":["hero","navigation","geometry","motion","coreInteraction"],"why":"A z-axis calibre explosion and timing dossier replace room placement, swatch wallet and reservation flow."},
+    {"id":"kinetic-automotive-01","differentAxes":["hero","sectionOrder","contentDensity","geometry","coreInteraction"],"why":"No cinematic road story or trim atelier; the signature is a microscopic mechanism and collector certificate."}
+  ],
+  "avoid":["Photographic sticky scene trilogy","Generic product card grid","Autoplay orbit","Allocation drawer","Huge circular CTA","Copied Swiss brand language or marks"]
+}

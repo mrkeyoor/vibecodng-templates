@@ -1,10 +1,10 @@
 # vibecodng templates
 
-35 complete React and Vite page starters from the public [vibecodng template library](https://vibecodng.com/templates/).
+91 complete React and Vite page starters from the public [vibecodng template library](https://vibecodng.com/templates/).
 
 Each template is a standalone project with its own `package.json`, `TEMPLATE.md`, license, responsive layout, and source-attribution notes. The library includes:
 
-- 8 general starters for landing pages, apps, agencies, docs, ecommerce, portfolios, and local businesses
+- 64 general and cinematic starters for products, studios, hospitality, fashion, commerce, and interactive brand experiences
 - 15 visual-style starters, including brutalism, glassmorphism, spatial, editorial, 3D, and neumorphism
 - 12 industry starters for clinics, finance, construction, education, hospitality, law, fitness, and more
 

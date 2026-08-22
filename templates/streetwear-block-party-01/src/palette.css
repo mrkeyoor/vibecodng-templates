@@ -1,0 +1,25 @@
+:root{
+  --bw-accent:#ffc928;
+  --bw-surface:#fff8de;
+  --bw-text:#111217;
+  --bw-muted:#fffdf6;
+}
+
+button:focus-visible,a:focus-visible,input:focus-visible{outline-color:var(--bw-accent)}
+.drop-pass input{color:var(--ink)}
+.drop-pass.issued{color:#fff}
+.issued-pass button{color:#111217}
+
+@media(max-width:800px){
+  .flight-strip{min-width:0}
+  .mark{min-width:0}
+  .flight-strip>button{min-width:0;max-width:46vw;white-space:normal}
+  .site-footer>*{min-width:0;overflow-wrap:anywhere}
+  .site-footer>a:first-child{font-size:clamp(2.5rem,16vw,4.25rem)}
+  .crew-lines>*{min-width:0}
+}
+
+@media(max-width:420px){
+  .crew-console,.drop-pass form{min-width:0}
+  .selected-spec dd,.crew-lines b{overflow-wrap:anywhere}
+}

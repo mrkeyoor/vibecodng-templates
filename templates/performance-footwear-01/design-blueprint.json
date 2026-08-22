@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "templateId": "performance-footwear-01",
+  "product": {
+    "industry": "Performance road-running footwear",
+    "audience": "Training-focused runners comparing one daily shoe across gait phase, surface and preferred ride",
+    "decision": "Understand how the Vector 01 chassis behaves under load and select the appropriate edition",
+    "conversion": "Resolve a transparent gait calibration and reserve the selected edition"
+  },
+  "signature": {
+    "noun": "force chassis",
+    "verb": "separates",
+    "moment": "A manipulable WebGL shoe splits into upper, carrier and outsole while a stride dial moves the assembly from touchdown through toe-off and redraws the active force path"
+  },
+  "systems": {
+    "hero": "A full-viewport instrument bay with a real-time 3D shoe suspended between a specimen rail and a stride-phase console; the product is the interface, not a decorative image",
+    "navigation": "A compact lab coordinate strip with direct mode controls; no overlay menu, cinematic chapter index or commerce header",
+    "sectionOrder": ["Live force chassis", "Stride calibration", "Pressure strip", "Edition relay", "Material proof", "Fit handoff"],
+    "contentDensity": "Dense at the live rig, sparse across pressure evidence, comparative at editions and concise at reservation",
+    "geometry": "Black instrument void inside warm ruled paper, orbital measurement arcs, vertical readout rails and horizontal race-lane data strips",
+    "motion": "Spring-based layer separation, pointer-driven rotation and phase-to-phase chassis articulation; scroll reveals are secondary and reduced motion freezes a fully legible posed frame",
+    "coreInteraction": "Visitors rotate and explode the shoe, inspect individual construction layers, scrub three gait phases and feed terrain, strike and ride choices into a deterministic edition recommendation"
+  },
+  "mobile": {
+    "archetype": "Thumb-operated run dial",
+    "structuralDifferences": [
+      "The desktop side rails become one bottom instrument tray placed directly under a shorter square 3D viewport",
+      "Stride phases are explicit previous and next thumb controls rather than a wide simultaneous timeline",
+      "Layer inspection becomes a stacked wallet that promotes one construction layer at a time while keeping explode and reset controls visible",
+      "Calibration questions remain a focused one-question sequence and appear before long-form pressure evidence"
+    ]
+  },
+  "artDirection": {
+    "typography": "A wide grotesk voice for runner-facing statements paired with compact monospace instrumentation; sentence case replaces fashion-editorial display conventions",
+    "material": "Warm test paper surrounding a near-black optical bay, cobalt structural surfaces, signal-orange forces and translucent engineered mesh",
+    "imageLogic": "The existing original product still remains a below-fold material proof; the signature product is built from code-native WebGL geometry, SVG force maps and semantic data",
+    "microcopy": "Touchdown, midstance, toe-off, carrier deflection, heel load, rocker release, stack and contact rubber language",
+    "dataHonesty": "All force, phase and recommendation values are explicitly illustrative product demonstrations, never medical assessment or live biomechanical measurement"
+  },
+  "palettes": [
+    {"name": "calibration-paper", "role": "Warm default sheet, black optical bay, cobalt chassis and orange force signal"},
+    {"name": "paper-coral", "role": "Representative light palette preserving instrument contrast"},
+    {"name": "aurora-terminal", "role": "Representative dark palette with semantic force and material separation"}
+  ],
+  "sections": [
+    {"name": "Live force chassis", "composition": "full-viewport WebGL rig between unequal vertical data rails"},
+    {"name": "Stride calibration", "composition": "3D anatomy bay joined to a deterministic runner-input console"},
+    {"name": "Pressure strip", "composition": "wide oscilloscope trace with terrain relay"},
+    {"name": "Edition relay", "composition": "three staggered race-lane specification tickets"},
+    {"name": "Material proof", "composition": "single photographic specimen beside a vertical construction stack"},
+    {"name": "Fit handoff", "composition": "resolved calibration receipt and inline reservation form"}
+  ],
+  "interactions": [
+    {
+      "name": "Force chassis explorer",
+      "input": "Pointer drag or explicit rotate, explode, reset, layer and stride-phase controls",
+      "states": ["assembled", "exploded", "upper", "carrier", "outsole", "touchdown", "midstance", "toe-off"],
+      "stateChange": "3D layer position, opacity, emphasis, chassis pitch, force ring and phase readouts change",
+      "visibleResult": "The runner sees which construction layer carries the selected stride phase and reads its illustrative load path"
+    },
+    {
+      "name": "Gait calibration",
+      "input": "Terrain, foot strike and preferred ride",
+      "states": ["unstarted", "sampling", "calibrated"],
+      "stateChange": "Edition, pressure trace, ride profile and recommendation rationale update",
+      "visibleResult": "A named Vector edition and transparent three-input rationale appear in the fit receipt"
+    },
+    {
+      "name": "Fit reservation",
+      "input": "Runner name, email and preferred size",
+      "states": ["empty", "invalid", "held"],
+      "stateChange": "Inline validation resolves into a local demo hold",
+      "visibleResult": "A fit-file reference and 24-hour hold confirmation replace the form"
+    }
+  ],
+  "assetStrategy": "One existing original AI-generated product photograph remains the material evidence anchor and is not repeated. The signature 3D product, force rings and stride visualization are generated in code so they remain interactive, palette-aware and resolution-independent.",
+  "assets": [
+    {
+      "file": "vector-01-lab.webp",
+      "role": "Below-fold photographic proof of knit, foam and outsole material under laboratory light",
+      "focalCrop": "Complete lateral shoe and test platen remain visible",
+      "mobileSafeArea": "Central shoe silhouette retained in a shallow crop with equipment allowed to fall away"
+    }
+  ],
+  "adjacentTemplates": [
+    {
+      "id": "style-3d-01",
+      "differentAxes": ["hero", "navigation", "sectionOrder", "contentDensity", "coreInteraction"],
+      "why": "The existing 3D asset marketplace uses an atmospheric object viewport and collection browsing; this rig is a technical shoe assembly whose geometry changes to explain gait phase and construction"
+    },
+    {
+      "id": "kinetic-automotive-01",
+      "differentAxes": ["hero", "sectionOrder", "geometry", "motion", "coreInteraction"],
+      "why": "No pinned image-film chapters or trim atelier: the footwear hero is a direct-manipulation WebGL instrument with force-phase controls"
+    },
+    {
+      "id": "luxury-watch-01",
+      "differentAxes": ["navigation", "sectionOrder", "contentDensity", "motion", "coreInteraction"],
+      "why": "The product does not orbit as luxury spectacle or end in allocation; it separates into functional layers and feeds an explainable fit calibration"
+    },
+    {
+      "id": "design-furniture-01",
+      "differentAxes": ["hero", "navigation", "geometry", "motion", "coreInteraction"],
+      "why": "Room planning and dimension placement are replaced by stride articulation, force paths and a thumb-operated phase dial"
+    },
+    {
+      "id": "film-vfx-studio-01",
+      "differentAxes": ["hero", "sectionOrder", "contentDensity", "geometry", "coreInteraction"],
+      "why": "The film template edits a shot sequence and treatment; this product interface manipulates physical layers and gait-state telemetry"
+    }
+  ],
+  "avoid": [
+    "generic rotating object with no useful state",
+    "long pinned scroll film",
+    "desktop side panels simply stacked on mobile",
+    "oversized uppercase plus italic serif typography",
+    "generic card grid and side-drawer conversion",
+    "auto-rotation without a stop or reduced-motion state",
+    "medical gait claims or fabricated athlete endorsements"
+  ]
+}

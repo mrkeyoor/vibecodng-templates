@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "templateId": "private-aviation-01",
+  "product": {
+    "industry": "Private aviation charter and aircraft operations",
+    "audience": "Executive assistants, family-office travel teams and principals arranging time-critical point-to-point flights",
+    "decision": "Which aircraft and operating plan responsibly fit a real route, party and schedule priority",
+    "conversion": "Clear a flight dossier and submit a complete charter enquiry"
+  },
+  "signature": {
+    "noun": "route globe",
+    "verb": "orbits",
+    "moment": "A tactile 3D route globe orbits between operating points, then resolves route, party, range and priority into a cleared aircraft dossier"
+  },
+  "systems": {
+    "hero": "A daylight dispatch table with a cropped aircraft portrait, live route line and dossier status—not a cinematic scroll scene",
+    "navigation": "Compact operations header with local-time strip and direct anchors; no menu overlay",
+    "sectionOrder": ["Dispatch hero", "Route clearance", "Route intelligence globe", "Fleet section", "Cabin protocol", "Operating standard", "Enquiry transfer"],
+    "contentDensity": "Precise operational data at the decision points, relieved by two cinematic aviation frames and quiet service statements",
+    "geometry": "Airway lines, rectangular flight strips, perforated boarding-wallet edges, monospace stamps and asymmetrical dispatch columns",
+    "motion": "Demand-rendered 3D globe rotations and route-arc changes caused only by explicit controls; no autoplay or scroll choreography",
+    "coreInteraction": "Visitors rotate a spatial route globe, select an arrival, then use origin, party, range and priority to produce an enquiry-ready dossier"
+  },
+  "mobile": {
+    "archetype": "Boarding wallet",
+    "structuralDifferences": [
+      "A compact boarding-pass route summary leads before the brand statement",
+      "The globe becomes a tall boarding-wallet world view with thumb-reachable east and west controls",
+      "Dispatch choices reveal one operational field at a time rather than the desktop table",
+      "The result collapses into a tear-off wallet with recommendation and clearance status",
+      "Fleet comparison becomes a selected aircraft specification strip with previous and next controls"
+    ]
+  },
+  "artDirection": {
+    "typography": "Humanist system sans for service language, narrow grotesk for route codes and monospaced operational data; no external fonts",
+    "material": "Warm flight-paper surface, carbon text, aviation-blue route ink and safety-orange clearance marks",
+    "imageLogic": "Two original local daylight aviation photographs establish exterior and cabin truth; CSS renders the route plot, flight strips and boarding wallet",
+    "microcopy": "Block time, range reserve, baggage profile, operating window, dispatch, crew duty and handling language",
+    "dataHonesty": "All routes, timings, aircraft availability and pricing context are labelled illustrative and subject to operator confirmation"
+  },
+  "palettes": [
+    {"name": "default-world", "role": "Warm dispatch paper with carbon text and blue-orange operational signals"},
+    {"name": "paper-coral", "role": "Representative light alternate retaining route hierarchy"},
+    {"name": "aurora-terminal", "role": "Representative dark operations-room world with accessible status contrast"}
+  ],
+  "sections": [
+    {"name": "Dispatch hero", "composition": "route plot, service statement and clipped aircraft portrait"},
+    {"name": "Route clearance", "composition": "field-by-field dispatch table resolving into perforated dossier"},
+    {"name": "Route intelligence globe", "composition": "demand-rendered spatial globe with illuminated route arc and operational corridor strip"},
+    {"name": "Fleet section", "composition": "aircraft silhouettes and technical comparison bands"},
+    {"name": "Cabin protocol", "composition": "full cabin image interrupted by vertical service protocol"},
+    {"name": "Operating standard", "composition": "timeline ledger of crew, handling and contingency checkpoints"},
+    {"name": "Enquiry transfer", "composition": "dossier attachment beside validated operations form"}
+  ],
+  "interactions": [
+    {
+      "name": "Interactive route globe",
+      "input": "Choose an arrival and rotate the world east or west",
+      "states": ["Geneva corridor", "Dubai corridor", "Nice corridor", "multiple globe headings"],
+      "stateChange": "3D route arc, endpoint light, corridor code and globe heading update",
+      "visibleResult": "A spatial mission route resolves before the aircraft recommendation workflow"
+    },
+    {
+      "name": "Flight dossier clearance",
+      "input": "Choose origin, destination, party size, operating range and schedule priority",
+      "states": ["route", "party", "profile", "priority", "cleared"],
+      "stateChange": "Route display, estimated block time, range context and recommended fleet update",
+      "visibleResult": "A cleared boarding-wallet dossier naming the recommended aircraft and operational caveat"
+    },
+    {
+      "name": "Fleet strip",
+      "input": "Select an aircraft or use mobile previous and next controls",
+      "states": ["light jet", "super midsize", "ultra long range"],
+      "stateChange": "Range, passengers, baggage and cabin role update",
+      "visibleResult": "One selected specification and best-use context appears"
+    }
+  ],
+  "assetStrategy": "Two original local photographs have non-interchangeable roles: one aircraft exterior defines dispatch and fleet scale; one cabin frame proves interior service character.",
+  "assets": [
+    {"file": "aircraft-apron.webp", "role": "Hero and fleet-scale portrait of a contemporary unbranded long-range jet", "focalCrop": "Wide side-three-quarter aircraft with open tarmac on left", "mobileSafeArea": "Nose, front door and wing root remain in central 70 percent"},
+    {"file": "cabin-daylight.webp", "role": "Cabin protocol evidence showing a quiet daylight working environment", "focalCrop": "Long cabin perspective with aisle centered and seat details on both sides", "mobileSafeArea": "Aisle and two forward seats remain in central portrait crop"}
+  ],
+  "adjacentTemplates": [
+    {"id": "travel-expedition-01", "differentAxes": ["hero", "navigation", "sectionOrder", "motion", "coreInteraction"], "why": "This uses an immediate dispatch table and resolved route dossier, not the shared three-scene sticky travel story or enquiry drawer."},
+    {"id": "cinematic-resort-01", "differentAxes": ["hero", "contentDensity", "geometry", "motion", "coreInteraction"], "why": "Operational route fields, fleet range and boarding-wallet output replace resort portals, room selections and cinematic scroll scenes."},
+    {"id": "kinetic-hotel-01", "differentAxes": ["hero", "sectionOrder", "geometry", "motion", "coreInteraction"], "why": "There is no moving portal, room gallery or booking overlay; the core silhouette is a dispatch plot and perforated flight strip."},
+    {"id": "longevity-clinic-01", "differentAxes": ["hero", "navigation", "sectionOrder", "geometry", "coreInteraction"], "why": "Although both assemble briefs, this dossier calculates a route-to-aircraft operational match and mobile boarding wallet rather than a clinical care passport."},
+    {"id": "film-vfx-studio-01", "differentAxes": ["hero", "contentDensity", "sectionOrder", "geometry", "coreInteraction"], "why": "No monitor, film rail, compositing frame or creative treatment; aviation uses map coordinates, aircraft specifications and clearance logic."}
+  ],
+  "avoid": ["Shared three-scene scroll-film scaffold", "Generic destination cards", "Huge circular CTA", "Fullscreen menu", "Generic booking drawer", "Claims of guaranteed aircraft or operational approval"]
+}

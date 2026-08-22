@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "templateId": "motorsport-team-01",
+  "product": {
+    "industry": "Elite single-seat motorsport racing team",
+    "audience": "Race fans, prospective partners and paddock members following the team’s competitive method",
+    "decision": "Understand the team’s strategy intelligence, programme and access tiers",
+    "conversion": "Complete a paddock-interest request with a selected membership level"
+  },
+  "signature": {
+    "noun": "telemetry lap",
+    "verb": "moves",
+    "moment": "A circuit marker, race clock and three engineering traces move together as the visitor isolates sectors before the pit wall calls a strategy"
+  },
+  "systems": {
+    "hero": "Broadcast command surface overlaying one race still with timing tower, radio transcript and session status",
+    "navigation": "Race-control masthead with direct anchors and live session coordinate",
+    "sectionOrder": ["Race control", "Strategy call", "Live telemetry simulation", "Circuit phase", "Team channel", "Season ledger", "Paddock handover"],
+    "contentDensity": "Dense operational first half, cinematic team statement, compact season proof and direct conversion",
+    "geometry": "Timing columns, hard cuts, track traces, asymmetrical broadcast safe zones and red call markers",
+    "motion": "A car marker and telemetry trace resolve from explicit race-clock, sector and channel input; no pinned film or decorative endless motion",
+    "coreInteraction": "Visitors simulate a telemetry lap, then run a deterministic tyre, pit-window, weather and traffic strategy call with visible race outcome"
+  },
+  "mobile": {
+    "archetype": "One-hand race-engineer radio stack",
+    "structuralDifferences": [
+      "Hero opens with current radio call and strategy status before the race image",
+      "Telemetry collapses into a radio-width track, stacked sector calls and a thumb-controlled race clock",
+      "Strategy inputs become four sequential radio prompts rather than a simultaneous desktop control wall",
+      "Outcome becomes a sticky-looking but in-flow timing ticket with explicit next and back controls",
+      "Season proof becomes a compact classification ledger rather than a broad desktop data strip"
+    ]
+  },
+  "artDirection": {
+    "typography": "System neo-grotesk for broadcast headlines and monospace timing labels; narrow numeric columns; no external fonts",
+    "material": "Near-black broadcast glass, warm white timing paper, race red signal, fluorescent chart line and subtle grid noise",
+    "imageLogic": "One original documentary race still establishes place and speed; track, delta and telemetry marks are code-native SVG/CSS",
+    "microcopy": "Box window, undercut, compound life, traffic loss, crossover, radio check and classification language",
+    "dataHonesty": "All telemetry and projections are explicitly labelled fictional demonstration data, not live race information"
+  },
+  "palettes": [
+    {"name": "pit-wall-night", "role": "Default dark broadcast world with race-red signal"},
+    {"name": "paper-coral", "role": "Representative light timing-sheet palette"},
+    {"name": "aurora-terminal", "role": "Representative dark telemetry palette"}
+  ],
+  "sections": [
+    {"name": "Race control", "composition": "broadcast still with independent timing and radio rails"},
+    {"name": "Strategy call", "composition": "control wall paired with track trace and resolved call ticket"},
+    {"name": "Live telemetry simulation", "composition": "moving circuit marker, three-sector call strip, engineering trace and explicit race clock"},
+    {"name": "Circuit phase", "composition": "horizontal three-sector telemetry band"},
+    {"name": "Team channel", "composition": "large transcript cut with role roster"},
+    {"name": "Season ledger", "composition": "classification rows and result ribbon"},
+    {"name": "Paddock handover", "composition": "membership signal plus inline credential form"}
+  ],
+  "interactions": [
+    {
+      "name": "Telemetry track simulation",
+      "input": "Select a sector, isolate speed, brake or energy, and step the race clock",
+      "states": ["sector one load", "sector two release", "sector three commit", "three telemetry channels"],
+      "stateChange": "Car position, circuit label, trace, headline metric and engineer values update together",
+      "visibleResult": "The lap behaves like an operational simulation rather than a static circuit illustration"
+    },
+    {
+      "name": "Pit-wall strategy call",
+      "input": "Tyre compound, pit lap, weather and traffic",
+      "states": ["listening", "modelling", "called"],
+      "stateChange": "Projected delta, rejoin position, stint risk and radio call change",
+      "visibleResult": "A strategy order such as BOX LAP 24 / MEDIUM appears with an explained outcome"
+    },
+    {
+      "name": "Paddock interest",
+      "input": "Membership tier and contact details",
+      "states": ["tier selected", "invalid", "confirmed"],
+      "stateChange": "Selected access tier enters the credential request",
+      "visibleResult": "Accessible confirmation returns a fictional paddock reference"
+    }
+  ],
+  "assetStrategy": "One original AI-generated documentary race still serves only the broadcast hero. All operations graphics remain semantic and code-native for responsiveness and palette resilience.",
+  "assets": [
+    {
+      "file": "apex-race-control.webp",
+      "role": "Race-control hero evidence showing car, pit wall and circuit context",
+      "focalCrop": "Car in lower-right with upper-left broadcast safe area",
+      "mobileSafeArea": "Car remains visible in the lower center of a shallow crop; the sky becomes the radio-text field"
+    }
+  ],
+  "adjacentTemplates": [
+    {"id": "kinetic-automotive-01", "differentAxes": ["hero", "navigation", "sectionOrder", "motion", "coreInteraction"], "why": "Race operations and strategy outcomes replace a three-scene road-car film, trim atelier and test-drive drawer"},
+    {"id": "event-conference-01", "differentAxes": ["hero", "navigation", "contentDensity", "geometry", "coreInteraction"], "why": "A live timing surface and compound model replace poster hero, schedule tabs and ticket tiers"},
+    {"id": "performance-footwear-01", "differentAxes": ["hero", "sectionOrder", "geometry", "motion", "coreInteraction"], "why": "Broadcast timing rails and race calls differ from product specimen, anatomy cutaway and gait calibration"},
+    {"id": "venture-capital-fund-01", "differentAxes": ["hero", "navigation", "sectionOrder", "contentDensity", "coreInteraction"], "why": "No pinned cinematic fund story or portfolio filters; the surface behaves like active race control"},
+    {"id": "cinematic-music-artist-01", "differentAxes": ["hero", "navigation", "geometry", "motion", "coreInteraction"], "why": "Timing hierarchy and strategy controls replace album portrait choreography, audio player and ticket cart"}
+  ],
+  "avoid": ["three-scene sticky film", "road-car configurator", "conference schedule cards", "generic cards", "giant circular CTA", "generic drawer", "live-data claims", "recognizable team branding"]
+}

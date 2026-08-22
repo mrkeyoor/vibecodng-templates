@@ -1,0 +1,9 @@
+.phase{grid-template-columns:minmax(0,1.2fr) repeat(3,minmax(0,1fr))}
+.phase>*{min-width:0}
+@media(max-width:760px){
+ html,body{width:100%;max-width:100%;overflow-x:hidden}
+ .mast nav{display:flex;justify-self:end}
+ .mast nav a:not(:nth-child(2)),.mast>a:last-child{display:none}
+ .result-ledger>div{grid-template-columns:44px minmax(0,1fr) auto;gap:8px}
+ .result-ledger b{font-size:28px}
+}

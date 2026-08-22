@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "templateId": "streetwear-block-party-01",
+  "product": {
+    "industry": "Independent streetwear T-shirt label",
+    "audience": "Style-led young adults choosing expressive group looks for everyday wear, music, skate and festival culture",
+    "decision": "Choose a coordinated three-person tee crew by colour, graphic and size while understanding fit and print construction",
+    "conversion": "Issue a fictional crew drop pass with three chosen tees and valid contact details"
+  },
+  "signature": {
+    "noun": "crew",
+    "verb": "assembles",
+    "moment": "Three full-height model lanes snap into a single joyful group portrait as the visitor assigns a tee, colour and size to every crew member"
+  },
+  "systems": {
+    "hero": "A sunlit block-party panorama split by three moving colour shutters; faces stay unobstructed while candid laughter and dance establish the label instantly",
+    "navigation": "A compact sound-system flight-strip with numbered set markers and a live three-slot crew counter",
+    "sectionOrder": ["Block opens", "Crowd wave", "Build the crew", "Print lab", "Street chorus", "Drop pass"],
+    "contentDensity": "Cinematic photo-led opening alternates with dense wearable product controls, macro craft evidence and short chant-like editorial beats",
+    "geometry": "Overlapping speaker-stack rectangles, torn-colour rails and three-person lanes; never a contact sheet, conventional product grid or luxury editorial column",
+    "motion": "Scroll moves colour shutters and crowd lanes at different speeds; state changes use short snap cuts and chromatic wipes that communicate selection",
+    "coreInteraction": "A three-slot crew mixer assigns tee colour, graphic and size per person, updates the live group composition and produces one complete drop pass"
+  },
+  "mobile": {
+    "archetype": "Festival crew-pass story deck",
+    "structuralDifferences": [
+      "The hero becomes a portrait-first swipe-like story with explicit previous and next controls instead of the desktop panorama",
+      "The crew mixer becomes one person per step with a persistent progress wristband rather than three simultaneous lanes",
+      "The crowd wave becomes a compact vertical chant sequence before the product decision, while desktop uses a wide lateral photo stage",
+      "The completed result is a full-screen color-block pass in normal document flow, not an overlay or compressed desktop receipt"
+    ]
+  },
+  "artDirection": {
+    "typography": "A heavy condensed display voice paired with warm humanist body copy and numeric mono details, all locally available system stacks",
+    "material": "Direct sunlight, on-camera fill flash, cotton grain, screen-print ink, painted asphalt and translucent festival wristband colour",
+    "imageLogic": "Original campaign photography carries people, styling and atmosphere; CSS supplies accessible brand lettering, shutters, diagrams and state indicators",
+    "microcopy": "Block, crew, colour hit, front print, back hit, fit, set, chorus, drop pass and sound-check language",
+    "dataHonesty": "Prices, stock, order codes and confirmations are explicitly labelled fictional template outcomes; fabric and print specifications are illustrative"
+  },
+  "palettes": [
+    {"name": "default", "role": "Mango, cobalt, hot pink, lime and ink create a cheerful daytime block-party hierarchy"},
+    {"name": "light", "role": "Paper-white ground preserves saturated product colours and print-lab readability"},
+    {"name": "dark", "role": "Night-block charcoal shifts photography and neon accents without changing state meaning"}
+  ],
+  "sections": [
+    {"name": "Block opens", "composition": "full-bleed three-shutter crowd panorama"},
+    {"name": "Crowd wave", "composition": "asymmetric lateral street-stage with rotating chant captions"},
+    {"name": "Build the crew", "composition": "three-person live outfit mixer and synchronized group result"},
+    {"name": "Print lab", "composition": "macro ink image cut by a vertical screen-print recipe"},
+    {"name": "Street chorus", "composition": "stacked voice lines woven through moving portrait crops"},
+    {"name": "Drop pass", "composition": "guided three-size contact form resolving into a full-color crew credential"}
+  ],
+  "interactions": [
+    {
+      "name": "Build the crew",
+      "input": "Visitor selects a crew slot, tee colour, graphic and size",
+      "states": ["slot-one", "slot-two", "slot-three", "crew-ready"],
+      "stateChange": "The selected person, garment treatment, line item and total all update in shared application state",
+      "visibleResult": "A coordinated three-person crew lineup and ready indicator appear"
+    },
+    {
+      "name": "Issue drop pass",
+      "input": "Visitor completes every crew size, name and valid email then submits",
+      "states": ["incomplete", "validation-feedback", "issued"],
+      "stateChange": "Validation errors clear and a deterministic fictional crew code is produced",
+      "visibleResult": "A full-colour pass lists all three tees, sizes, total and no-payment disclosure"
+    }
+  ],
+  "assetStrategy": "Five coordinated original campaign photographs tell one sunny block-party story: group arrival, kinetic celebration, close portrait, print craft and dusk finale. Each has a distinct narrative role and protected mobile crop.",
+  "assets": [
+    {"file": "louder-hero.webp", "role": "Six-person block-party arrival and desktop hero panorama", "focalCrop": "Six full or three-quarter bodies across a 3:2 street frame with faces in the middle vertical band", "mobileSafeArea": "Central two laughing models remain intact in a 4:5 crop"},
+    {"file": "louder-jump.webp", "role": "High-energy crowd-wave celebration", "focalCrop": "Five models moving across a painted basketball court", "mobileSafeArea": "Lead jumper and adjacent laughing face protected in center 42 percent"},
+    {"file": "louder-portrait.webp", "role": "Three-person styling and crew-mixer identity image", "focalCrop": "Three friends shoulder-to-shoulder from thigh up", "mobileSafeArea": "All three faces fit in upper central 60 percent"},
+    {"file": "louder-print.webp", "role": "Macro screen-print and cotton construction proof", "focalCrop": "Hands pulling saturated ink across a colorful tee with tactile detail", "mobileSafeArea": "Squeegee, hand and ink edge stay in central square"},
+    {"file": "louder-rooftop.webp", "role": "Golden-hour street chorus and finale", "focalCrop": "Crew dancing against skyline and painted sound system", "mobileSafeArea": "Two foreground dancers and sunset fit a portrait crop"}
+  ],
+  "adjacentTemplates": [
+    {"id": "fashion-contact-sheet-01", "differentAxes": ["hero", "navigation", "sectionOrder", "contentDensity", "geometry", "motion", "coreInteraction"], "why": "RIFT is a dark photographic proof sheet that selects one look and issues a size hold; LOUDER is a sunlit group stage assembling three coordinated people into one shared pass."},
+    {"id": "editorial-fashion-01", "differentAxes": ["hero", "navigation", "sectionOrder", "contentDensity", "geometry", "coreInteraction"], "why": "NOMA is a restrained coastal lookbook with isolated quick-shop drawers; LOUDER uses collective street culture, simultaneous crew lanes and an inline group outcome."},
+    {"id": "couture-fashion-runway-01", "differentAxes": ["hero", "navigation", "sectionOrder", "geometry", "motion", "coreInteraction"], "why": "Maison Fold transforms pattern geometry into an atelier fitting dossier; LOUDER begins with real crowd photography and resolves a social three-person tee set."},
+    {"id": "kinetic-beverage-01", "differentAxes": ["hero", "navigation", "sectionOrder", "contentDensity", "geometry", "coreInteraction"], "why": "PULSE moves one packaged product through pinned liquid worlds; LOUDER choreographs people and group choices with no persistent hero product or flavour ritual."},
+    {"id": "editorial-creative-studio-02", "differentAxes": ["hero", "navigation", "sectionOrder", "geometry", "motion", "coreInteraction"], "why": "MOTIF expands one sculptural portal into agency case studies and enquiry overlays; LOUDER is a retail crew builder with human campaign imagery and an inline pass."}
+  ],
+  "avoid": [
+    "Darkroom contact sheets, film sprockets or claim tags",
+    "Single product pinned through interchangeable scene worlds",
+    "Luxury coastal restraint or couture atelier drafting language",
+    "Generic card grids, giant type covering faces, circular orbit CTAs or enquiry drawers",
+    "Mobile as a one-column desktop collapse",
+    "Uncontrolled flashing, endless autoplay or motion required to access content"
+  ]
+}

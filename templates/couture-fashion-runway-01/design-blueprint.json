@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "templateId": "couture-fashion-runway-01",
+  "product": {
+    "industry": "Independent couture fashion house",
+    "audience": "Editors, private clients and stylists evaluating a numbered made-to-measure collection",
+    "decision": "Understand the silhouette construction, textile behaviour and fitting process",
+    "conversion": "Compose a look and request a private fitting dossier"
+  },
+  "signature": {
+    "noun": "pattern table",
+    "verb": "stitches",
+    "moment": "Flat digital pattern pieces travel on scroll, fold around a code-native mannequin and stitch into a complete couture silhouette before entering a runway sequence"
+  },
+  "systems": {
+    "hero": "A pattern-cutting table and assembly ruler occupy the first fold, not a model campaign portrait",
+    "navigation": "Atelier chapter tape with look number and fitting coordinate",
+    "sectionOrder": [
+      "Pattern assembly",
+      "Runway cut",
+      "Textile library",
+      "Construction ledger",
+      "Look composition",
+      "Fitting dossier"
+    ],
+    "contentDensity": "Large pattern geometry and silhouette moments alternate with dense seam, textile and fitting notes",
+    "geometry": "Pattern notches, grain lines, bias grids, seam allowances, dress-form curves and runway timing marks",
+    "motion": "Bounded scroll translates and folds pattern pieces into a garment; explicit cut controls and textile choice provide equivalents",
+    "coreInteraction": "Visitors assemble the silhouette, choose textile, volume and finish, then receive a numbered fitting look"
+  },
+  "mobile": {
+    "archetype": "Folded pattern envelope",
+    "structuralDifferences": [
+      "The first fold leads with a compact dress-form and explicit flat, drape and finished controls",
+      "Pattern pieces become a vertical stack rather than moving across a broad table",
+      "Runway cut becomes a swipe-like but button-accessible look strip",
+      "Fitting dossier unfolds inline like a pattern envelope rather than opening a drawer"
+    ]
+  },
+  "artDirection": {
+    "typography": "Editorial system serif for collection voice, condensed grotesk for look titles and mono cutting-room notation",
+    "material": "Black cutting felt, ivory pattern paper, lacquer red thread, cobalt silk and chrome dress-form marks",
+    "imageLogic": "Garments, pattern pieces, runway light and fabric studies are code-native SVG/CSS with Framer state transitions; no campaign photography",
+    "microcopy": "Toile, bias, grain, dart, godet, hand fall, fitting, look, atelier hours and delivery language",
+    "dataHonesty": "Collection, textile, atelier time, pricing and availability are fictional sample content"
+  },
+  "palettes": [
+    {
+      "name": "default-world",
+      "role": "Black cutting room with ivory paper, cobalt silk and red thread"
+    },
+    {
+      "name": "paper-coral",
+      "role": "Light pattern table retaining seam and silhouette hierarchy"
+    },
+    {
+      "name": "aurora-terminal",
+      "role": "Dark runway alternate with vivid cutting marks"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Pattern assembly",
+      "composition": "bounded scroll pattern table resolving into a dress-form silhouette"
+    },
+    {
+      "name": "Runway cut",
+      "composition": "horizontal timed look strip with spotlight and explicit frame controls"
+    },
+    {
+      "name": "Textile library",
+      "composition": "hanging swatch lengths with drape and weight readouts"
+    },
+    {
+      "name": "Construction ledger",
+      "composition": "vertical seam map and atelier-hour register"
+    },
+    {
+      "name": "Look composition",
+      "composition": "volume and finish selectors resolving into a numbered styling board"
+    },
+    {
+      "name": "Fitting dossier",
+      "composition": "folding pattern envelope with validated private fitting state"
+    }
+  ],
+  "interactions": [
+    {
+      "name": "Pattern-to-garment assembly",
+      "input": "Scroll or choose flat, drape and finished construction states",
+      "states": [
+        "flat pattern",
+        "pinned toile",
+        "finished silhouette"
+      ],
+      "stateChange": "Pattern pieces translate, rotate, layer and change material around the dress form",
+      "visibleResult": "The garment visibly emerges from construction rather than appearing as a static product"
+    },
+    {
+      "name": "Look and fitting composition",
+      "input": "Choose textile, volume, finish and fitting details",
+      "states": [
+        "look editing",
+        "look resolved",
+        "invalid fitting",
+        "dossier confirmed"
+      ],
+      "stateChange": "Silhouette, swatches, atelier hours, look number and dossier update",
+      "visibleResult": "A complete fictional made-to-measure look and fitting brief"
+    }
+  ],
+  "assetStrategy": "Two original editorial fashion frames extend the code-native pattern assembly into material reality: a runway motion portrait and an atelier handwork study, both local and assigned distinct crops.",
+  "assets": [{"file":"couture-runway.webp","role":"Finished silhouette in motion after the pattern assembly","focalCrop":"Full garment and controlled fabric trail occupy the central runway axis","mobileSafeArea":"Head-to-hem silhouette remains inside the middle 55 percent"},{"file":"couture-atelier.webp","role":"Handwork and textile proof beside the construction ledger","focalCrop":"Hands, cobalt silk, red basting thread and paper pattern meet diagonally","mobileSafeArea":"Hands and seam junction remain centered"}],
+  "adjacentTemplates": [
+    {
+      "id": "editorial-fashion-01",
+      "differentAxes": [
+        "hero",
+        "navigation",
+        "sectionOrder",
+        "contentDensity",
+        "motion",
+        "coreInteraction"
+      ],
+      "why": "The existing fashion template uses campaign photography; this starts from pattern construction and resolves a made-to-measure fitting look."
+    },
+    {
+      "id": "luxury-jewelry-01",
+      "differentAxes": [
+        "hero",
+        "sectionOrder",
+        "geometry",
+        "motion",
+        "coreInteraction"
+      ],
+      "why": "Pattern geometry, fabric drape and atelier hours replace gem collection, wishlist and cart interactions."
+    },
+    {
+      "id": "editorial-fragrance-01",
+      "differentAxes": [
+        "hero",
+        "navigation",
+        "sectionOrder",
+        "geometry",
+        "coreInteraction"
+      ],
+      "why": "No campaign image or purchase drawer; the signature is garment construction and fitting documentation."
+    },
+    {
+      "id": "luxury-watch-atelier-01",
+      "differentAxes": [
+        "hero",
+        "navigation",
+        "sectionOrder",
+        "geometry",
+        "motion",
+        "coreInteraction"
+      ],
+      "why": "Both reveal making, but soft pattern folding and runway timing are structurally unlike radial 3D mechanics and chronometry."
+    },
+    {
+      "id": "cinematic-music-artist-01",
+      "differentAxes": [
+        "hero",
+        "navigation",
+        "contentDensity",
+        "geometry",
+        "coreInteraction"
+      ],
+      "why": "A cutting table and fitting dossier replace artist portrait choreography, player and ticket merchandise journey."
+    }
+  ],
+  "avoid": [
+    "Model campaign hero",
+    "Generic product cards",
+    "Shop/cart drawer",
+    "Autoplay runway",
+    "Oversized italic-serif house formula",
+    "Photography-led editorial clone"
+  ]
+}

@@ -1,0 +1,224 @@
+{
+  "schemaVersion": 1,
+  "templateId": "design-furniture-01",
+  "product": {
+    "industry": "Numbered collectible furniture and small-run spatial objects sold directly by an independent design bureau",
+    "audience": "A design-literate collector or residential specifier checking whether a limited object fits a real room before placing a reservation",
+    "decision": "Select a span and finish, verify wall clearance and material character, then decide whether the resulting edition, lead time, price, and deposit suit the room",
+    "conversion": "Reserve one configured edition with a named placement code and receive an immediate on-page reservation record"
+  },
+  "signature": {
+    "noun": "room volume",
+    "verb": "registers",
+    "moment": "A live WebGL room widens to the supplied wall dimension while Ledge 02 changes span and material, shifts between elevation, corner and plan viewpoints, and resolves the remaining clearance into a reservable placement code"
+  },
+  "systems": {
+    "hero": "A product docket introduces the physical object photographically; the immediately following composer is the signature full-width spatial instrument, preventing the 3D room from becoming decorative hero spectacle",
+    "navigation": "A narrow horizontal catalogue header exposes Objects, Place, Materials, and Making; Index opens a centered full-screen folio rather than a side drawer, while mobile reduces the header to wordmark, current edition, and one Index control",
+    "sectionOrder": [
+      "Ledge 02 product docket",
+      "Room and material composer",
+      "Numbered object ledger",
+      "Material junction study",
+      "Making register",
+      "Edition provenance",
+      "Reservation record and studio notes"
+    ],
+    "contentDensity": "Precise object data and dimensions cluster around product decisions; full-bleed installation and material studies create quieter intervals without empty cinematic scroll tracks",
+    "geometry": "A twelve-column drafting sheet with registration crosses, dimension brackets, offset rules, rectangular swatches, and plan-view silhouettes; cards, portal crops, pills, circles, and repeated equal modules are excluded",
+    "motion": "Three.js interpolates wall width, object span, camera viewpoint and placement position only after visitor input; Framer Motion registers updated readouts, with no auto-rotation or decorative loop and a static reduced-motion pose",
+    "coreInteraction": "A spatial room composer combines Ledge 02 span, material, wall width, object position and camera viewpoint; it renders the result in 3D while calculating side clearance, fit guidance, edition availability, lead time, price, deposit and placement code"
+  },
+  "mobile": {
+    "archetype": "Swatch wallet and one-hand placement sheet",
+    "structuralDifferences": [
+      "The mobile first fold is a pocket-sized swatch wallet with current finish, edition count, and Place in your room action; the desktop's full installation stage and marginal product dossier are removed from the first screen",
+      "Desktop keeps finish, span, wall width, plan, and output visible at once; mobile turns the same state into an explicit three-step sequence—Swatch, Span, Place—with visible next and back controls",
+      "The desktop plan is a landscape room diagram with side clearances; mobile rotates the grammar into a vertical wall strip and measured object block sized for thumb-led comparison",
+      "Reservation is a right-hand column inside the desktop placement sheet but becomes a full-width continuation below the mobile plan, never a drawer or bottom sheet"
+    ]
+  },
+  "artDirection": {
+    "typography": "Use a compact neo-grotesk system stack for object names and a monospace system stack for edition data, measurements, and registry codes; hierarchy comes from alignment, indents, and numeric rhythm rather than giant uppercase type or a decorative italic-serif pairing",
+    "material": "Warm vellum, carbon ink, oxidised clay, charred ash, and cool brushed aluminium; surfaces look handled and architectural, with thin registration rules and no glossy luxury gradients",
+    "imageLogic": "Three local WebP photographs carry physical evidence while the configurable room, console, measurement grid and camera views are code-native WebGL; semantic HTML retains every numerical result",
+    "microcopy": "Use object-led vocabulary such as span, return, side clearance, finish batch, edition, maker mark, lead window, placement code, and reservation deposit; avoid generic shop, discover, elevate, timeless, and curated copy",
+    "dataHonesty": "All products, prices, edition numbers, dimensions, lead windows, and reservation codes are clearly fictional demonstration inventory; room-fit guidance is a simple geometric check, not installation or safety advice"
+  },
+  "palettes": [
+    {
+      "name": "vellum-carbon",
+      "role": "Default light drafting world: warm paper surface, near-black type, oxide-clay accent, and quiet graphite metadata"
+    },
+    {
+      "name": "night-register",
+      "role": "Representative dark build: carbon surface, pale plan lines, warm aluminium accent, and muted stone metadata"
+    },
+    {
+      "name": "paper-coral",
+      "role": "Representative library light build used to prove semantic BW_PALETTE mapping without changing the structural identity"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Product Docket",
+      "composition": "asymmetric installation stage crossed by measured marginalia"
+    },
+    {
+      "name": "Room Composer",
+      "composition": "control rail registered against a scaled architectural plan and live specification slip"
+    },
+    {
+      "name": "Object Ledger",
+      "composition": "full-width typographic registry rows driving one offset object dossier"
+    },
+    {
+      "name": "Material Junction",
+      "composition": "macro photographic seam split by a vertical performance annotation stack"
+    },
+    {
+      "name": "Making Register",
+      "composition": "staggered production stamps connected by a measured horizontal process line"
+    },
+    {
+      "name": "Edition Provenance",
+      "composition": "perforated certificate field paired with numbered inventory notches"
+    },
+    {
+      "name": "Studio Notes",
+      "composition": "compact correspondence block and utilitarian footer index"
+    }
+  ],
+  "interactions": [
+    {
+      "name": "Room and material composer",
+      "input": "Collector chooses Charred ash, Clay lacquer, or Brushed aluminium; selects 160, 200, or 240 centimetre span; and supplies a 260, 320, or 380 centimetre wall width",
+      "states": [
+        "default plan",
+        "swatch selected",
+        "span selected",
+        "fit resolved",
+        "fit caution"
+      ],
+      "stateChange": "The scaled plan, object finish, clearance rules, fit status, lead window, price, deposit, edition number, and placement code recompute from local deterministic data",
+      "visibleResult": "A live placement output states exact side clearance, whether the recommended 30 centimetre margin is met, configured dimensions, finish batch, edition availability, lead window, total, deposit, and plan code"
+    },
+    {
+      "name": "Edition reservation",
+      "input": "Collector accepts a valid placement, opens the inline record, submits name, email, project location, and reservation acknowledgement",
+      "states": [
+        "closed",
+        "editing",
+        "invalid",
+        "recorded"
+      ],
+      "stateChange": "Invalid fields produce an announced error summary; valid local submission marks the configured edition as reservation recorded without any external request",
+      "visibleResult": "The form is replaced by a reservation record containing the exact placement code, object, finish, dimensions, deposit, lead window, and a Return to plan action"
+    },
+    {
+      "name": "Object ledger dossier",
+      "input": "Visitor chooses one of four numbered object rows",
+      "states": [
+        "object 01",
+        "object 02",
+        "object 03",
+        "object 04"
+      ],
+      "stateChange": "The adjacent dossier updates function, dimensions, edition size, material note, price, and silhouette without navigating to a generic product card page",
+      "visibleResult": "A live dossier names the chosen object and exposes its authentic object data in the same registry grammar"
+    }
+  ],
+  "assetStrategy": "A coordinated three-frame local WebP storyboard establishes object silhouette, domestic scale, and material construction; each frame has one non-interchangeable evidence role, while all configurable state is rendered code-native so palette and dimensions remain honest",
+  "assets": [
+    {
+      "file": "ledge-02-studio.webp",
+      "role": "Hero evidence for the Ledge 02 console's low monolithic span, asymmetric return, and collectible-object silhouette on a sparse studio stage",
+      "focalCrop": "Landscape 3:2 frame with the complete console occupying the central-right 62 percent and open plaster floor around all feet for measurement overlays",
+      "mobileSafeArea": "Square center crop preserves the complete console and contact shadow; no essential object edge or join sits in the outer 12 percent"
+    },
+    {
+      "file": "sill-01-room.webp",
+      "role": "Domestic scale proof showing one Sill 01 lounge chair in a lived-in collector room, used only in the object ledger dossier",
+      "focalCrop": "Wide room view with the chair low-left, clear walking space, a restrained side table, and human-scale architecture without people",
+      "mobileSafeArea": "Portrait crop retains the entire chair, floor contact, and one adjacent architectural edge in the central 70 percent"
+    },
+    {
+      "file": "material-junction.webp",
+      "role": "Construction proof for the material section: a macro junction between charred ash, brushed aluminium, and a clay lacquer edge",
+      "focalCrop": "Tight diagonal macro with all three materials meeting near the lower-right third and tactile grain visible across the frame",
+      "mobileSafeArea": "Tall crop preserves the three-way seam in the central 55 percent with texture extending safely above and below"
+    }
+  ],
+  "libraryScan": {
+    "latestResolution": "Directory modification time fallback, used because the task prohibits Git work and no explicit creation metadata was found in the sampled template documents",
+    "latestSample": [
+      "longevity-clinic-01",
+      "venture-capital-fund-01",
+      "museum-exhibition-01",
+      "luxury-jewelry-01",
+      "cinematic-music-artist-01"
+    ],
+    "repeatedPatternsExcluded": "Pinned expanding-image heroes, oversized uppercase display, filter grids, persistent floating players, right-hand commerce drawers, and full-screen finale slogans"
+  },
+  "adjacentTemplates": [
+    {
+      "id": "interior-studio-01",
+      "differentAxes": [
+        "hero",
+        "navigation",
+        "sectionOrder",
+        "contentDensity",
+        "geometry",
+        "motion",
+        "coreInteraction"
+      ],
+      "why": "MORA uses a three-scene pinned room story, project selector, fact grid, giant finale, and consultation drawer; Vellum is a non-scrolling product docket and measured commerce system whose primary state is a dimensioned room fit and inline reservation"
+    },
+    {
+      "id": "ecommerce-01",
+      "differentAxes": [
+        "hero",
+        "sectionOrder",
+        "contentDensity",
+        "geometry",
+        "motion",
+        "coreInteraction"
+      ],
+      "why": "Loom+Co uses a familiar image-and-copy hero, eight-product card grid, principles, testimonial, and newsletter; this template uses registry rows, one architectural placement system, edition provenance, and a configured deposit outcome instead of quick-add cards"
+    },
+    {
+      "id": "luxury-jewelry-01",
+      "differentAxes": [
+        "hero",
+        "navigation",
+        "sectionOrder",
+        "contentDensity",
+        "geometry",
+        "motion",
+        "coreInteraction"
+      ],
+      "why": "SEREIN relies on a pinned expanding image, oversized display typography, collection grid, product configurator, bag drawer, and appointment drawer; Vellum avoids hero choreography and drawers while relating material and dimensions to a real room plan and numbered furniture edition"
+    },
+    {
+      "id": "luxury-watch-01",
+      "differentAxes": [
+        "hero",
+        "navigation",
+        "sectionOrder",
+        "contentDensity",
+        "geometry",
+        "motion",
+        "coreInteraction"
+      ],
+      "why": "VANTA is a four-scene scroll film with orbital product art, edition cards, giant image finale, and allocation drawer; Vellum uses an immediately available drafting sheet, measured clearance logic, ledger-driven dossiers, and an inline reservation record"
+    }
+  ],
+  "avoid": [
+    "Sticky or scroll-pinned campaign sequence, expanding portal image, parallax object, orbit loop, or progress theatre",
+    "Generic product-card grid, quick-add affordance, cart drawer, floating bag, wishlist, or checkout imitation",
+    "Giant all-caps slogan, italic-serif counterpoint, circular call to action, pill cloud, or image finale that repeats the hero",
+    "Room visualizer claims, photorealistic AR language, structural safety claims, or inventory signals not supported by the local deterministic model",
+    "Mobile as a compressed desktop plan, swipe-only swatches, fixed controls that obscure content, or a bottom-sheet reservation",
+    "Interchangeable lifestyle assets reused across hero, ledger, materials, and footer"
+  ]
+}

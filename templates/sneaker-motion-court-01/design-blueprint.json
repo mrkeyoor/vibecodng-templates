@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "templateId": "sneaker-motion-court-01",
+  "product": {
+    "industry": "Fashion-forward lifestyle sneaker label",
+    "audience": "Young adults choosing a vivid everyday sneaker across street, court and dance contexts",
+    "decision": "Compare three colorways, understand fit and traction, and choose a lace route for a preferred movement style",
+    "conversion": "Create a fictional first-step ticket for the selected sneaker, route and size"
+  },
+  "signature": {
+    "noun": "route",
+    "verb": "laces",
+    "moment": "A giant sneaker lace path redraws across three pressure zones while the selected colorway cuts into a cinematic moving street portrait"
+  },
+  "systems": {
+    "hero": "A diagonal triple-exposure street crossing where model feet, vivid sneakers and city light streaks occupy different depth planes",
+    "navigation": "A narrow pavement-coordinate rail with live route and colorway readout rather than a commerce header or overlay menu",
+    "sectionOrder": ["Crossing burst", "Footfall reel", "Lace route", "Sole scan", "Colorway wall", "First-step ticket"],
+    "contentDensity": "Fast cinematic opening, tactile product evidence, then one focused movement configurator and concise purchase outcome",
+    "geometry": "Diagonal crosswalks, lace-eyelet arcs, shoe-box lids and outsole tread lanes; no three-column crew stage or lab console",
+    "motion": "Scroll advances short footfall exposures; choice changes pull an SVG lace path through eyelets and wipe the active colorway into view",
+    "coreInteraction": "Visitors choose court, dance or all-day movement, colorway and size; the lace path, pressure emphasis, fit copy and ticket update"
+  },
+  "mobile": {
+    "archetype": "Thumb-led sneaker-box unboxing",
+    "structuralDifferences": [
+      "Hero becomes three stacked shoe-box lids opened with explicit step controls instead of a diagonal desktop panorama",
+      "Lace route becomes a one-question-at-a-time thumb flow with the shoe diagram above the controls",
+      "Colorways use a full-width single pair view with previous and next controls rather than the desktop wall",
+      "The final ticket becomes an in-flow box label and size seal, not a group pass, drawer or technical dossier"
+    ]
+  },
+  "artDirection": {
+    "typography": "Compressed grotesk display lettering with stencil-like numeric route markers and compact humanist product copy",
+    "material": "Wet asphalt reflections, direct flash, saturated leather and mesh, translucent rubber, pavement paint and corrugated shoe box board",
+    "imageLogic": "Original recurring-model campaign photography supplies energy and scale; original product/macros prove shoe form; SVG handles the live lace path",
+    "microcopy": "Footfall, lace route, toe freedom, heel lock, pivot, grip, colour hit, pair, box label and first step",
+    "dataHonesty": "Fit, traction and pressure values are explicitly illustrative product guidance; pricing, availability and ticket confirmation are fictional"
+  },
+  "palettes": [
+    {"name": "crosswalk-electric", "role": "Default cobalt night, safety orange, acid lime and chalk"},
+    {"name": "paper-coral", "role": "Light representative palette preserving product saturation"},
+    {"name": "arcade-sunset", "role": "Dark representative palette preserving route and focus contrast"}
+  ],
+  "sections": [
+    {"name": "Crossing burst", "composition": "diagonal triple-exposure street panorama"},
+    {"name": "Footfall reel", "composition": "three sequential full-bleed movement frames with ground-level captions"},
+    {"name": "Lace route", "composition": "oversized SVG eyelet map joined to a movement decision bench"},
+    {"name": "Sole scan", "composition": "macro tread photograph beneath a horizontal pivot ledger"},
+    {"name": "Colorway wall", "composition": "three overlapping shoe-box lids that promote one pair into the foreground"},
+    {"name": "First-step ticket", "composition": "shoe-box shipping label resolving into a perforation-free confirmation seal"}
+  ],
+  "interactions": [
+    {
+      "name": "Lace the route",
+      "input": "Visitor chooses movement context and colorway",
+      "states": ["court", "dance", "all-day", "route-ready"],
+      "stateChange": "SVG lace path, active pressure zones, fit note, product image and price change",
+      "visibleResult": "A named route with a visible lacing diagram and movement-specific recommendation appears"
+    },
+    {
+      "name": "Issue first-step ticket",
+      "input": "Visitor chooses size, adds name and valid email, then confirms",
+      "states": ["incomplete", "validation", "issued"],
+      "stateChange": "Validation resolves into a deterministic local demo ticket",
+      "visibleResult": "Selected pair, route, color, size and price appear on a fictional box label"
+    }
+  ],
+  "assetStrategy": "Five original coordinated campaign assets show one fictional sneaker silhouette and recurring cast across street movement, product still life and material detail.",
+  "assets": [
+    {"file": "airplay-hero.webp", "role": "Ground-level hero with three models crossing in vivid sneakers", "focalCrop": "Shoes dominate foreground while faces and bodies create cinematic depth", "mobileSafeArea": "Central orange sneaker and one moving model remain intact in portrait crop"},
+    {"file": "airplay-motion.webp", "role": "Dance and pivot movement proof", "focalCrop": "Two models mid-step on painted night court", "mobileSafeArea": "Lead pair of shoes and knees remain in central vertical half"},
+    {"file": "airplay-pair.webp", "role": "Hero product still life and colorway wall anchor", "focalCrop": "Complete fictional sneaker pair on stacked painted boxes", "mobileSafeArea": "Both shoes fit central square"},
+    {"file": "airplay-sole.webp", "role": "Macro translucent outsole and pivot-zone evidence", "focalCrop": "Tread and rubber texture fill wide frame", "mobileSafeArea": "Circular pivot zone remains in central square"},
+    {"file": "airplay-night.webp", "role": "Night crossing finale with recurring models", "focalCrop": "Three models moving through reflected color light", "mobileSafeArea": "Central model and shoes remain visible in 4:5 crop"}
+  ],
+  "adjacentTemplates": [
+    {"id": "performance-footwear-01", "differentAxes": ["hero", "navigation", "sectionOrder", "contentDensity", "geometry", "motion", "coreInteraction"], "why": "Vector is a technical WebGL gait chassis and calibration dossier; AIRPLAY is a photo-led culture campaign whose functional interface redraws a lace route and box label."},
+    {"id": "streetwear-block-party-01", "differentAxes": ["hero", "navigation", "sectionOrder", "geometry", "motion", "coreInteraction"], "why": "LOUDER assembles three people into a shared tee crew; AIRPLAY focuses on one pair, movement route, outsole evidence and size-specific first-step ticket."},
+    {"id": "kinetic-automotive-01", "differentAxes": ["hero", "navigation", "sectionOrder", "contentDensity", "geometry", "coreInteraction"], "why": "AERON uses a long exterior/interior drive film and vehicle trim drawer; AIRPLAY uses short footfall exposures and a direct lace-map configurator."},
+    {"id": "motorsport-team-01", "differentAxes": ["hero", "navigation", "sectionOrder", "geometry", "motion", "coreInteraction"], "why": "Motorsport operates a pit-wall strategy simulation; AIRPLAY is a human fashion retail journey with tactile footwear evidence and no telemetry stack."},
+    {"id": "fashion-contact-sheet-01", "differentAxes": ["hero", "navigation", "sectionOrder", "contentDensity", "geometry", "coreInteraction"], "why": "RIFT develops dark fashion frames and holds one look; AIRPLAY follows ground-level motion, redraws lacing and issues a sneaker-box ticket."}
+  ],
+  "avoid": [
+    "WebGL exploded shoe anatomy or gait-lab telemetry",
+    "Three-person crew mixer, claim tag or contact sheet",
+    "Long pinned product film with interchangeable worlds",
+    "Generic sneaker cards, carousel-only shopping or side drawer",
+    "Robotic models, floating product on empty gradient or giant type covering shoes",
+    "Mobile as a compressed desktop page"
+  ]
+}

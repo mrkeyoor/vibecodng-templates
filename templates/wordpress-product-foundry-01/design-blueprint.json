@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "templateId": "wordpress-product-foundry-01",
+  "product": {
+    "industry": "Independent WordPress theme and plugin product studio",
+    "audience": "Agencies, creators, and store owners comparing a theme-plus-plugin stack before launch",
+    "decision": "Choose a visual foundation and only the compatible functionality needed for a WordPress build",
+    "conversion": "Issue a fictional build manifest after selecting a theme, plugins, support tier, name, and email"
+  },
+  "signature": {
+    "noun": "foundry",
+    "verb": "compiles",
+    "moment": "A floating WordPress site chassis accepts functional plugin modules, then compiles into a launch manifest with live compatibility, speed, and maintenance signals"
+  },
+  "systems": {
+    "hero": "An offset desktop canvas: large editorial release copy beside an animated browser chassis whose plugin modules slot into a visible build rail",
+    "navigation": "A roomy release bar with numbered product anchors, live catalog count, and a compact mobile command tab",
+    "sectionOrder": ["Release stage", "Theme specimen reel", "Plugin signal board", "Stack compiler", "Build manifest"],
+    "contentDensity": "Cinematic and sparse at the release stage, dense and operational inside the product browser and compatibility compiler",
+    "geometry": "Browser chrome, plugin sockets, version badges, change-log rules, tab rails, and modular grid tracks rather than agency cards",
+    "motion": "Framer Motion makes browser layers compile, plugin modules slot into sockets, compatibility traces redraw, and the manifest fold into view; no decorative long-form scroll film",
+    "coreInteraction": "Theme, plugin modules, and support tier update a live site chassis, price, compatibility matrix, performance estimate, maintenance load, and issued manifest"
+  },
+  "mobile": {
+    "archetype": "One-hand plugin installer",
+    "structuralDifferences": [
+      "Hero becomes a release card with the live chassis immediately below rather than a side-by-side desktop stage",
+      "Theme reel becomes a horizontal snap specimen strip with explicit previous and next controls",
+      "The compiler becomes a stepwise install queue with a sticky summary dock instead of a two-column control console",
+      "Desktop compatibility matrix collapses into labelled pass rows ordered by launch risk"
+    ]
+  },
+  "artDirection": {
+    "typography": "Wide grotesk headlines paired with compact monospace release metadata; roomy tracking in navigation and readable sentence case in utility surfaces",
+    "material": "Electric blue chassis, warm parchment docs, acid-lime active sockets, coral release stamps, dark graphite code surfaces",
+    "imageLogic": "Three original bitmap specimen worlds establish the theme catalogue; all browser chrome, plugin sockets, metrics, diagrams, and icons remain code-native for precise state changes",
+    "microcopy": "WordPress-specific but honest vocabulary: block theme, WooCommerce-ready, custom post type, schema, cache, update channel, compatibility, changelog",
+    "dataHonesty": "All scores, prices, compatibility results, downloads, and performance estimates are clearly labelled illustrative demo data"
+  },
+  "palettes": [
+    {"name": "foundry-electric", "role": "Default cobalt, parchment, lime, coral, and graphite product world"},
+    {"name": "representative-light-dark", "role": "Semantic BW palette contract preserves hierarchy across library variants"}
+  ],
+  "sections": [
+    {"name": "Release stage", "composition": "asymmetric editorial copy plus animated site chassis"},
+    {"name": "Theme specimens", "composition": "horizontal browser reel with one dominant preview and two clipped releases"},
+    {"name": "Plugin signal board", "composition": "version ledger crossed by compatibility traces"},
+    {"name": "Stack compiler", "composition": "install queue facing a live launch diagnostic"},
+    {"name": "Build manifest", "composition": "folded release sheet with validation and issued success state"}
+  ],
+  "interactions": [
+    {
+      "name": "Theme specimen browser",
+      "input": "Visitor selects one of three WordPress theme foundations",
+      "states": ["release-index", "previewing", "selected"],
+      "stateChange": "Active specimen, use case, typography, commerce support, and preview world change",
+      "visibleResult": "Dominant browser preview and release facts update immediately"
+    },
+    {
+      "name": "Plugin stack compiler",
+      "input": "Visitor toggles plugin modules and chooses a support channel",
+      "states": ["base-theme", "installing-modules", "stack-ready"],
+      "stateChange": "Selected module list, compatibility, speed estimate, maintenance load, total, and chassis sockets update",
+      "visibleResult": "A live diagnostic resolves the proposed WordPress stack before manifest issue"
+    },
+    {
+      "name": "Manifest issue flow",
+      "input": "Visitor submits size-independent contact details after selecting a support tier",
+      "states": ["empty", "validation-errors", "issued"],
+      "stateChange": "Accessible errors appear or a deterministic fictional manifest code is issued",
+      "visibleResult": "Complete theme, plugin, support, price, and demo disclaimer manifest appears inline"
+    }
+  ],
+  "assetStrategy": "A coordinated original trio of text-free high-fashion website specimen worlds provides differentiated catalogue imagery while interactive product UI stays sharp and code-native",
+  "assets": [
+    {"file": "foundry-commerce.webp", "role": "Editorial commerce theme specimen with sculptural product forms", "focalCrop": "wide browser canvas with central product mass", "mobileSafeArea": "central object and color field remain readable in a 4:5 crop"},
+    {"file": "foundry-editorial.webp", "role": "Culture and magazine theme specimen with layered photography", "focalCrop": "wide rhythmic editorial spread", "mobileSafeArea": "primary portrait and saturated paper blocks stay centered"},
+    {"file": "foundry-hospitality.webp", "role": "Boutique hospitality theme specimen with architectural atmosphere", "focalCrop": "wide architectural pool and warm interior", "mobileSafeArea": "central doorway and light pool protected"}
+  ],
+  "adjacentTemplates": [
+    {"id": "agency-studio-01", "differentAxes": ["hero", "sectionOrder", "contentDensity", "geometry", "motion", "coreInteraction"], "why": "BLUNT OBJECT presents client work in brutalist cards; this is a product release system that compiles a usable theme and plugin stack."},
+    {"id": "ai-agency-01", "differentAxes": ["hero", "navigation", "sectionOrder", "geometry", "motion", "coreInteraction"], "why": "SIGNALCRAFT sells AI services through atmospheric effects; this operates as a WordPress catalogue and compatibility instrument."},
+    {"id": "kinetic-digital-agency-01", "differentAxes": ["hero", "sectionOrder", "contentDensity", "geometry", "motion", "coreInteraction"], "why": "PRIMARY/3 runs a campaign projection lab and long signal film; this uses compact software release choreography and a plugin compiler."},
+    {"id": "saas-dashboard-01", "differentAxes": ["hero", "navigation", "sectionOrder", "geometry", "motion", "coreInteraction"], "why": "Northstar is an authenticated operations dashboard; this is a public product showcase with browser specimens and build manifest."},
+    {"id": "film-vfx-studio-01", "differentAxes": ["hero", "navigation", "sectionOrder", "contentDensity", "geometry", "coreInteraction"], "why": "The VFX studio organizes shots and compositing evidence; this organizes themes, plugin dependencies, release compatibility, and support."}
+  ],
+  "avoid": [
+    "Generic agency hero followed by services cards, testimonials, and contact drawer",
+    "Repeated sticky three-scene cinematic story used by existing campaign templates",
+    "Fake WordPress administration UI or claims of live scans and measured performance",
+    "Oversized nav words without breathing room",
+    "Mobile as a plain one-column desktop collapse"
+  ]
+}

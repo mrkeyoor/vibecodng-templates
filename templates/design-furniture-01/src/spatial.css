@@ -1,0 +1,20 @@
+.plan-panel{padding:0!important;background:#171715;color:#f4eee2;display:flex;flex-direction:column;min-width:0}
+.plan-panel .plan-head{padding:.8rem 1rem;border-bottom:1px solid #f4eee247;color:#f4eee2}
+.spatial-canvas{position:relative;height:clamp(26rem,43vw,44rem);min-height:0;background:#171715;overflow:hidden}
+.spatial-canvas canvas{display:block;width:100%!important;height:100%!important}
+.spatial-label,.spatial-motion{position:absolute;z-index:2;top:1rem;padding:.45rem;background:#171715d9;font:700 .58rem/1 monospace;letter-spacing:.08em;text-transform:uppercase;pointer-events:none}
+.spatial-label{left:1rem}.spatial-motion{right:1rem;color:#d5c8b7}
+.spatial-controls{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #f4eee247}
+.spatial-controls fieldset{display:grid;grid-template-columns:repeat(3,1fr);border:0;margin:0;padding:1.8rem 1rem .8rem;position:relative}
+.spatial-controls fieldset+fieldset{border-left:1px solid #f4eee247}
+.spatial-controls legend{position:absolute;top:.55rem;left:1rem;font:700 .56rem/1 monospace;text-transform:uppercase}
+.spatial-controls button{min-height:46px;border:1px solid #f4eee247;border-right:0;background:transparent;color:#f4eee2;font:700 .62rem/1 monospace}
+.spatial-controls button:last-child{border-right:1px solid #f4eee247}.spatial-controls button[aria-pressed=true]{background:var(--accent-raw);color:var(--on-accent)}
+.plan-panel .plan-caption{min-height:4.5rem;margin:0;padding:1rem;color:#f4eee2;border-top:1px solid #f4eee247;line-height:1.5}
+@media(max-width:760px){
+  .spatial-canvas{height:min(70vw,28rem);min-height:17rem}
+  .spatial-motion{display:none}.spatial-controls{grid-template-columns:1fr}.spatial-controls fieldset+fieldset{border-left:0;border-top:1px solid #f4eee247}
+  .plan-panel .plan-caption{min-height:5rem}
+}
+@media(max-width:360px){.spatial-controls button{font-size:.56rem}.spatial-canvas{min-height:15rem}}
+@media(prefers-reduced-motion:reduce){.plan-panel .plan-caption{transform:none!important;opacity:1!important}}

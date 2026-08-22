@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "templateId": "fashion-contact-sheet-01",
+  "product": {
+    "industry": "Independent experimental ready-to-wear clothing label",
+    "audience": "Fashion-aware shoppers and stylists choosing a limited seasonal look",
+    "decision": "See how each complete look moves, understand its layers and fit, then select a wearable size",
+    "conversion": "Resolve one complete look and hold it in a chosen size with a numbered claim tag"
+  },
+  "signature": {
+    "noun": "contact sheet",
+    "verb": "develops",
+    "moment": "A dark photographic contact sheet runs beneath the viewport while one selected campaign frame develops from red negative into full colour; selecting a look recuts the frame, garment docket and fit receipt together"
+  },
+  "systems": {
+    "hero": "A full-bleed generated campaign photograph is split by sliding film shutters and an offset contact strip; restrained logotype and production marks stay at the edges rather than covering the model with giant type",
+    "navigation": "A slim vertical film docket on desktop becomes a thumb-level numbered scene rail on mobile",
+    "sectionOrder": ["Developing frame", "Contact run", "Style the frame", "Material exposure", "Street proof", "Claim tag"],
+    "contentDensity": "Long photographic breaths alternate with compact production metadata, a tactile styling workstation and a terse fit receipt",
+    "geometry": "35 mm sprockets, crop marks, irregular darkroom masks, overlapping proof prints and narrow docket columns without rounded card grids",
+    "motion": "Scroll advances exposure and shutter masks; direct controls change frames immediately; small afterimages communicate a cut without delaying product access",
+    "coreInteraction": "Choose one of three complete looks, inspect its garment stack and fit note, select a size, and issue a numbered hold tag with the resolved look image and total"
+  },
+  "mobile": {
+    "archetype": "Pocket contact strip",
+    "structuralDifferences": [
+      "The hero starts as a portrait frame with the scene rail directly beneath the model instead of reproducing desktop shutters",
+      "The contact run becomes vertically snapped proof frames with visible previous and next buttons instead of a wide horizontal film bed",
+      "Style metadata is ordered before atmospheric material imagery so size and fit decisions remain one-hand reachable",
+      "The final hold result replaces the form inline as a perforated claim tag rather than opening a drawer or modal"
+    ]
+  },
+  "artDirection": {
+    "typography": "A high-contrast editorial serif for the RIFT wordmark, a neutral grotesk for garment names and condensed mono for frame, exposure, fit and production notation; no oversized all-caps slogan formula",
+    "material": "Ink-black film, bone contact paper, electric cobalt light, dark cherry red safety marks, silver nylon, flash bloom and real fabric grain",
+    "imageLogic": "Four coordinated original AI-generated fashion photographs carry campaign narrative; one macro proves material; CSS film masks, sprockets and afterimages provide motion rather than fake 3D",
+    "microcopy": "Frame, exposure, take, shell, base, lower, cut, rise, drape, edition, hold and claim-tag language",
+    "dataHonesty": "Brand, collection, garments, inventory, pricing, frame numbers and confirmations are explicitly fictional demonstration content"
+  },
+  "palettes": [
+    {"name": "darkroom-red", "role": "Default black, bone, dark cherry and electric cobalt photographic world"},
+    {"name": "paper-coral", "role": "Light proof-sheet alternate preserving darkroom hierarchy"},
+    {"name": "aurora-terminal", "role": "Cold dark alternate that retains safe red status marks and readable garment metadata"}
+  ],
+  "sections": [
+    {"name": "Developing frame", "composition": "full-bleed campaign image divided by scroll-linked darkroom shutters and edge docket"},
+    {"name": "Contact run", "composition": "offset film bed with three unequal proof frames and numbered take controls"},
+    {"name": "Style the frame", "composition": "single large selected look beside a garment stack and live fit docket"},
+    {"name": "Material exposure", "composition": "macro textile image crossed by an annotated seam line and care exposure scale"},
+    {"name": "Street proof", "composition": "cinematic night frame with a moving transcript and no product-card treatment"},
+    {"name": "Claim tag", "composition": "inline sizing sequence that tears into a perforated numbered confirmation tag"}
+  ],
+  "interactions": [
+    {
+      "name": "Contact frame cutter",
+      "input": "Choose Take 01, 02 or 03 from the contact strip",
+      "states": ["negative idle", "frame selected", "look developed"],
+      "stateChange": "Selected image, exposure color, garment layers, price, fit and frame number update together",
+      "visibleResult": "One coherent campaign look develops at large scale with its real styling docket"
+    },
+    {
+      "name": "Numbered look hold",
+      "input": "Choose XS, S, M or L, enter contact details and submit",
+      "states": ["unresolved size", "invalid contact", "look held"],
+      "stateChange": "Validation messages resolve and the form transforms into a numbered perforated claim tag",
+      "visibleResult": "The selected look, size, price and fictional hold number remain visible as a complete outcome"
+    }
+  ],
+  "assetStrategy": "A five-frame original campaign is generated as one coordinated darkroom story. Each asset has a unique narrative role, crop and lighting condition; no image is reused as a generic card filler.",
+  "assets": [
+    {"file": "rift-hero.webp", "role": "Opening developed frame and collection identity", "focalCrop": "Full-body model sits in the central 48 percent with coat motion extending right", "mobileSafeArea": "Head, torso and coat hem remain inside the central 62 percent"},
+    {"file": "rift-negative.webp", "role": "Alternate same-look frame revealed by hero shutter exposure", "focalCrop": "Same model and silver shell move across a cobalt-red projector field", "mobileSafeArea": "Model remains inside the central portrait axis"},
+    {"file": "rift-duo.webp", "role": "Contact run Take 02 showing collection range", "focalCrop": "Two full-body models occupy opposing thirds with clean space between", "mobileSafeArea": "Each model remains independently crop-safe"},
+    {"file": "rift-street.webp", "role": "Night street proof of the garments in motion", "focalCrop": "Model crosses a wet street from lower left toward centre", "mobileSafeArea": "Face and silver coat remain in the middle 60 percent"},
+    {"file": "rift-material.webp", "role": "Material exposure and construction proof", "focalCrop": "Silver ripstop seam, dark cherry bartack and cobalt reflective piping cross diagonally", "mobileSafeArea": "Seam junction stays centred"}
+  ],
+  "adjacentTemplates": [
+    {"id": "editorial-fashion-01", "differentAxes": ["hero", "navigation", "sectionOrder", "geometry", "motion", "coreInteraction"], "why": "NOMA is a calm coastal portrait lookbook with a quick-shop drawer; RIFT is a darkroom contact sheet whose frame selection synchronizes campaign, garment and inline hold state."},
+    {"id": "couture-fashion-runway-01", "differentAxes": ["hero", "navigation", "sectionOrder", "contentDensity", "geometry", "motion", "coreInteraction"], "why": "Maison Fold starts from code-native pattern assembly and private fitting; RIFT begins with finished ready-to-wear photography and a contact-sheet styling and size hold flow."},
+    {"id": "performance-footwear-01", "differentAxes": ["hero", "sectionOrder", "contentDensity", "geometry", "motion", "coreInteraction"], "why": "VECTOR is a technical three-column 3D chassis lab; RIFT uses full-bleed photographic proof, irregular film geometry and a human styling decision."},
+    {"id": "kinetic-beverage-01", "differentAxes": ["navigation", "sectionOrder", "contentDensity", "geometry", "motion", "coreInteraction"], "why": "PULSE moves one can through liquid worlds and a bag; RIFT develops multiple human campaign frames and concludes with an inline sized-look claim tag."},
+    {"id": "luxury-jewelry-01", "differentAxes": ["hero", "sectionOrder", "contentDensity", "geometry", "motion", "coreInteraction"], "why": "SEREIN centres one product in an oval portal with soft cards; RIFT uses raw rectangular contact prints, garment dockets and shutter cuts."}
+  ],
+  "avoid": ["Coastal campaign clone", "Pattern table or dress form", "Three-column dashboard hero", "Product-card grid", "Quick-shop side drawer", "Giant uppercase slogan covering the model", "Primitive 3D mannequin", "Rounded portal motif", "Long blank sticky tracks"]
+}

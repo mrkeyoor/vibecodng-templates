@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "templateId": "futuristic-villa-01",
+  "product": {
+    "industry": "Design-led future villa development",
+    "audience": "International buyers and design patrons evaluating one site-specific coastal residence",
+    "decision": "Understand spatial sequence, daylight, programme and acquisition fit",
+    "conversion": "Build a private visit brief and request a viewing"
+  },
+  "signature": {
+    "noun": "sectional promenade",
+    "verb": "travels",
+    "moment": "A scroll-linked 3D cutaway villa travels from arrival court through living void and water court to the roof horizon while sun angle and room dossier update"
+  },
+  "systems": {
+    "hero": "A live architectural section occupies the full first fold with a marginal address ledger rather than a photographic property hero",
+    "navigation": "Vertical floor-coordinate rail on desktop; compact room itinerary on mobile",
+    "sectionOrder": [
+      "Sectional promenade",
+      "Room itinerary",
+      "Daylight study",
+      "Material archive",
+      "Site ledger",
+      "Private visit brief"
+    ],
+    "contentDensity": "Spatially quiet 3D scenes alternate with dense architect-style room and environmental data",
+    "geometry": "Section cuts, datum lines, sun arcs, level markers, courtyard voids and long landscape plans",
+    "motion": "Bounded scroll changes camera position, section cut and sun angle; explicit room and daylight controls provide non-scroll equivalents",
+    "coreInteraction": "Visitors travel through four architectural coordinates, inspect sun conditions and room programme, then assemble a visit brief"
+  },
+  "mobile": {
+    "archetype": "Pocket section and room itinerary",
+    "structuralDifferences": [
+      "The live model becomes a square sectional viewport followed by the current room card",
+      "Scroll choreography is replaced by four explicit coordinate buttons",
+      "The horizontal site plan becomes a vertical level stack",
+      "Visit preferences remain an inline itinerary ticket rather than a booking drawer"
+    ]
+  },
+  "artDirection": {
+    "typography": "Architectural grotesk with narrow level numbers and restrained serif site notes",
+    "material": "Chalk concrete, smoked glass, oxidised bronze, ocean blue and sun-washed sand",
+    "imageLogic": "The residence and landscape are code-native 3D geometry; plans, sun diagrams and material sections are SVG/CSS",
+    "microcopy": "Datum, court, aperture, thermal mass, sea axis, programme, level and private visit language",
+    "dataHonesty": "Area, climate, availability and site facts are labelled as fictional sample development data"
+  },
+  "palettes": [
+    {
+      "name": "default-world",
+      "role": "Mineral sand drawing room with ocean and bronze signals"
+    },
+    {
+      "name": "paper-coral",
+      "role": "Bright architectural sheet preserving section hierarchy"
+    },
+    {
+      "name": "aurora-terminal",
+      "role": "Night model room with accessible cyan datum signals"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Sectional promenade",
+      "composition": "full-fold 3D cutaway with vertical datum rail and bounded scroll camera"
+    },
+    {
+      "name": "Room itinerary",
+      "composition": "room-coordinate ribbon with changing programme dossier"
+    },
+    {
+      "name": "Daylight study",
+      "composition": "sun arc instrument paired with thermal and shadow readouts"
+    },
+    {
+      "name": "Material archive",
+      "composition": "stacked sectional material samples rather than cards"
+    },
+    {
+      "name": "Site ledger",
+      "composition": "long coastal datum plan and environmental measures"
+    },
+    {
+      "name": "Private visit brief",
+      "composition": "preference itinerary resolving into visit confirmation"
+    }
+  ],
+  "interactions": [
+    {
+      "name": "Villa promenade",
+      "input": "Scroll or select arrival, living, water court and roof coordinates",
+      "states": [
+        "arrival",
+        "living void",
+        "water court",
+        "roof horizon"
+      ],
+      "stateChange": "3D camera, section cut, highlighted room and coordinate dossier update",
+      "visibleResult": "The visitor experiences the house as a spatial sequence rather than a gallery"
+    },
+    {
+      "name": "Daylight and visit brief",
+      "input": "Set sun period, interests and visit details",
+      "states": [
+        "morning",
+        "solar noon",
+        "evening",
+        "invalid brief",
+        "confirmed visit"
+      ],
+      "stateChange": "Model light, sun diagram, comfort readout and itinerary update",
+      "visibleResult": "A coherent daylight preference and private visit request"
+    }
+  ],
+  "assetStrategy": "Two original architectural campaign frames translate the 3D section into lived atmosphere: a blue-hour coastal exterior and a tactile interior threshold, stored locally and assigned separate narrative roles.",
+  "assets": [{"file":"villa-dusk.webp","role":"Blue-hour proof of the house meeting horizon and water","focalCrop":"Cantilever, pool edge and sea horizon form three horizontal planes","mobileSafeArea":"Cantilever and reflected pool remain centered"},{"file":"villa-interior.webp","role":"Material and daylight proof inside the arrival sequence","focalCrop":"Stone threshold, smoked glass and distant coast create layered depth","mobileSafeArea":"Threshold junction and ocean aperture remain within the center"}],
+  "adjacentTemplates": [
+    {
+      "id": "architecture-studio-01",
+      "differentAxes": [
+        "hero",
+        "navigation",
+        "sectionOrder",
+        "contentDensity",
+        "motion",
+        "coreInteraction"
+      ],
+      "why": "FORMA is a panoramic portfolio and project index; this is a single-residence 3D sectional promenade and visit brief."
+    },
+    {
+      "id": "design-furniture-01",
+      "differentAxes": [
+        "hero",
+        "navigation",
+        "sectionOrder",
+        "motion",
+        "coreInteraction"
+      ],
+      "why": "This fixed architectural journey changes camera and daylight rather than configuring furniture dimensions and placement."
+    },
+    {
+      "id": "real-estate-luxury-01",
+      "differentAxes": [
+        "hero",
+        "navigation",
+        "geometry",
+        "motion",
+        "coreInteraction"
+      ],
+      "why": "A sectional model and architect itinerary replace conventional listing imagery, amenity cards and enquiry patterns."
+    },
+    {
+      "id": "cinematic-resort-01",
+      "differentAxes": [
+        "hero",
+        "sectionOrder",
+        "contentDensity",
+        "geometry",
+        "coreInteraction"
+      ],
+      "why": "No resort portals, room collection or reservation drawer; the residence is explored as one continuous section."
+    },
+    {
+      "id": "kinetic-hotel-01",
+      "differentAxes": [
+        "hero",
+        "navigation",
+        "sectionOrder",
+        "motion",
+        "coreInteraction"
+      ],
+      "why": "The camera travels through a spatial model, not cinematic hotel frames or booking overlays."
+    }
+  ],
+  "avoid": [
+    "Property card grid",
+    "Image portal scroll film",
+    "Room configurator",
+    "Booking drawer",
+    "Autoplay flythrough",
+    "Generic luxury claims"
+  ]
+}
